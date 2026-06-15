@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тренажёр слов — Հայերեն</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="topbar"><div class="topbar__in">
+  <a class="brand" href="index.html"><span class="brand__mark">Հ</span>
+    <span>Հայերեն <span class="brand__sub">A0 → B1</span></span></a>
+  <div class="topbar__spacer"></div>
+  <nav class="crumb"><a href="index.html">Оглавление</a> / Слова</nav>
+</div></header>
+
+<main class="wrap wrap--wide">
+
+  <h1>Тренажёр слов</h1>
+  <p class="lead">Весь словарь курса — <b id="lead-total">2869</b> слов. Следи за прогрессом по шкалам,
+  запускай <b>сессии</b> с упражнениями (переворот, ввод, выбор из четырёх, сопоставление) или просто
+  просматривай слова списком и карточками. Прогресс сохраняется в браузере.</p>
+
+  <!-- ============ ДАШБОРД ============ -->
+  <section class="dash" id="dash">
+    <div class="dash__head">
+      <h2 class="dash__title">Прогресс</h2>
+      <span class="dash__total" id="dash-total"></span>
+    </div>
+
+    <div class="meter meter--big">
+      <div class="meter__label"><span>Всего выучено</span><b id="m-all-txt">0 / 0</b></div>
+      <div class="meter__track"><div class="meter__bar meter__bar--all" id="m-all-bar"></div></div>
+      <div class="meter__pct" id="m-all-pct">0%</div>
+    </div>
+
+    <div class="dash__levels">
+      <div class="meter meter--lvl" data-lvl="A1">
+        <div class="meter__label"><span class="badge badge--a1">A1</span><b id="m-A1-txt">0 / 0</b></div>
+        <div class="meter__track"><div class="meter__bar" id="m-A1-bar" style="background:var(--a1)"></div></div>
+      </div>
+      <div class="meter meter--lvl" data-lvl="A2">
+        <div class="meter__label"><span class="badge badge--a2">A2</span><b id="m-A2-txt">0 / 0</b></div>
+        <div class="meter__track"><div class="meter__bar" id="m-A2-bar" style="background:var(--a2)"></div></div>
+      </div>
+      <div class="meter meter--lvl" data-lvl="B1">
+        <div class="meter__label"><span class="badge badge--b1">B1</span><b id="m-B1-txt">0 / 0</b></div>
+        <div class="meter__track"><div class="meter__bar" id="m-B1-bar" style="background:var(--b1)"></div></div>
+      </div>
+    </div>
+
+    <button class="dash__toggle" id="dash-themes-toggle" type="button" aria-expanded="false">
+      <span class="dash__toggle-ico">▸</span> Прогресс по темам
+    </button>
+    <div class="dash__themes" id="dash-themes" hidden></div>
+  </section>
+
+  <!-- ============ КНОПКА СЕССИИ ============ -->
+  <div class="sess-start">
+    <button class="btn btn--primary btn--lg" id="open-setup" type="button">▶ Начать сессию</button>
+    <span class="sess-start__hint">или просматривай слова ниже</span>
+  </div>
+
+  <!-- ============ ЭКРАН НАСТРОЙКИ СЕССИИ ============ -->
+  <section class="setup" id="setup" hidden>
+    <div class="setup__head">
+      <h2>Настройка сессии</h2>
+      <button class="chip" id="setup-close" type="button">✕ закрыть</button>
+    </div>
+
+    <div class="setup__grid">
+      <div class="setup__group">
+        <div class="setup__label">Размер сессии</div>
+        <div class="optrow" id="opt-size" data-single="1">
+          <span class="opt is-active" data-size="10">10</span>
+          <span class="opt" data-size="15">15</span>
+          <span class="opt" data-size="20">20</span>
+          <span class="opt" data-size="30">30</span>
+          <span class="opt" data-size="50">50</span>
+          <span class="opt" data-size="all">все</span>
+        </div>
+      </div>
+
+      <div class="setup__group">
+        <div class="setup__label">Направление</div>
+        <div class="optrow" id="opt-dir" data-single="1">
+          <span class="opt is-active" data-dir="ru2hy">рус → арм</span>
+          <span class="opt" data-dir="hy2ru">арм → рус</span>
+          <span class="opt" data-dir="mix">вперемешку</span>
+        </div>
+      </div>
+
+      <div class="setup__group">
+        <div class="setup__label">Уровень</div>
+        <div class="optrow" id="opt-level" data-single="1">
+          <span class="opt is-active" data-level="all">все</span>
+          <span class="opt" data-level="A1">A1</span>
+          <span class="opt" data-level="A2">A2</span>
+          <span class="opt" data-level="B1">B1</span>
+        </div>
+      </div>
+
+      <div class="setup__group">
+        <div class="setup__label">Тема</div>
+        <select class="vsearch setup__select" id="opt-theme"></select>
+      </div>
+
+      <div class="setup__group">
+        <div class="setup__label">Какие слова</div>
+        <div class="optrow" id="opt-pool" data-single="1">
+          <span class="opt is-active" data-pool="new">только новые</span>
+          <span class="opt" data-pool="all">все (с повтором)</span>
+        </div>
+      </div>
+
+      <div class="setup__group">
+        <div class="setup__label">Источник</div>
+        <div class="optrow" id="opt-source" data-single="1">
+          <span class="opt is-active" data-source="filters">по фильтрам</span>
+          <span class="opt" data-source="pick">моя подборка</span>
+          <span class="opt" data-source="both">подборка + фильтры</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="setup__group setup__group--wide">
+      <div class="setup__label">Типы упражнений <span class="setup__hint">(можно несколько, идут вперемешку)</span></div>
+      <div class="optrow optrow--checks" id="opt-types">
+        <span class="opt is-active" data-type="flip">🔄 карточка-переворот</span>
+        <span class="opt is-active" data-type="input">⌨ ввод ответа</span>
+        <span class="opt is-active" data-type="choice">🎯 выбор из 4</span>
+        <span class="opt is-active" data-type="match">🔗 сопоставление 4↔4</span>
+      </div>
+    </div>
+
+    <div class="setup__group setup__group--wide">
+      <div class="setup__label">Моя подборка
+        <span class="setup__hint"><b id="pick-count">0</b> слов</span></div>
+      <div class="picker">
+        <input class="vsearch" id="pick-search" placeholder="Найти слово (ru / hy / tr) и добавить в подборку…" autocomplete="off">
+        <span class="chip" id="pick-clear" type="button">очистить подборку</span>
+      </div>
+      <div class="picker__results" id="pick-results" hidden></div>
+      <div class="picker__chips" id="pick-chips"></div>
+    </div>
+
+    <div class="setup__foot">
+      <span class="setup__deck-info" id="setup-deck-info"></span>
+      <button class="btn btn--primary btn--lg" id="setup-go" type="button">Поехали →</button>
+    </div>
+  </section>
+
+  <!-- ============ СЕССИЯ ============ -->
+  <section class="session" id="session" hidden>
+    <div class="session__bar">
+      <div class="session__counts" id="session-counts"></div>
+      <div class="session__prog"><div class="session__prog-bar" id="session-prog-bar"></div></div>
+      <button class="chip session__end" id="session-end" type="button">Завершить сессию</button>
+    </div>
+    <div class="session__stage" id="session-stage"></div>
+  </section>
+
+  <!-- ============ ИТОГ СЕССИИ ============ -->
+  <section class="result" id="result" hidden>
+    <div class="result__card card">
+      <h2 class="result__title">Сессия завершена</h2>
+      <div class="result__stats" id="result-stats"></div>
+      <div class="result__actions">
+        <button class="btn btn--primary" id="result-again" type="button">Новая сессия</button>
+        <button class="btn btn--ghost" id="result-dash" type="button">В дашборд</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ СВОБОДНЫЙ ПРОСМОТР ============ -->
+  <section class="browse" id="browse">
+    <h2 class="browse__title">Просмотр словаря</h2>
+
+    <div class="vbar">
+      <div class="vcontrols">
+        <input class="vsearch" id="search" placeholder="Поиск по-русски или по-армянски…" autocomplete="off">
+        <select class="vsearch" id="theme" style="flex:0 1 240px"></select>
+        <span class="chip is-active" data-level="all">Все уровни</span>
+        <span class="chip" data-level="A1">A1</span>
+        <span class="chip" data-level="A2">A2</span>
+        <span class="chip" data-level="B1">B1</span>
+        <span class="chip" id="toggle-unlearned" data-on="0">Только невыученные</span>
+        <span class="chip" id="export">⬇︎ Сохранить прогресс</span>
+        <span class="chip" id="import">⬆︎ Загрузить</span>
+        <input type="file" id="importfile" accept="application/json" hidden>
+        <span class="chip" id="reset" style="margin-left:auto">Сбросить</span>
+      </div>
+    </div>
+
+    <div class="vmode">
+      <span class="chip is-active" data-view="list">☰ Список</span>
+      <span class="chip" data-view="cards">🃏 Карточки</span>
+    </div>
+
+    <div id="list"></div>
+
+    <div id="cards" hidden>
+      <div class="cardbar">
+        <span class="chip is-active" data-cardmode="single">📇 По одной</span>
+        <span class="chip" data-cardmode="grid">▦ Сетка</span>
+        <span class="chip" id="shuffle">🔀 Перемешать</span>
+        <span class="ccount" id="ccount"></span>
+      </div>
+      <div id="study"></div>
+      <div id="studynav"></div>
+      <div id="grid" hidden></div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="src">Лексика по темам на базе тематического словаря (3000 слов) и частотных списков из раздела
+      <a href="reference/resources.html">«Ресурсы»</a>. Транскрипция — ереванское произношение.</div>
+  </footer>
+
+</main>
+
+<script src="assets/app.js" defer></script>
+<script src="assets/vocab-data.js" defer></script>
+<script src="assets/trainer.js" defer></script>
+</body>
+</html>
