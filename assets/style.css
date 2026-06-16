@@ -368,6 +368,14 @@ table.tbl { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 1
 .lnav { display: flex; justify-content: space-between; gap: 12px; margin-top: 28px; }
 .lnav a { font-weight: 600; }
 
+/* Трёхпозиционная панель: Назад | Оглавление | Вперёд */
+.lnav--bar { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 12px; }
+.lnav--bar > :nth-child(1) { justify-self: start; }
+.lnav--bar > :nth-child(2) { justify-self: center; }
+.lnav--bar > :nth-child(3) { justify-self: end; }
+.lnav--top { margin-top: 0; margin-bottom: 24px; }
+.lnav--bar .is-disabled { opacity: .5; pointer-events: none; cursor: default; }
+
 /* ---------- Тренажёр слов (vocabulary.html) ---------- */
 .vbar { position: sticky; top: 56px; z-index: 10; background: var(--glass);
   backdrop-filter: blur(8px); border: 1px solid var(--line); border-radius: var(--radius);
