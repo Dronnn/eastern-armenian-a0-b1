@@ -1,0 +1,3180 @@
+[
+  {
+    "hy": "անուն",
+    "ru": "имя",
+    "level": "A1",
+    "url": "lessons/0001-alphabet-1.html",
+    "units": [
+      "0001",
+      "review-05",
+      "0006"
+    ],
+    "example": "անուն տուն նոր օր"
+  },
+  {
+    "hy": "տուն",
+    "ru": "дом",
+    "level": "A1",
+    "url": "lessons/0001-alphabet-1.html",
+    "units": [
+      "0001"
+    ],
+    "example": "անուն տուն նոր օր"
+  },
+  {
+    "hy": "նոր",
+    "ru": "новый",
+    "level": "A1",
+    "url": "lessons/0001-alphabet-1.html",
+    "units": [
+      "0001"
+    ],
+    "example": "անուն տուն նոր օր"
+  },
+  {
+    "hy": "օր",
+    "ru": "день",
+    "level": "A1",
+    "url": "lessons/0001-alphabet-1.html",
+    "units": [
+      "0001",
+      "0019"
+    ],
+    "example": "անուն տուն նոր օր"
+  },
+  {
+    "hy": "հաց",
+    "ru": "хлеб",
+    "level": "A1",
+    "url": "lessons/0002-alphabet-2.html",
+    "units": [
+      "0002"
+    ],
+    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ"
+  },
+  {
+    "hy": "ջուր",
+    "ru": "вода",
+    "level": "A1",
+    "url": "lessons/0002-alphabet-2.html",
+    "units": [
+      "0002",
+      "review-10"
+    ],
+    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ"
+  },
+  {
+    "hy": "փակ",
+    "ru": "закрыто",
+    "level": "A1",
+    "url": "lessons/0002-alphabet-2.html",
+    "units": [
+      "0002",
+      "0032"
+    ],
+    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ"
+  },
+  {
+    "hy": "փող",
+    "ru": "деньги",
+    "level": "A1",
+    "url": "lessons/0002-alphabet-2.html",
+    "units": [
+      "0002"
+    ],
+    "example": "Փող չունեմ։"
+  },
+  {
+    "hy": "մուտք",
+    "ru": "вход",
+    "level": "A1",
+    "url": "lessons/0003-reading.html",
+    "units": [
+      "0003",
+      "reading-01",
+      "0018"
+    ],
+    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ"
+  },
+  {
+    "hy": "ելք",
+    "ru": "выход",
+    "level": "A1",
+    "url": "lessons/0003-reading.html",
+    "units": [
+      "0003",
+      "reading-01"
+    ],
+    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ"
+  },
+  {
+    "hy": "բաց",
+    "ru": "открыто",
+    "level": "A1",
+    "url": "lessons/0003-reading.html",
+    "units": [
+      "0003"
+    ],
+    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ"
+  },
+  {
+    "hy": "դեղատուն",
+    "ru": "аптека",
+    "level": "A1",
+    "url": "lessons/0003-reading.html",
+    "units": [
+      "0003"
+    ],
+    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ"
+  },
+  {
+    "hy": "ներողություն",
+    "ru": "извините",
+    "level": "A1",
+    "url": "lessons/0004-greetings.html",
+    "units": [
+      "0004"
+    ],
+    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։"
+  },
+  {
+    "hy": "խնդրում եմ",
+    "ru": "пожалуйста (в просьбе)",
+    "level": "A1",
+    "url": "lessons/0004-greetings.html",
+    "units": [
+      "0004"
+    ],
+    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։"
+  },
+  {
+    "hy": "կրկնեք",
+    "ru": "повторите",
+    "level": "A1",
+    "url": "lessons/0004-greetings.html",
+    "units": [
+      "0004"
+    ],
+    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։"
+  },
+  {
+    "hy": "շնորհակալություն",
+    "ru": "спасибо",
+    "level": "A1",
+    "url": "lessons/0004-greetings.html",
+    "units": [
+      "0004"
+    ],
+    "example": "Շնորհակալություն։"
+  },
+  {
+    "hy": "հարևան",
+    "ru": "сосед",
+    "level": "A1",
+    "url": "lessons/0005-to-be.html",
+    "units": [
+      "0005",
+      "review-05",
+      "reading-04"
+    ],
+    "example": "Ես ձեր հարևանն եմ։"
+  },
+  {
+    "hy": "ուսուցիչ",
+    "ru": "учитель",
+    "level": "A1",
+    "url": "lessons/0005-to-be.html",
+    "units": [
+      "0005",
+      "review-05"
+    ],
+    "example": "Ես ուսուցիչ եմ։"
+  },
+  {
+    "hy": "բժիշկ",
+    "ru": "врач",
+    "level": "A1",
+    "url": "lessons/0005-to-be.html",
+    "units": [
+      "0005",
+      "review-05",
+      "0030"
+    ],
+    "example": "Ոչ, ես բժիշկ եմ։"
+  },
+  {
+    "hy": "այստեղ",
+    "ru": "здесь",
+    "level": "A1",
+    "url": "lessons/0005-to-be.html",
+    "units": [
+      "0005"
+    ],
+    "example": "Այստեղ ջուր կա։"
+  },
+  {
+    "hy": "ազգանուն",
+    "ru": "фамилия",
+    "level": "A1",
+    "url": "lessons/0006-introductions.html",
+    "units": [
+      "0006"
+    ],
+    "example": "Ազգանուն՝ Սարգսյան։"
+  },
+  {
+    "hy": "հասցե",
+    "ru": "адрес",
+    "level": "A1",
+    "url": "lessons/0006-introductions.html",
+    "units": [
+      "0006",
+      "reading-02",
+      "speaking-01",
+      "checkpoint-16",
+      "reading-03",
+      "checkpoint-34"
+    ],
+    "example": "Հասցե՝ Արամի փողոց։"
+  },
+  {
+    "hy": "հեռախոս",
+    "ru": "телефон",
+    "level": "A1",
+    "url": "lessons/0006-introductions.html",
+    "units": [
+      "0006"
+    ],
+    "example": "Սա իմ հեռախոսն է։"
+  },
+  {
+    "hy": "Հայաստան",
+    "ru": "Армения",
+    "level": "A1",
+    "url": "lessons/0006-introductions.html",
+    "units": [
+      "0006"
+    ],
+    "example": "Երկիր՝ Հայաստան։"
+  },
+  {
+    "hy": "բանալի",
+    "ru": "ключ",
+    "level": "A1",
+    "url": "lessons/0007-article-noun.html",
+    "units": [
+      "0007",
+      "review-10"
+    ],
+    "example": "Սա մի բանալի է։"
+  },
+  {
+    "hy": "պայուսակ",
+    "ru": "сумка",
+    "level": "A1",
+    "url": "lessons/0007-article-noun.html",
+    "units": [
+      "0007",
+      "review-10"
+    ],
+    "example": "Սա իմ պայուսակն է։"
+  },
+  {
+    "hy": "փաստաթուղթ",
+    "ru": "документ",
+    "level": "A1",
+    "url": "lessons/0007-article-noun.html",
+    "units": [
+      "0007",
+      "checkpoint-16",
+      "checkpoint-34"
+    ],
+    "example": "Սա ձեր փաստաթո՞ւղթն է։"
+  },
+  {
+    "hy": "Հանրապետություն",
+    "ru": "республика",
+    "level": "A1",
+    "url": "lessons/0007-article-noun.html",
+    "units": [
+      "0007"
+    ],
+    "example": "Հայաստանի Հանրապետություն։"
+  },
+  {
+    "hy": "թուղթ",
+    "ru": "бумага",
+    "level": "A1",
+    "url": "lessons/0008-demonstratives-plural.html",
+    "units": [
+      "0008",
+      "reading-01"
+    ],
+    "example": "Սա իմ փաստաթուղթն է։"
+  },
+  {
+    "hy": "պատուհան",
+    "ru": "окно",
+    "level": "A1",
+    "url": "lessons/0008-demonstratives-plural.html",
+    "units": [
+      "0008",
+      "reading-01"
+    ],
+    "example": "Սա պատուհան է։"
+  },
+  {
+    "hy": "այս",
+    "ru": "этот (перед словом)",
+    "level": "A1",
+    "url": "lessons/0008-demonstratives-plural.html",
+    "units": [
+      "0008"
+    ],
+    "example": "Այս թղթերը նոր են։"
+  },
+  {
+    "hy": "այն",
+    "ru": "тот (перед словом)",
+    "level": "A1",
+    "url": "lessons/0008-demonstratives-plural.html",
+    "units": [
+      "0008"
+    ],
+    "example": "Այն թղթերը նոր չեն։"
+  },
+  {
+    "hy": "սենյակ",
+    "ru": "комната",
+    "level": "A1",
+    "url": "practice/reading-01.html",
+    "units": [
+      "reading-01",
+      "0014"
+    ],
+    "example": "Այս սենյակը փոքր է։"
+  },
+  {
+    "hy": "տեղ",
+    "ru": "место",
+    "level": "A1",
+    "url": "lessons/0009-have-exist.html",
+    "units": [
+      "0009"
+    ],
+    "example": "Այստեղ ազատ տեղ կա՞։"
+  },
+  {
+    "hy": "ազատ",
+    "ru": "свободный",
+    "level": "A1",
+    "url": "lessons/0009-have-exist.html",
+    "units": [
+      "0009"
+    ],
+    "example": "Այստեղ ազատ տեղ կա՞։"
+  },
+  {
+    "hy": "ժամանակ",
+    "ru": "время",
+    "level": "A1",
+    "url": "lessons/0009-have-exist.html",
+    "units": [
+      "0009"
+    ],
+    "example": "Ես ժամանակ ունեմ։"
+  },
+  {
+    "hy": "ունեմ",
+    "ru": "у меня есть",
+    "level": "A1",
+    "url": "lessons/0009-have-exist.html",
+    "units": [
+      "0009"
+    ],
+    "example": "Ես մի հարց ունեմ։"
+  },
+  {
+    "hy": "քաղաքացի",
+    "ru": "гражданин",
+    "level": "A1",
+    "url": "lessons/0009-have-exist.html",
+    "units": [
+      "0009"
+    ],
+    "example": "Ես քաղաքացի եմ։"
+  },
+  {
+    "hy": "սուրճ",
+    "ru": "кофе",
+    "level": "A1",
+    "url": "lessons/0010-numbers.html",
+    "units": [
+      "0010",
+      "checkpoint-16"
+    ],
+    "example": "Սուրճ՝ 700 դրամ։"
+  },
+  {
+    "hy": "թեյ",
+    "ru": "чай",
+    "level": "A1",
+    "url": "lessons/0010-numbers.html",
+    "units": [
+      "0010"
+    ],
+    "example": "Թեյ՝ 500 դրամ։"
+  },
+  {
+    "hy": "դրամ",
+    "ru": "драм",
+    "level": "A1",
+    "url": "lessons/0010-numbers.html",
+    "units": [
+      "0010",
+      "review-10"
+    ],
+    "example": "Սուրճ՝ 700 դրամ։"
+  },
+  {
+    "hy": "հարյուր",
+    "ru": "сто",
+    "level": "A1",
+    "url": "lessons/0010-numbers.html",
+    "units": [
+      "0010"
+    ],
+    "example": "Հարյուր դրամ։"
+  },
+  {
+    "hy": "հազար",
+    "ru": "тысяча",
+    "level": "A1",
+    "url": "lessons/0010-numbers.html",
+    "units": [
+      "0010"
+    ],
+    "example": "Հազար դրամ։"
+  },
+  {
+    "hy": "պետություն",
+    "ru": "государство",
+    "level": "A1",
+    "url": "lessons/0010-numbers.html",
+    "units": [
+      "0010",
+      "constitution-01"
+    ],
+    "example": "Հայաստանը պետություն է։"
+  },
+  {
+    "hy": "այսօր",
+    "ru": "сегодня",
+    "level": "A1",
+    "url": "lessons/0011-present-tense.html",
+    "units": [
+      "0011"
+    ],
+    "example": "Այսօր ես աշխատում եմ տանը։"
+  },
+  {
+    "hy": "տանը",
+    "ru": "дома",
+    "level": "A1",
+    "url": "lessons/0011-present-tense.html",
+    "units": [
+      "0011",
+      "review-21"
+    ],
+    "example": "Այսօր ես աշխատում եմ տանը։"
+  },
+  {
+    "hy": "աշխատել",
+    "ru": "работать",
+    "level": "A1",
+    "url": "lessons/0011-present-tense.html",
+    "units": [
+      "0011"
+    ],
+    "example": "Ես աշխատում եմ տանը։"
+  },
+  {
+    "hy": "սպասել",
+    "ru": "ждать",
+    "level": "A1",
+    "url": "lessons/0011-present-tense.html",
+    "units": [
+      "0011",
+      "0015",
+      "reading-02"
+    ],
+    "example": "Մենք սպասում ենք այստեղ։"
+  },
+  {
+    "hy": "հիմա",
+    "ru": "сейчас",
+    "level": "A1",
+    "url": "lessons/0011-present-tense.html",
+    "units": [
+      "0011"
+    ],
+    "example": "Հիմա նամակ եմ գրում։"
+  },
+  {
+    "hy": "Սահմանադրություն",
+    "ru": "Конституция",
+    "level": "A1",
+    "url": "lessons/0011-present-tense.html",
+    "units": [
+      "0011",
+      "constitution-01"
+    ],
+    "example": "Սա Հայաստանի Հանրապետության Սահմանադրությունն է։"
+  },
+  {
+    "hy": "տեսնել",
+    "ru": "видеть",
+    "level": "A1",
+    "url": "lessons/0012-first-cases.html",
+    "units": [
+      "0012"
+    ],
+    "example": "Ես տեսնում եմ տունը։"
+  },
+  {
+    "hy": "կարդալ",
+    "ru": "читать",
+    "level": "A1",
+    "url": "lessons/0012-first-cases.html",
+    "units": [
+      "0012"
+    ],
+    "example": "Նա կարդում է նամակը։"
+  },
+  {
+    "hy": "նամակ",
+    "ru": "письмо",
+    "level": "A1",
+    "url": "lessons/0012-first-cases.html",
+    "units": [
+      "0012"
+    ],
+    "example": "Նա կարդում է նամակը։"
+  },
+  {
+    "hy": "մարդ",
+    "ru": "человек",
+    "level": "A1",
+    "url": "lessons/0012-first-cases.html",
+    "units": [
+      "0012"
+    ],
+    "example": "Այստեղ մի մարդ կա։"
+  },
+  {
+    "hy": "օրենք",
+    "ru": "закон",
+    "level": "A1",
+    "url": "lessons/0012-first-cases.html",
+    "units": [
+      "0012",
+      "constitution-01"
+    ],
+    "example": "Սա կարևոր օրենք է։"
+  },
+  {
+    "hy": "իրավունք",
+    "ru": "право",
+    "level": "A1",
+    "url": "practice/constitution-01.html",
+    "units": [
+      "constitution-01",
+      "constitution-04"
+    ],
+    "example": "Այստեղ կարդում ենք պետության և մարդու իրավունքների մասին։"
+  },
+  {
+    "hy": "հոդված",
+    "ru": "статья",
+    "level": "A1",
+    "url": "practice/constitution-01.html",
+    "units": [
+      "constitution-01"
+    ],
+    "example": "Սա առաջին հոդվածն է։"
+  },
+  {
+    "hy": "թղթապանակ",
+    "ru": "папка",
+    "level": "A1",
+    "url": "lessons/0013-genitive-dative.html",
+    "units": [
+      "0013"
+    ],
+    "example": "Սա Արամի թղթապանակն է։"
+  },
+  {
+    "hy": "զանգել",
+    "ru": "звонить",
+    "level": "A1",
+    "url": "lessons/0013-genitive-dative.html",
+    "units": [
+      "0013",
+      "0015",
+      "reading-02"
+    ],
+    "example": "Ես զանգում եմ Արամին։"
+  },
+  {
+    "hy": "տալ",
+    "ru": "давать",
+    "level": "A1",
+    "url": "lessons/0013-genitive-dative.html",
+    "units": [
+      "0013",
+      "0023"
+    ],
+    "example": "Ես փաստաթուղթը տալիս եմ Արամին։"
+  },
+  {
+    "hy": "քաղաքացու",
+    "ru": "гражданина",
+    "level": "A1",
+    "url": "lessons/0013-genitive-dative.html",
+    "units": [
+      "0013"
+    ],
+    "example": "Այս փաստաթուղթը քաղաքացու համար է։"
+  },
+  {
+    "hy": "համար",
+    "ru": "для",
+    "level": "A1",
+    "url": "lessons/0013-genitive-dative.html",
+    "units": [
+      "0013",
+      "review-44"
+    ],
+    "example": "Այս փաստաթուղթը քաղաքացու համար է։"
+  },
+  {
+    "hy": "լուսավոր",
+    "ru": "светлый",
+    "level": "A1",
+    "url": "lessons/0014-family-adjectives.html",
+    "units": [
+      "0014"
+    ],
+    "example": "Մեծ սենյակը լուսավոր է։"
+  },
+  {
+    "hy": "հանգիստ",
+    "ru": "тихий, спокойный",
+    "level": "A1",
+    "url": "lessons/0014-family-adjectives.html",
+    "units": [
+      "0014",
+      "0057"
+    ],
+    "example": "Փոքր սենյակը հանգիստ է։"
+  },
+  {
+    "hy": "սեղան",
+    "ru": "стол",
+    "level": "A1",
+    "url": "lessons/0014-family-adjectives.html",
+    "units": [
+      "0014"
+    ],
+    "example": "Իմ սեղանը նոր է։"
+  },
+  {
+    "hy": "բնակարան",
+    "ru": "квартира",
+    "level": "A1",
+    "url": "lessons/0014-family-adjectives.html",
+    "units": [
+      "0014"
+    ],
+    "example": "Այս բնակարանը փոքր է։"
+  },
+  {
+    "hy": "վաղը",
+    "ru": "завтра",
+    "level": "A1",
+    "url": "lessons/0015-future-imperative.html",
+    "units": [
+      "0015",
+      "checkpoint-16"
+    ],
+    "example": "Վաղը առավոտյան կգա՞ք։"
+  },
+  {
+    "hy": "առավոտ",
+    "ru": "утро",
+    "level": "A1",
+    "url": "lessons/0015-future-imperative.html",
+    "units": [
+      "0015",
+      "0019"
+    ],
+    "example": "Վաղը առավոտյան կգա՞ք։"
+  },
+  {
+    "hy": "բերել",
+    "ru": "приносить",
+    "level": "A1",
+    "url": "lessons/0015-future-imperative.html",
+    "units": [
+      "0015",
+      "speaking-01"
+    ],
+    "example": "Ես կբերեմ ձեր փաստաթուղթը։"
+  },
+  {
+    "hy": "առանց",
+    "ru": "без",
+    "level": "A1",
+    "url": "lessons/0016-questions-food.html",
+    "units": [
+      "0016"
+    ],
+    "example": "Ոչ, առանց կաթի։"
+  },
+  {
+    "hy": "շաքար",
+    "ru": "сахар",
+    "level": "A1",
+    "url": "lessons/0016-questions-food.html",
+    "units": [
+      "0016"
+    ],
+    "example": "Եվ մի թեյ՝ առանց շաքարի։"
+  },
+  {
+    "hy": "կաթ",
+    "ru": "молоко",
+    "level": "A1",
+    "url": "lessons/0016-questions-food.html",
+    "units": [
+      "0016"
+    ],
+    "example": "Կաթո՞վ։"
+  },
+  {
+    "hy": "տաք",
+    "ru": "горячий",
+    "level": "A1",
+    "url": "lessons/0016-questions-food.html",
+    "units": [
+      "0016"
+    ],
+    "example": "Թեյը տա՞ք է։"
+  },
+  {
+    "hy": "հաշիվ",
+    "ru": "счёт",
+    "level": "A1",
+    "url": "lessons/0016-questions-food.html",
+    "units": [
+      "0016",
+      "speaking-01",
+      "0031"
+    ],
+    "example": "Հաշիվը կբերե՞ք։"
+  },
+  {
+    "hy": "առաքիչ",
+    "ru": "курьер",
+    "level": "A1",
+    "url": "practice/reading-02.html",
+    "units": [
+      "reading-02",
+      "0025"
+    ],
+    "example": "Հիմա առաքիչն է զանգում։"
+  },
+  {
+    "hy": "պատվեր",
+    "ru": "заказ",
+    "level": "A1",
+    "url": "practice/reading-02.html",
+    "units": [
+      "reading-02",
+      "0031"
+    ],
+    "example": "Առաքիչը բերում է պատվերը։"
+  },
+  {
+    "hy": "կրկնել",
+    "ru": "повторять",
+    "level": "A1",
+    "url": "practice/speaking-01.html",
+    "units": [
+      "speaking-01",
+      "0033",
+      "0055"
+    ],
+    "example": "Կրկնե՛ք, խնդրում եմ։"
+  },
+  {
+    "hy": "ավտոբուս",
+    "ru": "автобус",
+    "level": "A2",
+    "url": "lessons/0017-ablative-instrumental.html",
+    "units": [
+      "0017",
+      "review-21"
+    ],
+    "example": "Սովորաբար գնում եմ ավտոբուսով։"
+  },
+  {
+    "hy": "տաքսի",
+    "ru": "такси",
+    "level": "A2",
+    "url": "lessons/0017-ablative-instrumental.html",
+    "units": [
+      "0017"
+    ],
+    "example": "Նա տաքսի է կանչում։"
+  },
+  {
+    "hy": "ոտքով",
+    "ru": "пешком",
+    "level": "A2",
+    "url": "lessons/0017-ablative-instrumental.html",
+    "units": [
+      "0017"
+    ],
+    "example": "Բանկից հետո մենք ոտքով կգնանք տուն։"
+  },
+  {
+    "hy": "կենտրոն",
+    "ru": "центр",
+    "level": "A2",
+    "url": "lessons/0017-ablative-instrumental.html",
+    "units": [
+      "0017"
+    ],
+    "example": "Ես այսօր կենտրոն եմ գնում։"
+  },
+  {
+    "hy": "մայրաքաղաք",
+    "ru": "столица",
+    "level": "A2",
+    "url": "lessons/0017-ablative-instrumental.html",
+    "units": [
+      "0017",
+      "constitution-02"
+    ],
+    "example": "Հայաստանի Հանրապետության մայրաքաղաքը Երևանն է։"
+  },
+  {
+    "hy": "գրասենյակ",
+    "ru": "офис",
+    "level": "A2",
+    "url": "lessons/0018-locative-declensions.html",
+    "units": [
+      "0018"
+    ],
+    "example": "Նրա գրասենյակը երկրորդ հարկում է։"
+  },
+  {
+    "hy": "հարկ",
+    "ru": "этаж",
+    "level": "A2",
+    "url": "lessons/0018-locative-declensions.html",
+    "units": [
+      "0018"
+    ],
+    "example": "Նրա գրասենյակը երկրորդ հարկում է։"
+  },
+  {
+    "hy": "կողք",
+    "ru": "сторона",
+    "level": "A2",
+    "url": "lessons/0018-locative-declensions.html",
+    "units": [
+      "0018"
+    ],
+    "example": "Բանկի կողքին խանութ կա։"
+  },
+  {
+    "hy": "բանկ",
+    "ru": "банк",
+    "level": "A2",
+    "url": "lessons/0018-locative-declensions.html",
+    "units": [
+      "0018",
+      "review-21"
+    ],
+    "example": "Արամը սպասում է բանկում։"
+  },
+  {
+    "hy": "պետական լեզու",
+    "ru": "государственный язык",
+    "level": "A2",
+    "url": "practice/constitution-02.html",
+    "units": [
+      "constitution-02"
+    ],
+    "example": "Պետական լեզուն հայերենն է։"
+  },
+  {
+    "hy": "դրոշ",
+    "ru": "флаг",
+    "level": "A2",
+    "url": "practice/constitution-02.html",
+    "units": [
+      "constitution-02"
+    ],
+    "example": "Հանրապետության դրոշը եռագույն է։"
+  },
+  {
+    "hy": "զինանշան",
+    "ru": "герб",
+    "level": "A2",
+    "url": "practice/constitution-02.html",
+    "units": [
+      "constitution-02"
+    ],
+    "example": "Սահմանադրության մեջ կան նաև զինանշանի և հիմնի մասին դրույթներ։"
+  },
+  {
+    "hy": "հիմն",
+    "ru": "гимн",
+    "level": "A2",
+    "url": "practice/constitution-02.html",
+    "units": [
+      "constitution-02"
+    ],
+    "example": "Սահմանադրության մեջ կան նաև զինանշանի և հիմնի մասին դրույթներ։"
+  },
+  {
+    "hy": "շաբաթ",
+    "ru": "неделя",
+    "level": "A2",
+    "url": "lessons/0019-irregular-declensions.html",
+    "units": [
+      "0019",
+      "review-21"
+    ],
+    "example": "Այս շաբաթվա ծրագիրը պարզ է։"
+  },
+  {
+    "hy": "ընկեր",
+    "ru": "друг",
+    "level": "A2",
+    "url": "lessons/0019-irregular-declensions.html",
+    "units": [
+      "0019"
+    ],
+    "example": "Երեկոյան հանդիպում եմ ընկերոջս։"
+  },
+  {
+    "hy": "եղբայր",
+    "ru": "брат",
+    "level": "A2",
+    "url": "lessons/0019-irregular-declensions.html",
+    "units": [
+      "0019"
+    ],
+    "example": "Ես հանդիպում եմ եղբորս։"
+  },
+  {
+    "hy": "երեկ",
+    "ru": "вчера",
+    "level": "A2",
+    "url": "lessons/0020-imperfect.html",
+    "units": [
+      "0020"
+    ],
+    "example": "Երեկ երեկոյան տանն էի։"
+  },
+  {
+    "hy": "ինտերնետ",
+    "ru": "интернет",
+    "level": "A2",
+    "url": "lessons/0020-imperfect.html",
+    "units": [
+      "0020"
+    ],
+    "example": "Նամակ էի գրում, բայց ինտերնետ չկար։"
+  },
+  {
+    "hy": "կապ",
+    "ru": "связь",
+    "level": "A2",
+    "url": "lessons/0020-imperfect.html",
+    "units": [
+      "0020",
+      "0033",
+      "checkpoint-34"
+    ],
+    "example": "Առաքիչը զանգում է, բայց կապը վատ է։"
+  },
+  {
+    "hy": "երեկոյան",
+    "ru": "вечером",
+    "level": "A2",
+    "url": "lessons/0020-imperfect.html",
+    "units": [
+      "0020"
+    ],
+    "example": "Երեկ երեկոյան տանն էի։"
+  },
+  {
+    "hy": "նախկինում",
+    "ru": "раньше",
+    "level": "A2",
+    "url": "lessons/0020-imperfect.html",
+    "units": [
+      "0020"
+    ],
+    "example": "Նախկինում հաճախ էի աշխատում սրճարանում, հիմա՝ տանը։"
+  },
+  {
+    "hy": "երկուշաբթի",
+    "ru": "понедельник",
+    "level": "A2",
+    "url": "lessons/0021-time-calendar.html",
+    "units": [
+      "0021"
+    ],
+    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։"
+  },
+  {
+    "hy": "չորեքշաբթի",
+    "ru": "среда",
+    "level": "A2",
+    "url": "lessons/0021-time-calendar.html",
+    "units": [
+      "0021"
+    ],
+    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։"
+  },
+  {
+    "hy": "ուրբաթ",
+    "ru": "пятница",
+    "level": "A2",
+    "url": "lessons/0021-time-calendar.html",
+    "units": [
+      "0021"
+    ],
+    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։"
+  },
+  {
+    "hy": "ընդմիջում",
+    "ru": "перерыв",
+    "level": "A2",
+    "url": "lessons/0021-time-calendar.html",
+    "units": [
+      "0021",
+      "reading-03"
+    ],
+    "example": "Ընդմիջում՝ 13:00–14:00։"
+  },
+  {
+    "hy": "ժամը",
+    "ru": "в ... часов",
+    "level": "A2",
+    "url": "lessons/0021-time-calendar.html",
+    "units": [
+      "0021"
+    ],
+    "example": "Արամը կգա չորեքշաբթի՝ ժամը տասին։"
+  },
+  {
+    "hy": "ուղարկել",
+    "ru": "отправлять",
+    "level": "A2",
+    "url": "lessons/0022-aorist-regular.html",
+    "units": [
+      "0022"
+    ],
+    "example": "Ես նամակ ուղարկեցի։"
+  },
+  {
+    "hy": "ստուգել",
+    "ru": "проверять",
+    "level": "A2",
+    "url": "lessons/0022-aorist-regular.html",
+    "units": [
+      "0022",
+      "0043"
+    ],
+    "example": "Ես նրան հիշեցրի, որ պետք է հասցեն նորից ստուգել։"
+  },
+  {
+    "hy": "բացել",
+    "ru": "открывать",
+    "level": "A2",
+    "url": "lessons/0022-aorist-regular.html",
+    "units": [
+      "0022"
+    ],
+    "example": "Նա բացեց դուռը։"
+  },
+  {
+    "hy": "փակել",
+    "ru": "закрывать",
+    "level": "A2",
+    "url": "lessons/0022-aorist-regular.html",
+    "units": [
+      "0022"
+    ],
+    "example": "Ես փակեցի պատուհանը։"
+  },
+  {
+    "hy": "պատասխան",
+    "ru": "ответ",
+    "level": "A2",
+    "url": "lessons/0022-aorist-regular.html",
+    "units": [
+      "0022",
+      "reading-03",
+      "review-30",
+      "0042",
+      "review-49"
+    ],
+    "example": "Ես կարդացի հարցը և պատասխան գրեցի։"
+  },
+  {
+    "hy": "գտնել",
+    "ru": "находить",
+    "level": "A2",
+    "url": "lessons/0023-aorist-irregular.html",
+    "units": [
+      "0023"
+    ],
+    "example": "Նարեն գտավ փաստաթուղթը։"
+  },
+  {
+    "hy": "վերցնել",
+    "ru": "брать",
+    "level": "A2",
+    "url": "lessons/0023-aorist-irregular.html",
+    "units": [
+      "0023"
+    ],
+    "example": "Արամը վերցրեց պայուսակը։"
+  },
+  {
+    "hy": "գալ",
+    "ru": "приходить",
+    "level": "A2",
+    "url": "lessons/0023-aorist-irregular.html",
+    "units": [
+      "0023"
+    ],
+    "example": "Նա երեկ եկավ։"
+  },
+  {
+    "hy": "կորցնել",
+    "ru": "терять",
+    "level": "A2",
+    "url": "lessons/0023-aorist-irregular.html",
+    "units": [
+      "0023"
+    ],
+    "example": "Ես կորցրի բանալին։"
+  },
+  {
+    "hy": "վճարել",
+    "ru": "платить",
+    "level": "A2",
+    "url": "lessons/0024-future-intentional.html",
+    "units": [
+      "0024"
+    ],
+    "example": "Առավոտյան գնալու եմ բանկ և վճարելու եմ բնակարանի համար։"
+  },
+  {
+    "hy": "պատրաստվել",
+    "ru": "готовиться",
+    "level": "A2",
+    "url": "lessons/0024-future-intentional.html",
+    "units": [
+      "0024"
+    ],
+    "example": "Ես պատրաստվում եմ հանդիպմանը։"
+  },
+  {
+    "hy": "այցելել",
+    "ru": "посещать",
+    "level": "A2",
+    "url": "lessons/0024-future-intentional.html",
+    "units": [
+      "0024"
+    ],
+    "example": "Վաղը այցելելու եմ ընկերոջս։"
+  },
+  {
+    "hy": "հանդիպում",
+    "ru": "встреча",
+    "level": "A2",
+    "url": "lessons/0024-future-intentional.html",
+    "units": [
+      "0024",
+      "review-30",
+      "checkpoint-34",
+      "0036"
+    ],
+    "example": "Մտածում էի, որ հանդիպումը ժամը երեքին է։"
+  },
+  {
+    "hy": "որոշել",
+    "ru": "решать",
+    "level": "A2",
+    "url": "lessons/0024-future-intentional.html",
+    "units": [
+      "0024"
+    ],
+    "example": "Մենք որոշեցինք մնալ տանը։"
+  },
+  {
+    "hy": "Ազգային ժողով",
+    "ru": "Национальное собрание",
+    "level": "A2",
+    "url": "practice/constitution-03.html",
+    "units": [
+      "constitution-03"
+    ],
+    "example": "Ազգային ժողովը ժողովրդի ներկայացուցչական մարմինն է։"
+  },
+  {
+    "hy": "նախագահ",
+    "ru": "президент",
+    "level": "A2",
+    "url": "practice/constitution-03.html",
+    "units": [
+      "constitution-03"
+    ],
+    "example": "Հանրապետության նախագահը պետության գլուխն է։"
+  },
+  {
+    "hy": "կառավարություն",
+    "ru": "правительство",
+    "level": "A2",
+    "url": "practice/constitution-03.html",
+    "units": [
+      "constitution-03"
+    ],
+    "example": "Կառավարությունը գործադիր իշխանության բարձրագույն մարմինն է։"
+  },
+  {
+    "hy": "վարչապետ",
+    "ru": "премьер-министр",
+    "level": "A2",
+    "url": "practice/constitution-03.html",
+    "units": [
+      "constitution-03",
+      "constitution-06"
+    ],
+    "example": "Վարչապետը ղեկավարում է Կառավարության գործունեությունը։"
+  },
+  {
+    "hy": "իշխանություն",
+    "ru": "власть",
+    "level": "A2",
+    "url": "practice/constitution-03.html",
+    "units": [
+      "constitution-03"
+    ],
+    "example": "Այն իրականացնում է օրենսդիր իշխանությունը։"
+  },
+  {
+    "hy": "նախկին",
+    "ru": "прежний",
+    "level": "A2",
+    "url": "practice/reading-03.html",
+    "units": [
+      "reading-03"
+    ],
+    "example": "Ես նախկինում մի քանի անգամ այնտեղ էի գնում, բայց այս անգամ շենքը փակ էր։"
+  },
+  {
+    "hy": "տեղափոխվել",
+    "ru": "переехать",
+    "level": "A2",
+    "url": "practice/reading-03.html",
+    "units": [
+      "reading-03"
+    ],
+    "example": "Բանկը տեղափոխվել էր ուրիշ փողոց։"
+  },
+  {
+    "hy": "դիմաց",
+    "ru": "напротив",
+    "level": "A2",
+    "url": "lessons/0025-postpositions.html",
+    "units": [
+      "0025"
+    ],
+    "example": "Նա բանկի դիմաց է։"
+  },
+  {
+    "hy": "հետևում",
+    "ru": "позади",
+    "level": "A2",
+    "url": "lessons/0025-postpositions.html",
+    "units": [
+      "0025"
+    ],
+    "example": "Ես ասում եմ. «Մեր տունը դեղատան հետևում է։"
+  },
+  {
+    "hy": "կողքին",
+    "ru": "рядом",
+    "level": "A2",
+    "url": "lessons/0025-postpositions.html",
+    "units": [
+      "0025"
+    ],
+    "example": "Մուտքը փոքր խանութի կողքին է»։"
+  },
+  {
+    "hy": "առջև",
+    "ru": "перед",
+    "level": "A2",
+    "url": "lessons/0025-postpositions.html",
+    "units": [
+      "0025"
+    ],
+    "example": "Հիմա մենք խանութի առջև ենք։"
+  },
+  {
+    "hy": "հարմար",
+    "ru": "удобный",
+    "level": "A2",
+    "url": "lessons/0026-comparison-ordinals.html",
+    "units": [
+      "0026",
+      "0049"
+    ],
+    "example": "Արամի համար առաջին տարբերակն ավելի հարմար է։"
+  },
+  {
+    "hy": "էժան",
+    "ru": "дешёвый",
+    "level": "A2",
+    "url": "lessons/0026-comparison-ordinals.html",
+    "units": [
+      "0026",
+      "review-26"
+    ],
+    "example": "Երկրորդ բնակարանն ավելի մեծ է և ավելի էժան։"
+  },
+  {
+    "hy": "թանկ",
+    "ru": "дорогой",
+    "level": "A2",
+    "url": "lessons/0026-comparison-ordinals.html",
+    "units": [
+      "0026"
+    ],
+    "example": "Այս բնակարանն ավելի թանկ է։"
+  },
+  {
+    "hy": "մոտ",
+    "ru": "близко",
+    "level": "A2",
+    "url": "lessons/0026-comparison-ordinals.html",
+    "units": [
+      "0026"
+    ],
+    "example": "Այն փոքր է, բայց աշխատանքին մոտ է։"
+  },
+  {
+    "hy": "հեռու",
+    "ru": "далеко",
+    "level": "A2",
+    "url": "lessons/0026-comparison-ordinals.html",
+    "units": [
+      "0026"
+    ],
+    "example": "Բայց այն կենտրոնից հեռու է։"
+  },
+  {
+    "hy": "առաջին",
+    "ru": "первый",
+    "level": "A2",
+    "url": "practice/review-26.html",
+    "units": [
+      "review-26"
+    ],
+    "example": "Առաջինը բանկի դիմաց էր։"
+  },
+  {
+    "hy": "երկրորդ",
+    "ru": "второй",
+    "level": "A2",
+    "url": "practice/review-26.html",
+    "units": [
+      "review-26"
+    ],
+    "example": "Երկրորդ բնակարանը ավելի մեծ էր։"
+  },
+  {
+    "hy": "պայման",
+    "ru": "условие",
+    "level": "A2",
+    "url": "practice/review-26.html",
+    "units": [
+      "review-26",
+      "0037",
+      "review-39",
+      "0048"
+    ],
+    "example": "Կուզեի նախ խոսել երկու ղեկավարների հետ և իմանալ բոլոր պայմանները։"
+  },
+  {
+    "hy": "դիմում",
+    "ru": "заявление",
+    "level": "A2",
+    "url": "lessons/0027-modality-subjunctive.html",
+    "units": [
+      "0027",
+      "0042"
+    ],
+    "example": "Այսօր պետք է դիմում լրացնեմ։"
+  },
+  {
+    "hy": "լրացնել",
+    "ru": "заполнять",
+    "level": "A2",
+    "url": "lessons/0027-modality-subjunctive.html",
+    "units": [
+      "0027",
+      "0043"
+    ],
+    "example": "Ընկերս ինձ խնդրեց օգնել դիմումը լրացնել։"
+  },
+  {
+    "hy": "ստորագրել",
+    "ru": "подписывать",
+    "level": "A2",
+    "url": "lessons/0027-modality-subjunctive.html",
+    "units": [
+      "0027"
+    ],
+    "example": "Հիմա կարող եմ ստորագրել։"
+  },
+  {
+    "hy": "օգնել",
+    "ru": "помогать",
+    "level": "A2",
+    "url": "lessons/0027-modality-subjunctive.html",
+    "units": [
+      "0027",
+      "review-30"
+    ],
+    "example": "Ես աշխատակցին ասում եմ. «Կարո՞ղ եք օգնել։"
+  },
+  {
+    "hy": "պետք է",
+    "ru": "нужно",
+    "level": "A2",
+    "url": "lessons/0027-modality-subjunctive.html",
+    "units": [
+      "0027"
+    ],
+    "example": "Այսօր պետք է դիմում լրացնեմ։"
+  },
+  {
+    "hy": "յուրաքանչյուր ոք",
+    "ru": "каждый",
+    "level": "A2",
+    "url": "practice/constitution-04.html",
+    "units": [
+      "constitution-04"
+    ],
+    "example": "Յուրաքանչյուր ոք ունի կրթության իրավունք։"
+  },
+  {
+    "hy": "բոլորը",
+    "ru": "все",
+    "level": "A2",
+    "url": "practice/constitution-04.html",
+    "units": [
+      "constitution-04",
+      "0028"
+    ],
+    "example": "Բոլորը հավասար են օրենքի առջև։"
+  },
+  {
+    "hy": "պարտականություն",
+    "ru": "обязанность",
+    "level": "A2",
+    "url": "practice/constitution-04.html",
+    "units": [
+      "constitution-04"
+    ],
+    "example": "Սա իմ պարտականությունն է։"
+  },
+  {
+    "hy": "արգելվում է",
+    "ru": "запрещается",
+    "level": "A2",
+    "url": "practice/constitution-04.html",
+    "units": [
+      "constitution-04"
+    ],
+    "example": "Խոշտանգումն արգելվում է։"
+  },
+  {
+    "hy": "մեկը",
+    "ru": "кто-то, один",
+    "level": "A2",
+    "url": "lessons/0028-indefinite-pronouns.html",
+    "units": [
+      "0028"
+    ],
+    "example": "Մեկը հարցնում է. «Ո՞վ է տանը։"
+  },
+  {
+    "hy": "ոչ ոք",
+    "ru": "никто",
+    "level": "A2",
+    "url": "lessons/0028-indefinite-pronouns.html",
+    "units": [
+      "0028"
+    ],
+    "example": "Բայց դա չի նշանակում, որ ոչ ոք չի ուզում օգնել։"
+  },
+  {
+    "hy": "ոչինչ",
+    "ru": "ничего",
+    "level": "A2",
+    "url": "lessons/0028-indefinite-pronouns.html",
+    "units": [
+      "0028"
+    ],
+    "example": "Մյուսները դեռ ոչինչ չեն գրում։"
+  },
+  {
+    "hy": "մի քանի",
+    "ru": "несколько",
+    "level": "A2",
+    "url": "lessons/0028-indefinite-pronouns.html",
+    "units": [
+      "0028"
+    ],
+    "example": "Տան խմբում մի քանի նոր հաղորդագրություն կա։"
+  },
+  {
+    "hy": "որովհետև",
+    "ru": "потому что",
+    "level": "A2",
+    "url": "lessons/0029-adverbs-conjunctions.html",
+    "units": [
+      "0029"
+    ],
+    "example": "Մենք բանկ ենք գնում, որովհետև պետք է վճարում անենք։"
+  },
+  {
+    "hy": "եթե",
+    "ru": "если",
+    "level": "A2",
+    "url": "lessons/0029-adverbs-conjunctions.html",
+    "units": [
+      "0029"
+    ],
+    "example": "Եթե բանկում երկար հերթ լինի, հետո կգնանք։"
+  },
+  {
+    "hy": "բայց",
+    "ru": "но",
+    "level": "A2",
+    "url": "lessons/0029-adverbs-conjunctions.html",
+    "units": [
+      "0029"
+    ],
+    "example": "Բայց այսօր գործը պետք է ավարտենք։"
+  },
+  {
+    "hy": "արդեն",
+    "ru": "уже",
+    "level": "A2",
+    "url": "lessons/0029-adverbs-conjunctions.html",
+    "units": [
+      "0029",
+      "0035",
+      "review-39"
+    ],
+    "example": "Արամը արդեն տաքսի է կանչում։"
+  },
+  {
+    "hy": "դեռ",
+    "ru": "ещё",
+    "level": "A2",
+    "url": "lessons/0029-adverbs-conjunctions.html",
+    "units": [
+      "0029",
+      "0035",
+      "review-39",
+      "0049"
+    ],
+    "example": "Նարեն դեռ տանն է։"
+  },
+  {
+    "hy": "ջերմություն",
+    "ru": "температура",
+    "level": "A2",
+    "url": "lessons/0030-health-doctor.html",
+    "units": [
+      "0030",
+      "review-30"
+    ],
+    "example": "Ջերմություն ունեմ և հազում եմ։"
+  },
+  {
+    "hy": "ցավ",
+    "ru": "боль",
+    "level": "A2",
+    "url": "lessons/0030-health-doctor.html",
+    "units": [
+      "0030"
+    ],
+    "example": "Ուժեղ ցավ ունեմ։"
+  },
+  {
+    "hy": "հազ",
+    "ru": "кашель",
+    "level": "A2",
+    "url": "lessons/0030-health-doctor.html",
+    "units": [
+      "0030"
+    ],
+    "example": "Ջերմություն ունեմ և հազում եմ։"
+  },
+  {
+    "hy": "ընդունելություն",
+    "ru": "приём",
+    "level": "A2",
+    "url": "lessons/0030-health-doctor.html",
+    "units": [
+      "0030",
+      "0055"
+    ],
+    "example": "Այսօր ընդունելություն չկա։"
+  },
+  {
+    "hy": "քարտ",
+    "ru": "карта",
+    "level": "A2",
+    "url": "lessons/0031-restaurant.html",
+    "units": [
+      "0031"
+    ],
+    "example": "Հարցնում եմ. «Քարտով կարո՞ղ եմ վճարել»։"
+  },
+  {
+    "hy": "կանխիկ",
+    "ru": "наличные",
+    "level": "A2",
+    "url": "lessons/0031-restaurant.html",
+    "units": [
+      "0031"
+    ],
+    "example": "Կանխիկ փող չունեմ։"
+  },
+  {
+    "hy": "սխալ",
+    "ru": "ошибка, неправильный",
+    "level": "A2",
+    "url": "lessons/0031-restaurant.html",
+    "units": [
+      "0031"
+    ],
+    "example": "Այս հասցեն սխալ է։"
+  },
+  {
+    "hy": "ընտրել",
+    "ru": "избирать, выбирать",
+    "level": "A2",
+    "url": "practice/constitution-05.html",
+    "units": [
+      "constitution-05"
+    ],
+    "example": "Ազգային ժողովի ընտրության օրը տասնութ տարին լրացած Հայաստանի Հանրապետության քաղաքացիներն ունեն ընտրելու իրավունք։"
+  },
+  {
+    "hy": "քվեարկություն",
+    "ru": "голосование",
+    "level": "A2",
+    "url": "practice/constitution-05.html",
+    "units": [
+      "constitution-05"
+    ],
+    "example": "Քվեարկությունը գաղտնի է։"
+  },
+  {
+    "hy": "գաղտնի",
+    "ru": "тайный",
+    "level": "A2",
+    "url": "practice/constitution-05.html",
+    "units": [
+      "constitution-05"
+    ],
+    "example": "Քվեարկությունը գաղտնի է։"
+  },
+  {
+    "hy": "հանրաքվե",
+    "ru": "референдум",
+    "level": "A2",
+    "url": "practice/constitution-05.html",
+    "units": [
+      "constitution-05"
+    ],
+    "example": "Հանրաքվեն քվեարկություն է։"
+  },
+  {
+    "hy": "պատգամավոր",
+    "ru": "депутат",
+    "level": "A2",
+    "url": "practice/constitution-05.html",
+    "units": [
+      "constitution-05"
+    ],
+    "example": "Այն կազմված է առնվազն հարյուր մեկ պատգամավորից։"
+  },
+  {
+    "hy": "կանգառ",
+    "ru": "остановка",
+    "level": "A2",
+    "url": "lessons/0032-directions.html",
+    "units": [
+      "0032"
+    ],
+    "example": "Այս կանգառը այսօր փակ է։"
+  },
+  {
+    "hy": "աջ",
+    "ru": "направо",
+    "level": "A2",
+    "url": "lessons/0032-directions.html",
+    "units": [
+      "0032"
+    ],
+    "example": "Ավտոբուսը կանգնում է հաջորդ փողոցում։"
+  },
+  {
+    "hy": "ձախ",
+    "ru": "налево",
+    "level": "A2",
+    "url": "lessons/0032-directions.html",
+    "units": [
+      "0032"
+    ],
+    "example": "Թեքվե՛ք ձախ։"
+  },
+  {
+    "hy": "ուղիղ",
+    "ru": "прямо",
+    "level": "A2",
+    "url": "lessons/0032-directions.html",
+    "units": [
+      "0032"
+    ],
+    "example": "Նա ասում է. «Գնացե՛ք ուղիղ, հետո թեքվե՛ք աջ։"
+  },
+  {
+    "hy": "լսել",
+    "ru": "слышать",
+    "level": "A2",
+    "url": "lessons/0033-phone.html",
+    "units": [
+      "0033"
+    ],
+    "example": "Ներողություն, լավ չեմ լսում։"
+  },
+  {
+    "hy": "դանդաղ",
+    "ru": "медленно",
+    "level": "A2",
+    "url": "lessons/0033-phone.html",
+    "units": [
+      "0033"
+    ],
+    "example": "Մի քիչ դանդաղ խոսե՛ք, խնդրում եմ»։"
+  },
+  {
+    "hy": "հեռախոսահամար",
+    "ru": "номер телефона",
+    "level": "A2",
+    "url": "lessons/0033-phone.html",
+    "units": [
+      "0033"
+    ],
+    "example": "Ձեր հեռախոսահամարը կասե՞ք։"
+  },
+  {
+    "hy": "գործընկեր",
+    "ru": "коллега",
+    "level": "A2",
+    "url": "lessons/0034-work-weather-integration.html",
+    "units": [
+      "0034"
+    ],
+    "example": "Գործընկերս զանգում է։"
+  },
+  {
+    "hy": "եղանակ",
+    "ru": "погода",
+    "level": "A2",
+    "url": "lessons/0034-work-weather-integration.html",
+    "units": [
+      "0034"
+    ],
+    "example": "Եղանակը վատ է, և նա քաղաքից դուրս է։"
+  },
+  {
+    "hy": "ավարտել",
+    "ru": "заканчивать",
+    "level": "A2",
+    "url": "lessons/0034-work-weather-integration.html",
+    "units": [
+      "0034"
+    ],
+    "example": "Այսօր պետք է ավարտեմ գործը։"
+  },
+  {
+    "hy": "տեղափոխել",
+    "ru": "переносить",
+    "level": "A2",
+    "url": "lessons/0034-work-weather-integration.html",
+    "units": [
+      "0034"
+    ],
+    "example": "Մենք որոշում ենք վաղվա հանդիպումը տեղափոխել հաջորդ շաբաթ։"
+  },
+  {
+    "hy": "հաջորդ",
+    "ru": "следующий",
+    "level": "A2",
+    "url": "lessons/0034-work-weather-integration.html",
+    "units": [
+      "0034"
+    ],
+    "example": "Մենք որոշում ենք վաղվա հանդիպումը տեղափոխել հաջորդ շաբաթ։"
+  },
+  {
+    "hy": "թաղամաս",
+    "ru": "район",
+    "level": "A2",
+    "url": "practice/reading-04.html",
+    "units": [
+      "reading-04"
+    ],
+    "example": "Թաղամասը դեռ լավ չգիտեի։"
+  },
+  {
+    "hy": "խումբ",
+    "ru": "группа",
+    "level": "A2",
+    "url": "practice/reading-04.html",
+    "units": [
+      "reading-04"
+    ],
+    "example": "Մեր խմբում նոր մարդ կա։"
+  },
+  {
+    "hy": "հաղորդագրություն",
+    "ru": "сообщение",
+    "level": "A2",
+    "url": "practice/reading-04.html",
+    "units": [
+      "reading-04"
+    ],
+    "example": "Այնտեղ կարդացի ջրի և մուտքի մասին հաղորդագրությունները։"
+  },
+  {
+    "hy": "ժամանակին",
+    "ru": "вовремя",
+    "level": "A2",
+    "url": "practice/reading-04.html",
+    "units": [
+      "reading-04"
+    ],
+    "example": "Ես ժամանակին եկա։"
+  },
+  {
+    "hy": "խնդիր",
+    "ru": "проблема",
+    "level": "A2",
+    "url": "practice/speaking-02.html",
+    "units": [
+      "speaking-02"
+    ],
+    "example": "Մի խնդիր կա։"
+  },
+  {
+    "hy": "ճշտել",
+    "ru": "уточнять",
+    "level": "A2",
+    "url": "practice/speaking-02.html",
+    "units": [
+      "speaking-02",
+      "0045",
+      "review-49",
+      "0055"
+    ],
+    "example": "Արամ. Ուզում եմ ճշտել. մինչև չո՞րսը։"
+  },
+  {
+    "hy": "փոխել",
+    "ru": "менять",
+    "level": "A2",
+    "url": "practice/speaking-02.html",
+    "units": [
+      "speaking-02"
+    ],
+    "example": "Կարո՞ղ ենք փոխել հանդիպման ժամը։"
+  },
+  {
+    "hy": "վերադառնալ",
+    "ru": "возвращаться",
+    "level": "A2",
+    "url": "practice/speaking-02.html",
+    "units": [
+      "speaking-02"
+    ],
+    "example": "Ես երեկ վերադարձա տուն։"
+  },
+  {
+    "hy": "ստանալ",
+    "ru": "получать",
+    "level": "B1",
+    "url": "lessons/0035-perfect.html",
+    "units": [
+      "0035"
+    ],
+    "example": "Պատասխան դեռ չեմ ստացել։"
+  },
+  {
+    "hy": "պատրաստ",
+    "ru": "готовый",
+    "level": "B1",
+    "url": "lessons/0035-perfect.html",
+    "units": [
+      "0035"
+    ],
+    "example": "Մի փաստաթղթի պատճենը դեռ չեմ պատրաստել։"
+  },
+  {
+    "hy": "պատճեն",
+    "ru": "копия",
+    "level": "B1",
+    "url": "lessons/0035-perfect.html",
+    "units": [
+      "0035",
+      "review-54"
+    ],
+    "example": "Մի փաստաթղթի պատճենը դեռ չեմ պատրաստել։"
+  },
+  {
+    "hy": "նախապես",
+    "ru": "заранее",
+    "level": "B1",
+    "url": "lessons/0036-pluperfect.html",
+    "units": [
+      "0036"
+    ],
+    "example": "Հիմա նախապես եմ ստուգում հաղորդագրությունները։"
+  },
+  {
+    "hy": "մինչև",
+    "ru": "до",
+    "level": "B1",
+    "url": "lessons/0036-pluperfect.html",
+    "units": [
+      "0036"
+    ],
+    "example": "Սպասեցի մինչև ժամը հինգը։"
+  },
+  {
+    "hy": "ուշանալ",
+    "ru": "опаздывать",
+    "level": "B1",
+    "url": "lessons/0036-pluperfect.html",
+    "units": [
+      "0036"
+    ],
+    "example": "Ես ուշացել էի տասնհինգ րոպեով։"
+  },
+  {
+    "hy": "փոխվել",
+    "ru": "изменяться",
+    "level": "B1",
+    "url": "lessons/0036-pluperfect.html",
+    "units": [
+      "0036"
+    ],
+    "example": "Պարզվեց՝ ժամը փոխվել էր։"
+  },
+  {
+    "hy": "աշխատավարձ",
+    "ru": "зарплата",
+    "level": "B1",
+    "url": "lessons/0037-conditional.html",
+    "units": [
+      "0037"
+    ],
+    "example": "Առաջին գրասենյակը տանս մոտ է, բայց աշխատավարձը փոքր է։"
+  },
+  {
+    "hy": "ընտրություն",
+    "ru": "выбор",
+    "level": "B1",
+    "url": "lessons/0037-conditional.html",
+    "units": [
+      "0037"
+    ],
+    "example": "Դա իմ ընտրությունն է։"
+  },
+  {
+    "hy": "հնարավորություն",
+    "ru": "возможность",
+    "level": "B1",
+    "url": "lessons/0037-conditional.html",
+    "units": [
+      "0037"
+    ],
+    "example": "Ես հնարավորություն ունեմ տնից աշխատելու։"
+  },
+  {
+    "hy": "կուզեի",
+    "ru": "я бы хотел",
+    "level": "B1",
+    "url": "lessons/0037-conditional.html",
+    "units": [
+      "0037"
+    ],
+    "example": "Կուզեի նախ խոսել երկու ղեկավարների հետ և իմանալ բոլոր պայմանները։"
+  },
+  {
+    "hy": "երանի",
+    "ru": "вот бы",
+    "level": "B1",
+    "url": "lessons/0038-subjunctive-past-wishes.html",
+    "units": [
+      "0038"
+    ],
+    "example": "Երանի ավելի ազատ ժամանակ ունենայի։"
+  },
+  {
+    "hy": "հաջողություն",
+    "ru": "удача",
+    "level": "B1",
+    "url": "lessons/0038-subjunctive-past-wishes.html",
+    "units": [
+      "0038"
+    ],
+    "example": "Առավոտյան նրան գրեցի. «Քեզ հաջողություն եմ ցանկանում»։"
+  },
+  {
+    "hy": "հույս",
+    "ru": "надежда",
+    "level": "B1",
+    "url": "lessons/0038-subjunctive-past-wishes.html",
+    "units": [
+      "0038"
+    ],
+    "example": "Հույս ունեմ, որ հաջորդ շաբաթ կկարողանամ առաջին նամակն ուղարկել։"
+  },
+  {
+    "hy": "ուրախ",
+    "ru": "радостный",
+    "level": "B1",
+    "url": "lessons/0038-subjunctive-past-wishes.html",
+    "units": [
+      "0038"
+    ],
+    "example": "Նա մի քիչ անհանգիստ էր, բայց երեկոյան արդեն ուրախ էր խոսում։"
+  },
+  {
+    "hy": "ցանկանալ",
+    "ru": "желать",
+    "level": "B1",
+    "url": "lessons/0038-subjunctive-past-wishes.html",
+    "units": [
+      "0038"
+    ],
+    "example": "Քեզ հաջողություն եմ ցանկանում։"
+  },
+  {
+    "hy": "անհրաժեշտ",
+    "ru": "необходимый",
+    "level": "B1",
+    "url": "lessons/0039-subjunctive-system.html",
+    "units": [
+      "0039"
+    ],
+    "example": "Ինձ անհրաժեշտ է հասկանալ պայմանները։"
+  },
+  {
+    "hy": "հնարավոր",
+    "ru": "возможный",
+    "level": "B1",
+    "url": "lessons/0039-subjunctive-system.html",
+    "units": [
+      "0039",
+      "0049"
+    ],
+    "example": "Հնարավո՞ր է հանդիպել ժամը երեքին կամ ուրբաթ առավոտյան»։"
+  },
+  {
+    "hy": "նպատակ",
+    "ru": "цель",
+    "level": "B1",
+    "url": "lessons/0039-subjunctive-system.html",
+    "units": [
+      "0039",
+      "review-39",
+      "0047"
+    ],
+    "example": "Իմ նպատակն արագ ստորագրելը չէ։"
+  },
+  {
+    "hy": "բացատրել",
+    "ru": "объяснять",
+    "level": "B1",
+    "url": "lessons/0039-subjunctive-system.html",
+    "units": [
+      "0039"
+    ],
+    "example": "Խնդրում եմ բացատրել այս կետը։"
+  },
+  {
+    "hy": "պահանջ",
+    "ru": "требование",
+    "level": "B1",
+    "url": "lessons/0039-subjunctive-system.html",
+    "units": [
+      "0039"
+    ],
+    "example": "Ես չեմ հասկանում այս պահանջը։"
+  },
+  {
+    "hy": "լիազորություն",
+    "ru": "полномочие",
+    "level": "B1",
+    "url": "practice/constitution-06.html",
+    "units": [
+      "constitution-06"
+    ],
+    "example": "Պետական մարմինը գործում է իր լիազորությունների սահմաններում։"
+  },
+  {
+    "hy": "նախարար",
+    "ru": "министр",
+    "level": "B1",
+    "url": "practice/constitution-06.html",
+    "units": [
+      "constitution-06"
+    ],
+    "example": "Կառավարությունը կազմված է վարչապետից, փոխվարչապետներից և նախարարներից։"
+  },
+  {
+    "hy": "կազմ",
+    "ru": "состав",
+    "level": "B1",
+    "url": "practice/constitution-06.html",
+    "units": [
+      "constitution-06"
+    ],
+    "example": "Կառավարությունը կազմված է վարչապետից, փոխվարչապետներից և նախարարներից։"
+  },
+  {
+    "hy": "ղեկավարել",
+    "ru": "руководить",
+    "level": "B1",
+    "url": "practice/constitution-06.html",
+    "units": [
+      "constitution-06"
+    ],
+    "example": "Նա ղեկավարում է այս բաժինը։"
+  },
+  {
+    "hy": "աշխատող",
+    "ru": "работающий",
+    "level": "B1",
+    "url": "lessons/0040-participles-1.html",
+    "units": [
+      "0040"
+    ],
+    "example": "Ընդունարանում աշխատող կինը ցույց տվեց անհրաժեշտ փաստաթղթերի ցանկը։"
+  },
+  {
+    "hy": "գրած",
+    "ru": "написанный",
+    "level": "B1",
+    "url": "lessons/0040-participles-1.html",
+    "units": [
+      "0040"
+    ],
+    "example": "Աշխատակիցը կարդաց իմ գրած հասցեն և խնդրեց մեկ տառ ուղղել։"
+  },
+  {
+    "hy": "լրացված",
+    "ru": "заполненный",
+    "level": "B1",
+    "url": "lessons/0040-participles-1.html",
+    "units": [
+      "0040",
+      "review-44"
+    ],
+    "example": "Ինձ պետք էին լրացված դիմումը և անձնագրի պատճենը։"
+  },
+  {
+    "hy": "ստորագրված",
+    "ru": "подписанный",
+    "level": "B1",
+    "url": "lessons/0040-participles-1.html",
+    "units": [
+      "0040",
+      "review-44"
+    ],
+    "example": "Հետո հարցրեց, թե որտեղ է ստորագրված օրինակը։"
+  },
+  {
+    "hy": "բաժին",
+    "ru": "отдел",
+    "level": "B1",
+    "url": "lessons/0040-participles-1.html",
+    "units": [
+      "0040"
+    ],
+    "example": "Ես աշխատում եմ այս բաժնում։"
+  },
+  {
+    "hy": "կարդալիս",
+    "ru": "при чтении",
+    "level": "B1",
+    "url": "lessons/0041-participles-2.html",
+    "units": [
+      "0041"
+    ],
+    "example": "Հիմա հարցը կարդալիս մատիտով նշում եմ կարևոր բառերը։"
+  },
+  {
+    "hy": "բարձրաձայն",
+    "ru": "вслух",
+    "level": "B1",
+    "url": "lessons/0041-participles-2.html",
+    "units": [
+      "0041"
+    ],
+    "example": "Բարձրաձայն կարդալով՝ ավելի հեշտ եմ նկատում նախադասության կառուցվածքը։"
+  },
+  {
+    "hy": "ասելիք",
+    "ru": "то, что предстоит сказать",
+    "level": "B1",
+    "url": "lessons/0041-participles-2.html",
+    "units": [
+      "0041"
+    ],
+    "example": "Քեզ մի բան ունեմ ասելու։ Դա իմ ասելիքն է։"
+  },
+  {
+    "hy": "վերջ",
+    "ru": "конец",
+    "level": "B1",
+    "url": "lessons/0041-participles-2.html",
+    "units": [
+      "0041"
+    ],
+    "example": "Նամակի վերջում հարց կա։"
+  },
+  {
+    "hy": "հուշում",
+    "ru": "подсказка",
+    "level": "B1",
+    "url": "lessons/0041-participles-2.html",
+    "units": [
+      "0041"
+    ],
+    "example": "Առանց հուշման պատասխանեցի հարցին։"
+  },
+  {
+    "hy": "ընդունվել",
+    "ru": "приниматься",
+    "level": "B1",
+    "url": "lessons/0042-passive.html",
+    "units": [
+      "0042"
+    ],
+    "example": "Դիմումն ընդունվել է։"
+  },
+  {
+    "hy": "ուղարկվել",
+    "ru": "отправляться",
+    "level": "B1",
+    "url": "lessons/0042-passive.html",
+    "units": [
+      "0042"
+    ],
+    "example": "Նախորդ անգամ նամակը ուղարկվել էր սխալ հասցեով։"
+  },
+  {
+    "hy": "գրանցվել",
+    "ru": "регистрироваться",
+    "level": "B1",
+    "url": "lessons/0042-passive.html",
+    "units": [
+      "0042"
+    ],
+    "example": "Ես արդեն գրանցվել եմ։"
+  },
+  {
+    "hy": "դատարան",
+    "ru": "суд",
+    "level": "B1",
+    "url": "practice/constitution-07.html",
+    "units": [
+      "constitution-07"
+    ],
+    "example": "Հայաստանի Հանրապետությունում արդարադատությունն իրականացնում են միայն դատարանները։"
+  },
+  {
+    "hy": "դատավոր",
+    "ru": "судья",
+    "level": "B1",
+    "url": "practice/constitution-07.html",
+    "units": [
+      "constitution-07"
+    ],
+    "example": "Դատավորը անկախ է և գործում է Սահմանադրությանը և օրենքներին համապատասխան։"
+  },
+  {
+    "hy": "արդարադատություն",
+    "ru": "правосудие",
+    "level": "B1",
+    "url": "practice/constitution-07.html",
+    "units": [
+      "constitution-07"
+    ],
+    "example": "Հայաստանի Հանրապետությունում արդարադատությունն իրականացնում են միայն դատարանները։"
+  },
+  {
+    "hy": "անկախ",
+    "ru": "независимый",
+    "level": "B1",
+    "url": "practice/constitution-07.html",
+    "units": [
+      "constitution-07"
+    ],
+    "example": "Դատավորը անկախ է և գործում է Սահմանադրությանը և օրենքներին համապատասխան։"
+  },
+  {
+    "hy": "պաշտպան",
+    "ru": "защитник",
+    "level": "B1",
+    "url": "practice/constitution-07.html",
+    "units": [
+      "constitution-07"
+    ],
+    "example": "Մարդու իրավունքների պաշտպանն անկախ պաշտոնատար անձ է։"
+  },
+  {
+    "hy": "հիշեցնել",
+    "ru": "напоминать",
+    "level": "B1",
+    "url": "lessons/0043-causative.html",
+    "units": [
+      "0043"
+    ],
+    "example": "Հիշեցրո՛ւ ինձ հանդիպման մասին։"
+  },
+  {
+    "hy": "սովորեցնել",
+    "ru": "обучать",
+    "level": "B1",
+    "url": "lessons/0043-causative.html",
+    "units": [
+      "0043"
+    ],
+    "example": "Նա ինձ հայերեն է սովորեցնում։"
+  },
+  {
+    "hy": "հասկացնել",
+    "ru": "дать понять",
+    "level": "B1",
+    "url": "lessons/0043-causative.html",
+    "units": [
+      "0043"
+    ],
+    "example": "Նա հասկացրեց, որ համաձայն չէ։"
+  },
+  {
+    "hy": "տանտեր",
+    "ru": "хозяин жилья",
+    "level": "B1",
+    "url": "lessons/0044-relative-clauses.html",
+    "units": [
+      "0044"
+    ],
+    "example": "Տանտերը խոստացավ ուղարկել ամբողջ տեքստը։"
+  },
+  {
+    "hy": "վարձակալ",
+    "ru": "арендатор",
+    "level": "B1",
+    "url": "lessons/0044-relative-clauses.html",
+    "units": [
+      "0044"
+    ],
+    "example": "Ընկերս խորհուրդ տվեց խոսել նաև նախկին վարձակալի հետ։"
+  },
+  {
+    "hy": "պայմանագիր",
+    "ru": "договор",
+    "level": "B1",
+    "url": "lessons/0044-relative-clauses.html",
+    "units": [
+      "0044",
+      "0050"
+    ],
+    "example": "Բնակարանի վարձակալության պայմանագիրը ավարտվում է հաջորդ ամսվա վերջին։"
+  },
+  {
+    "hy": "բնակիչ",
+    "ru": "житель",
+    "level": "B1",
+    "url": "lessons/0044-relative-clauses.html",
+    "units": [
+      "0044"
+    ],
+    "example": "Բնակիչները քննարկեցին առաջարկը։"
+  },
+  {
+    "hy": "հարց",
+    "ru": "вопрос",
+    "level": "B1",
+    "url": "lessons/0044-relative-clauses.html",
+    "units": [
+      "0044"
+    ],
+    "example": "Ես հարցրի պայմանագրի մասին, որը դեռ չէի կարդացել։"
+  },
+  {
+    "hy": "օրինակ",
+    "ru": "экземпляр",
+    "level": "B1",
+    "url": "practice/review-44.html",
+    "units": [
+      "review-44",
+      "0056"
+    ],
+    "example": "Նա խնդրեց ցույց տալ ստորագրված օրինակը։"
+  },
+  {
+    "hy": "հայտնել",
+    "ru": "сообщать",
+    "level": "B1",
+    "url": "lessons/0045-reported-speech.html",
+    "units": [
+      "0045"
+    ],
+    "example": "Խնդրում եմ հայտնել որոշումը։"
+  },
+  {
+    "hy": "հարցնել",
+    "ru": "спрашивать",
+    "level": "B1",
+    "url": "lessons/0045-reported-speech.html",
+    "units": [
+      "0045"
+    ],
+    "example": "Ես հարցրի, թե երբ է հանդիպումը։"
+  },
+  {
+    "hy": "պատասխանել",
+    "ru": "отвечать",
+    "level": "B1",
+    "url": "lessons/0045-reported-speech.html",
+    "units": [
+      "0045"
+    ],
+    "example": "Նա պատասխանեց իմ հարցին։"
+  },
+  {
+    "hy": "տեղեկություն",
+    "ru": "информация",
+    "level": "B1",
+    "url": "lessons/0045-reported-speech.html",
+    "units": [
+      "0045",
+      "review-49",
+      "checkpoint-58"
+    ],
+    "example": "Չէի ուզում իմ ենթադրությունը ներկայացնել որպես հաստատված տեղեկություն։"
+  },
+  {
+    "hy": "ջրամատակարարում",
+    "ru": "водоснабжение",
+    "level": "B1",
+    "url": "lessons/0046-clauses-time-cause.html",
+    "units": [
+      "0046"
+    ],
+    "example": "Վերանորոգման պատճառով ջրամատակարարումը դադարեցվելու է ժամը տասից մինչև չորսը։"
+  },
+  {
+    "hy": "դադարեցնել",
+    "ru": "прекращать",
+    "level": "B1",
+    "url": "lessons/0046-clauses-time-cause.html",
+    "units": [
+      "0046"
+    ],
+    "example": "Նրանք որոշեցին դադարեցնել աշխատանքը։"
+  },
+  {
+    "hy": "վերականգնել",
+    "ru": "восстанавливать",
+    "level": "B1",
+    "url": "lessons/0046-clauses-time-cause.html",
+    "units": [
+      "0046"
+    ],
+    "example": "Պետք է վերականգնել կորցրած փաստաթուղթը։"
+  },
+  {
+    "hy": "վերանորոգում",
+    "ru": "ремонт",
+    "level": "B1",
+    "url": "lessons/0046-clauses-time-cause.html",
+    "units": [
+      "0046"
+    ],
+    "example": "Վերանորոգումը դեռ չի ավարտվել։"
+  },
+  {
+    "hy": "պատճառ",
+    "ru": "причина",
+    "level": "B1",
+    "url": "lessons/0046-clauses-time-cause.html",
+    "units": [
+      "0046",
+      "review-49",
+      "checkpoint-58"
+    ],
+    "example": "Վերանորոգման պատճառով ջրամատակարարումը դադարեցվելու է ժամը տասից մինչև չորսը։"
+  },
+  {
+    "hy": "բացառությամբ",
+    "ru": "за исключением",
+    "level": "B1",
+    "url": "practice/constitution-08.html",
+    "units": [
+      "constitution-08"
+    ],
+    "example": "Բոլորը եկան՝ բացառությամբ Արամի։"
+  },
+  {
+    "hy": "միայն",
+    "ru": "только",
+    "level": "B1",
+    "url": "practice/constitution-08.html",
+    "units": [
+      "constitution-08"
+    ],
+    "example": "Թեստի ժամանակ պետք է ուշադիր կարդալ «միայն», «առնվազն», «չի կարող» բառերը։"
+  },
+  {
+    "hy": "առնվազն",
+    "ru": "не менее",
+    "level": "B1",
+    "url": "practice/constitution-08.html",
+    "units": [
+      "constitution-08"
+    ],
+    "example": "Թեստի ժամանակ պետք է ուշադիր կարդալ «միայն», «առնվազն», «չի կարող» բառերը։"
+  },
+  {
+    "hy": "ենթակա չէ",
+    "ru": "не подлежит",
+    "level": "B1",
+    "url": "practice/constitution-08.html",
+    "units": [
+      "constitution-08"
+    ],
+    "example": "Այդ փոփոխությունը քննարկման ենթակա չէ։"
+  },
+  {
+    "hy": "ուժի մեջ",
+    "ru": "в силе",
+    "level": "B1",
+    "url": "practice/constitution-08.html",
+    "units": [
+      "constitution-08"
+    ],
+    "example": "Պայմանագիրն ուժի մեջ է։"
+  },
+  {
+    "hy": "աղբյուր",
+    "ru": "источник",
+    "level": "B1",
+    "url": "practice/reading-05.html",
+    "units": [
+      "reading-05",
+      "0054"
+    ],
+    "example": "Հաղորդագրության մեջ ոչ հասցե կար, ոչ էլ պաշտոնական աղբյուր։"
+  },
+  {
+    "hy": "պաշտոնական",
+    "ru": "официальный",
+    "level": "B1",
+    "url": "practice/reading-05.html",
+    "units": [
+      "reading-05"
+    ],
+    "example": "Հաղորդագրության մեջ ոչ հասցե կար, ոչ էլ պաշտոնական աղբյուր։"
+  },
+  {
+    "hy": "ենթադրություն",
+    "ru": "предположение",
+    "level": "B1",
+    "url": "practice/reading-05.html",
+    "units": [
+      "reading-05"
+    ],
+    "example": "Դա միայն ենթադրություն է։"
+  },
+  {
+    "hy": "հաստատել",
+    "ru": "подтверждать",
+    "level": "B1",
+    "url": "practice/reading-05.html",
+    "units": [
+      "reading-05",
+      "0053",
+      "speaking-03"
+    ],
+    "example": "Խնդրում եմ նաև հաստատել, որ ստացել եք այս նամակն ու կից փաստաթուղթը։"
+  },
+  {
+    "hy": "ժամկետ",
+    "ru": "срок",
+    "level": "B1",
+    "url": "practice/reading-05.html",
+    "units": [
+      "reading-05",
+      "0050"
+    ],
+    "example": "Պետք է գտնել գործող անձին, պահանջվող գործողությունը, ժամկետը և բացառությունները։"
+  },
+  {
+    "hy": "արդյունք",
+    "ru": "результат",
+    "level": "B1",
+    "url": "lessons/0047-clauses-purpose-concession.html",
+    "units": [
+      "0047",
+      "0058"
+    ],
+    "example": "Արդյունքը դեռ չգիտեմ։"
+  },
+  {
+    "hy": "դժվարություն",
+    "ru": "трудность",
+    "level": "B1",
+    "url": "lessons/0047-clauses-purpose-concession.html",
+    "units": [
+      "0047"
+    ],
+    "example": "Ես դժվարություն ունեմ այս բառը կարդալիս։"
+  },
+  {
+    "hy": "թեև",
+    "ru": "хотя",
+    "level": "B1",
+    "url": "lessons/0047-clauses-purpose-concession.html",
+    "units": [
+      "0047"
+    ],
+    "example": "Թեև աշխատանքից հետո հոգնած եմ լինում, ամեն երեկո մի քիչ հայերեն եմ կարդում։"
+  },
+  {
+    "hy": "որպեսզի",
+    "ru": "чтобы",
+    "level": "B1",
+    "url": "lessons/0047-clauses-purpose-concession.html",
+    "units": [
+      "0047"
+    ],
+    "example": "Հիմա նախ կարդում եմ ամբողջ տեքստը, որպեսզի հասկանամ ընդհանուր իմաստը։"
+  },
+  {
+    "hy": "հետևանք",
+    "ru": "последствие",
+    "level": "B1",
+    "url": "lessons/0048-conditionals.html",
+    "units": [
+      "0048"
+    ],
+    "example": "Դա ուշացման հետևանքն է։"
+  },
+  {
+    "hy": "ուշացում",
+    "ru": "задержка",
+    "level": "B1",
+    "url": "lessons/0048-conditionals.html",
+    "units": [
+      "0048"
+    ],
+    "example": "Ուշացման պատճառով չհասա հանդիպմանը։"
+  },
+  {
+    "hy": "փոխարեն",
+    "ru": "вместо",
+    "level": "B1",
+    "url": "lessons/0048-conditionals.html",
+    "units": [
+      "0048",
+      "0049"
+    ],
+    "example": "Սուրճի փոխարեն թեյ պատվիրեցի։"
+  },
+  {
+    "hy": "որոշում",
+    "ru": "решение",
+    "level": "B1",
+    "url": "lessons/0048-conditionals.html",
+    "units": [
+      "0048",
+      "checkpoint-58"
+    ],
+    "example": "Նա դեռ չէր ստացել վերջնական որոշումը, բայց գիտեր իր հաջորդ քայլը։"
+  },
+  {
+    "hy": "ցավոք",
+    "ru": "к сожалению",
+    "level": "B1",
+    "url": "lessons/0049-negation-register.html",
+    "units": [
+      "0049"
+    ],
+    "example": "Գրեցի. «Ցավոք, ժամը իննին չեմ կարող գալ։"
+  },
+  {
+    "hy": "վարձակալություն",
+    "ru": "аренда",
+    "level": "B1",
+    "url": "lessons/0050-housing-bureaucracy.html",
+    "units": [
+      "0050"
+    ],
+    "example": "Վարձակալության պայմանագիրը պետք է կարդալ։"
+  },
+  {
+    "hy": "երկարաձգել",
+    "ru": "продлевать",
+    "level": "B1",
+    "url": "lessons/0050-housing-bureaucracy.html",
+    "units": [
+      "0050"
+    ],
+    "example": "Ուզում եմ այն երկարաձգել ևս վեց ամսով։"
+  },
+  {
+    "hy": "վճար",
+    "ru": "плата",
+    "level": "B1",
+    "url": "lessons/0050-housing-bureaucracy.html",
+    "units": [
+      "0050"
+    ],
+    "example": "Ինձ համար կարևոր էր հասկանալ՝ վարձը փոխվելո՞ւ է, և ո՞վ է վճարելու փոքր վերանորոգման համար։"
+  },
+  {
+    "hy": "գանձում",
+    "ru": "списание денег",
+    "level": "B1",
+    "url": "lessons/0051-emergencies-complaints.html",
+    "units": [
+      "0051"
+    ],
+    "example": "Առավոտյան տեսա երկու նույն գումարի գանձում։"
+  },
+  {
+    "hy": "վերադարձ",
+    "ru": "возврат",
+    "level": "B1",
+    "url": "lessons/0051-emergencies-complaints.html",
+    "units": [
+      "0051"
+    ],
+    "example": "Միայն «գումարս վերադարձրեք» չգրեցի, որովհետև դեռ չգիտեի՝ ինչ է տեղի ունեցել։"
+  },
+  {
+    "hy": "անդորրագիր",
+    "ru": "квитанция",
+    "level": "B1",
+    "url": "lessons/0051-emergencies-complaints.html",
+    "units": [
+      "0051"
+    ],
+    "example": "Խնդրում եմ տալ անդորրագիրը։"
+  },
+  {
+    "hy": "գործարք",
+    "ru": "операция",
+    "level": "B1",
+    "url": "lessons/0051-emergencies-complaints.html",
+    "units": [
+      "0051",
+      "review-54"
+    ],
+    "example": "Չհասկացա՝ դա սխա՞լ է, թե՞ գործարքներից մեկը դեռ մշակվում է։"
+  },
+  {
+    "hy": "ստուգում",
+    "ru": "проверка",
+    "level": "B1",
+    "url": "lessons/0051-emergencies-complaints.html",
+    "units": [
+      "0051"
+    ],
+    "example": "Ստուգումն ավարտվել է։"
+  },
+  {
+    "hy": "համայնք",
+    "ru": "община",
+    "level": "B1",
+    "url": "lessons/0052-word-formation-culture.html",
+    "units": [
+      "0052"
+    ],
+    "example": "Մեր համայնքում գրադարան կա։"
+  },
+  {
+    "hy": "մասնակցել",
+    "ru": "участвовать",
+    "level": "B1",
+    "url": "lessons/0052-word-formation-culture.html",
+    "units": [
+      "0052"
+    ],
+    "example": "«Մասնակցություն» բառի իմաստը հասկացա, որովհետև գիտեի «մասնակցել» բայը։"
+  },
+  {
+    "hy": "պատասխանատվություն",
+    "ru": "ответственность",
+    "level": "B1",
+    "url": "lessons/0052-word-formation-culture.html",
+    "units": [
+      "0052"
+    ],
+    "example": "Ո՞վ է պատասխանատվություն կրում այս աշխատանքի համար։"
+  },
+  {
+    "hy": "քաղաքացիություն",
+    "ru": "гражданство",
+    "level": "B1",
+    "url": "lessons/0052-word-formation-culture.html",
+    "units": [
+      "0052"
+    ],
+    "example": "Նա դիմել է քաղաքացիություն ստանալու համար։"
+  },
+  {
+    "hy": "համագործակցություն",
+    "ru": "сотрудничество",
+    "level": "B1",
+    "url": "lessons/0052-word-formation-culture.html",
+    "units": [
+      "0052"
+    ],
+    "example": "«Համագործակցություն» բառը դեռ ծանոթ չէր, բայց համատեքստից պարզ էր, որ խոսքը միասին աշխատելու մասին է։"
+  },
+  {
+    "hy": "հարգելի",
+    "ru": "уважаемый",
+    "level": "B1",
+    "url": "lessons/0053-writing.html",
+    "units": [
+      "0053"
+    ],
+    "example": "Հարգելի՛ աշխատակից, Երեկ ստացել եմ Ձեր նամակը՝ լրացուցիչ փաստաթուղթ ներկայացնելու մասին։"
+  },
+  {
+    "hy": "կից",
+    "ru": "в приложении",
+    "level": "B1",
+    "url": "lessons/0053-writing.html",
+    "units": [
+      "0053",
+      "review-54"
+    ],
+    "example": "Հարգելի՛ աշխատակից, Երեկ ստացել եմ Ձեր նամակը՝ լրացուցիչ փաստաթուղթ ներկայացնելու մասին։"
+  },
+  {
+    "hy": "պարզաբանել",
+    "ru": "разъяснять",
+    "level": "B1",
+    "url": "lessons/0053-writing.html",
+    "units": [
+      "0053",
+      "review-54",
+      "speaking-03"
+    ],
+    "example": "Խնդրում եմ պարզաբանել՝ անհրաժեշտ է ներկայացնել նաև բնօրինա՞կը։"
+  },
+  {
+    "hy": "դիմող",
+    "ru": "заявитель",
+    "level": "B1",
+    "url": "lessons/0053-writing.html",
+    "units": [
+      "0053"
+    ],
+    "example": "Դիմողը ստորագրել է դիմումը։"
+  },
+  {
+    "hy": "վերնագիր",
+    "ru": "заголовок",
+    "level": "B1",
+    "url": "lessons/0054-reading.html",
+    "units": [
+      "0054"
+    ],
+    "example": "Սկզբում կարդա՛ վերնագիրը։"
+  },
+  {
+    "hy": "փաստ",
+    "ru": "факт",
+    "level": "B1",
+    "url": "lessons/0054-reading.html",
+    "units": [
+      "0054"
+    ],
+    "example": "Այս փաստը նշված է հաղորդագրության մեջ։"
+  },
+  {
+    "hy": "ծրագիր",
+    "ru": "программа, план",
+    "level": "B1",
+    "url": "lessons/0054-reading.html",
+    "units": [
+      "0054"
+    ],
+    "example": "Համայնքում քննարկվել է նոր ընթերցասրահ բացելու ծրագիրը։"
+  },
+  {
+    "hy": "քննարկում",
+    "ru": "обсуждение",
+    "level": "B1",
+    "url": "lessons/0054-reading.html",
+    "units": [
+      "0054"
+    ],
+    "example": "Քննարկումը դեռ շարունակվում է։"
+  },
+  {
+    "hy": "այսինքն",
+    "ru": "то есть",
+    "level": "B1",
+    "url": "lessons/0055-strategies.html",
+    "units": [
+      "0055"
+    ],
+    "example": "Վաղը չեմ կարող գալ, այսինքն՝ պետք է ժամը փոխենք։"
+  },
+  {
+    "hy": "նկատի ունենալ",
+    "ru": "иметь в виду",
+    "level": "B1",
+    "url": "lessons/0055-strategies.html",
+    "units": [
+      "0055"
+    ],
+    "example": "Ի՞նչ նկատի ունեք։"
+  },
+  {
+    "hy": "իմ կարծիքով",
+    "ru": "по моему мнению",
+    "level": "B1",
+    "url": "lessons/0056-opinion.html",
+    "units": [
+      "0056"
+    ],
+    "example": "Իմ կարծիքով՝ բնակարան ընտրելիս միայն կենտրոնին մոտ լինելը բավարար չէ։"
+  },
+  {
+    "hy": "սակայն",
+    "ru": "однако",
+    "level": "B1",
+    "url": "lessons/0056-opinion.html",
+    "units": [
+      "0056"
+    ],
+    "example": "Սակայն վարձը հաճախ բարձր է, և փողոցը կարող է աղմկոտ լինել։"
+  },
+  {
+    "hy": "առավելություն",
+    "ru": "преимущество",
+    "level": "B1",
+    "url": "lessons/0056-opinion.html",
+    "units": [
+      "0056"
+    ],
+    "example": "Կենտրոնում ապրելն ունի առավելություններ։"
+  },
+  {
+    "hy": "թերություն",
+    "ru": "недостаток",
+    "level": "B1",
+    "url": "lessons/0056-opinion.html",
+    "units": [
+      "0056"
+    ],
+    "example": "Այս տարբերակն ունի նաև թերություններ։"
+  },
+  {
+    "hy": "անհանգիստ",
+    "ru": "встревоженный",
+    "level": "B1",
+    "url": "lessons/0057-emotions.html",
+    "units": [
+      "0057"
+    ],
+    "example": "Վաղը կարևոր օր է, և ես մի քիչ անհանգիստ եմ։"
+  },
+  {
+    "hy": "հույս ունենալ",
+    "ru": "надеяться",
+    "level": "B1",
+    "url": "lessons/0057-emotions.html",
+    "units": [
+      "0057"
+    ],
+    "example": "Հույս ունեմ, որ վաղը կհանդիպենք։"
+  },
+  {
+    "hy": "վստահ",
+    "ru": "уверенный",
+    "level": "B1",
+    "url": "lessons/0057-emotions.html",
+    "units": [
+      "0057"
+    ],
+    "example": "Հասկանում եմ, որ վստահ լինելը չի նշանակում երբեք չսխալվել։"
+  },
+  {
+    "hy": "հուզվել",
+    "ru": "волноваться",
+    "level": "B1",
+    "url": "lessons/0057-emotions.html",
+    "units": [
+      "0057"
+    ],
+    "example": "Կարևոր հանդիպումից առաջ հուզվում եմ։"
+  },
+  {
+    "hy": "ինքնուրույն",
+    "ru": "самостоятельно",
+    "level": "B1",
+    "url": "lessons/0058-b1-integration.html",
+    "units": [
+      "0058"
+    ],
+    "example": "Դիմումը լրացրեցի ինքնուրույն։"
+  },
+  {
+    "hy": "հաստատում",
+    "ru": "подтверждение",
+    "level": "B1",
+    "url": "lessons/0058-b1-integration.html",
+    "units": [
+      "0058",
+      "checkpoint-58"
+    ],
+    "example": "Եթե հաստատում չստանար, պետք է կրկին կապ հաստատեր։"
+  },
+  {
+    "hy": "հստակ",
+    "ru": "ясный",
+    "level": "B1",
+    "url": "lessons/0058-b1-integration.html",
+    "units": [
+      "0058"
+    ],
+    "example": "Խնդրում եմ հստակ պատասխան տալ։"
+  },
+  {
+    "hy": "հաջորդ քայլ",
+    "ru": "следующий шаг",
+    "level": "B1",
+    "url": "lessons/0058-b1-integration.html",
+    "units": [
+      "0058"
+    ],
+    "example": "Ո՞րն է հաջորդ քայլը։"
+  },
+  {
+    "hy": "վերջնաժամկետ",
+    "ru": "крайний срок",
+    "level": "B1",
+    "url": "practice/reading-06.html",
+    "units": [
+      "reading-06"
+    ],
+    "example": "Վերջնաժամկետը նշված էր առանձին տողով։"
+  },
+  {
+    "hy": "բնօրինակ",
+    "ru": "оригинал",
+    "level": "B1",
+    "url": "practice/reading-06.html",
+    "units": [
+      "reading-06"
+    ],
+    "example": "Սկզբում պետք էր պատճենն ուղարկել, իսկ այցելության ժամանակ բնօրինակը բերել։"
+  },
+  {
+    "hy": "լրացուցիչ",
+    "ru": "дополнительный",
+    "level": "B1",
+    "url": "practice/reading-06.html",
+    "units": [
+      "reading-06"
+    ],
+    "example": "Պետք էր ներկայացնել լրացուցիչ փաստաթուղթ և հաստատել այցելության օրը։"
+  },
+  {
+    "hy": "պարզաբանում",
+    "ru": "разъяснение",
+    "level": "B1",
+    "url": "practice/reading-06.html",
+    "units": [
+      "reading-06"
+    ],
+    "example": "Ինձ լրացուցիչ պարզաբանում է պետք։"
+  },
+  {
+    "hy": "պայմանավորվածություն",
+    "ru": "договорённость",
+    "level": "B1",
+    "url": "practice/reading-06.html",
+    "units": [
+      "reading-06",
+      "speaking-03"
+    ],
+    "example": "Խնդրում եմ հաստատել մեր պայմանավորվածությունը։"
+  },
+  {
+    "hy": "ընդունելի",
+    "ru": "приемлемый",
+    "level": "B1",
+    "url": "practice/speaking-03.html",
+    "units": [
+      "speaking-03"
+    ],
+    "example": "Այս տարբերակն ինձ համար ընդունելի է։"
+  }
+]

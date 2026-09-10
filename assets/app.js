@@ -76,8 +76,10 @@
   /* --- нормализация армянского ввода --- */
   function norm(s) {
     return (s || "")
+      .normalize("NFC")
       .trim()
       .toLowerCase()
+      .replace(/և/g, "եւ")
       .replace(/[ՙ՚՛՜՝՞՟։．.,!?¡՛]/g, "")
       .replace(/\s+/g, " ");
   }
@@ -172,7 +174,9 @@
     score.total++; if (ok) score.ok++;
     var el = document.querySelector("[data-score]");
     if (el) el.textContent = score.ok + " / " + score.total;
+    document.dispatchEvent(new CustomEvent("hy:score", { detail: { ok: score.ok, total: score.total } }));
   }
+  document.addEventListener("hy:answer", function (event) { bumpScore(event.detail.ok); });
 
   /* --- Прогресс по урокам (localStorage) --- */
   var KEY = "hy-progress-v1";
@@ -187,7 +191,7 @@
       var done = getDone();
       function paint() {
         if (done[id]) { btn.textContent = "✓ Урок пройден"; btn.classList.remove("btn--primary"); btn.classList.add("btn--ghost"); }
-        else { btn.textContent = btn.dataset.label || "Отметить урок пройденным ✓"; }
+        else { btn.textContent = btn.dataset.label || "Отметить урок пройденным ✓"; btn.classList.add("btn--primary"); btn.classList.remove("btn--ghost"); }
       }
       paint();
       btn.addEventListener("click", function () {

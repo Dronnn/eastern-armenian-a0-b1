@@ -1,0 +1,12 @@
+docs
+logs
+tools
+content
+.qa
+README.md
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+.DS_Store
+**/__pycache__

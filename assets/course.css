@@ -1,0 +1,39 @@
+/* Additive styles: same palette, readable Armenian, keyboard and mobile support. */
+.course-nav{display:flex;flex-wrap:wrap;gap:.65rem;margin:1rem 0 1.5rem;font-size:.9rem}
+.course-nav a,.track-tag{padding:.35rem .65rem;border:1px solid var(--line);border-radius:8px;background:var(--bg-soft)}
+.track-tags{display:flex;flex-wrap:wrap;gap:.35rem;margin:.5rem 0;font-size:.8rem}
+.reading-text{font-family:var(--hy);font-size:1.15rem;line-height:1.95;max-width:72ch}
+.reading-text p{margin-bottom:1.1em}
+.course-practice{scroll-margin-top:90px}
+.course-practice details{padding:.8rem 0;border-top:1px solid var(--line)}
+.course-practice summary{cursor:pointer;font-weight:600}
+.course-practice .inp{width:100%;max-width:44rem;margin:.5rem 0}
+.course-practice textarea{display:block;width:100%;min-height:130px;padding:1rem;background:var(--bg);color:var(--ink);border:1px solid var(--line-strong);border-radius:10px;font:inherit;line-height:1.7}
+.word-bank,.built-answer{display:flex;flex-wrap:wrap;gap:.5rem;min-height:3rem;padding:.6rem;border:1px dashed var(--line-strong);border-radius:10px;margin:.6rem 0}
+.built-answer{background:var(--bg-soft)}
+[data-token]{font-family:var(--hy);font-size:1rem;min-height:44px}
+.course-table-scroll{overflow-x:auto;max-width:100%}
+.course-table{min-width:1100px;font-size:.9rem}
+.course-table th{position:static}
+.course-table td{vertical-align:top;min-width:110px}
+.course-table td:first-child{min-width:55px}
+.course-table .route-extra{background:var(--bg-soft)}
+.self-list label{display:block;margin:.7rem 0;line-height:1.7}
+.self-list input{margin-right:.6rem}
+.exam-toolbar{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:1rem 0}
+.exam-status{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid var(--line);padding:.8rem;display:flex;justify-content:space-between;gap:1rem}
+.exam-question{padding:1.25rem;border:1px solid var(--line);border-radius:var(--radius);margin:1rem 0}
+.exam-question label{display:flex;gap:.65rem;align-items:baseline;padding:.8rem;margin:.4rem 0;border:1px solid var(--line);border-radius:8px;cursor:pointer;line-height:1.7}
+.exam-question input{flex-shrink:0}
+.exam-question label:has(input:checked){background:var(--primary-soft);border-color:var(--primary)}
+.exam-question:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid var(--primary);outline-offset:3px}
+.exam-review{border-left:3px solid var(--line);padding-left:1rem;margin:1.5rem 0}
+.exam-review.is-bad{border-color:var(--bad)}
+.muted a{color:var(--primary)}
+[hidden]{display:none!important}
+@media(max-width:600px){.course-nav{font-size:.85rem}.reading-text{font-size:1.08rem}.course-practice .btn,.exam-toolbar .btn{min-height:44px}.exam-status{font-size:.88rem}.exam-question{padding:.8rem}.course-practice{overflow-wrap:anywhere}.tbl{font-size:.9rem}}
+@media print{.course-nav,.exam-toolbar,[data-track-complete],[data-order] button{display:none}.reading-text{font-size:12pt}.course-table-scroll{overflow:visible}.course-table{min-width:0;font-size:8pt}.course-table td{min-width:0}}
+
+.course-words{min-width:440px}
+.course-words td{overflow-wrap:normal}
+.course-words .flearn{white-space:nowrap}

@@ -1028,21 +1028,33 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 200);
   }
   $("export").addEventListener("click", function () {
-    var data = { app: "hy-course", version: 1, exportedAt: new Date().toISOString(),
-      vocab: loadMap(KEY), lessons: lessonsGet(), pick: loadMap(PICK_KEY) };
+    var stores = {};
+    window.HYProgress.keys.forEach(function (key) { stores[key] = window.HYProgress.read(key); });
+    var data = { app: "hy-course", version: 2, exportedAt: new Date().toISOString(), stores: stores };
     download("armenian-progress-" + new Date().toISOString().slice(0, 10) + ".json", JSON.stringify(data, null, 2));
   });
   $("import").addEventListener("click", function () { $("importfile").click(); });
   $("importfile").addEventListener("change", function (e) {
     var file = e.target.files[0]; if (!file) return;
+    if (file.size > 5000000) { alert("Файл слишком большой."); e.target.value = ""; return; }
     var r = new FileReader();
     r.onload = function () {
       try {
         var data = JSON.parse(r.result);
-        var v = data.vocab || {}, ls = data.lessons || {}, pk = data.pick || {};
-        var cur = loadMap(KEY); for (var k in v) cur[k] = v[k]; learned = cur; saveMap(KEY, learned);
-        var lp = lessonsGet(); for (var k2 in ls) lp[k2] = ls[k2]; lessonsSet(lp);
-        var cp = loadMap(PICK_KEY); for (var k3 in pk) cp[k3] = pk[k3]; pick = cp; saveMap(PICK_KEY, pick);
+        if (data.app !== "hy-course" || [1, 2].indexOf(data.version) === -1) throw Error("Это не файл прогресса курса.");
+        var stores = data.version === 2 ? data.stores : { "hy-vocab-v1": data.vocab, "hy-progress-v1": data.lessons, "hy-vocab-pick-v1": data.pick };
+        if (!stores || typeof stores !== "object" || Array.isArray(stores)) throw Error("Некорректные данные.");
+        var pending = [];
+        window.HYProgress.keys.forEach(function (key) {
+          var value = stores[key];
+          if (value === undefined) return;
+          if (!value || typeof value !== "object" || Array.isArray(value)) throw Error("Некорректный раздел прогресса.");
+          pending.push([key, Object.assign({}, window.HYProgress.read(key), value)]);
+        });
+        var saved = true;
+        pending.forEach(function (entry) { if (!window.HYProgress.write(entry[0], entry[1])) saved = false; });
+        if (!saved) throw Error("Не всё удалось сохранить: проверь свободное место в браузере.");
+        learned = loadMap(KEY); pick = loadMap(PICK_KEY); var lp = lessonsGet();
         renderDash(); refreshBrowse(); renderPick();
         alert("Прогресс загружен. Слов: " + Object.keys(learned).length + ", уроков: " + Object.keys(lp).length + ". (объединено, ничего не стёрто)");
       } catch (err) { alert("Не удалось прочитать файл: " + err.message); }
