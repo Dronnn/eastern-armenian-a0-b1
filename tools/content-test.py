@@ -27,6 +27,30 @@ for level,minimum in [('A1',5),('A2',5),('B1',5)]:
  assert sum(u['level']==level for u in load('readings.json'))>=minimum
 assert len(' '.join(next(u for u in extras if u['id']=='checkpoint-58')['text']).split())>=400
 assert next(u for u in extras if u['id']=='checkpoint-58')['legal']['questions']
+bank={q['id']:q for q in load('exam-bank.json')['questions']}
+constitution={u['topic']:u for u in extras if u['kind']=='constitution'}
+review_blocks=0
+for u in extras:
+ if u['kind']!='review':continue
+ page=(root/'practice'/(u['id']+'.html')).read_text()
+ if u['after']<6:
+  assert 'id="constitution-review"' not in page,u['id']
+  continue
+ review_blocks+=1
+ block=u['constitution_review']
+ assert block['speech'] and block['model']
+ assert len(block['question_ids'])==len(set(block['question_ids']))
+ assert len(block['question_ids'])+len(block.get('recall',[]))>=2,u['id']
+ parsed=Page(page)
+ rendered=[a['data-review-question'] for tag,a in parsed.attrs if 'data-review-question' in a]
+ assert rendered==block['question_ids'],u['id']
+ assert page.count('id="constitution-review"')==1,u['id']
+ assert 'data-self="constitution-reply"' in page,u['id']
+ for qid in block['question_ids']:
+  assert qid in bank,(u['id'],qid)
+  assert constitution[bank[qid]['topic']]['after']<=u['after'],(u['id'],'future topic',qid)
+assert review_blocks==8
+print('Constitution review: 8 blocks, real questions and only previously introduced topics.')
 counts=Counter()
 for path in list((root/'lessons').glob('*.html'))+list((root/'practice').glob('*.html')):
  s=path.read_text();p=Page(s)

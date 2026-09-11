@@ -109,6 +109,39 @@ def spaced(u):
 def cumulative(u):
  n=u['after'];nums=sorted(set(k for k in [n-1,n-4,n-10,5 if n>16 else 0,15 if n>34 else 0] if k>0))
  return '<section class="card"><h2>Накопительное повторение грамматики</h2><p>Здесь смешаны старые темы. Прочитай исходную реплику, затем измени её без подсказки.</p>'+''.join('<p>'+hy(chains[k]['steps'][-2][1].split('|')[0])+'</p>'+typed('Урок '+str(k)+': '+chains[k]['steps'][-1][0],chains[k]['steps'][-1][1]) for k in nums)+'<p>Через два дня ответь снова, а через неделю перескажи текст без подготовки.</p></section>'
+# Mechanical reference validation drafted with Grok CLI; reviewed locally.
+def resolve_review_questions(question_ids, questions, allowed_topics):
+    seen = set()
+    by_id = {q["id"]: q for q in questions}
+    resolved = []
+    for qid in question_ids:
+        if qid in seen:
+            raise ValueError(qid)
+        seen.add(qid)
+        question = by_id.get(qid)
+        if question is None:
+            raise ValueError(qid)
+        if question["topic"] not in allowed_topics:
+            raise ValueError(question["topic"])
+        resolved.append(question)
+    return resolved
+
+def constitution_review(u):
+ block=u.get('constitution_review')
+ if not block:
+  if u['kind']=='review' and u['after']>=6:raise ValueError('Missing Constitution review: '+u['id'])
+  return ''
+ studied={x['topic']:x for x in extra if x['kind']=='constitution' and x['after']<=u['after']}
+ questions=resolve_review_questions(block['question_ids'],bank['questions'],studied)
+ s='<section class="card" id="constitution-review"><h2>Конституция: вспомни изученное</h2><p>Сначала ответь по памяти. После ответа открой разбор, прочитай трудную фразу вслух и объясни смысл своими словами.</p>'
+ for prompt,answer in block.get('recall',[]):s+=typed(prompt,answer,'Вернись к блоку государственных слов в указанном уроке.')
+ for q in questions:
+  lesson=studied[q['topic']]
+  s+=f'<div data-review-question="{q["id"]}" data-review-topic="{q["topic"]}">'+choice(q['q'],q['options'],q['answer'])
+  s+='<details><summary>Разбор и источник</summary><p>'+prose(q['explanation'])+'</p><p><a href="'+e(q['source'])+'">Статья '+e(q['article'])+'</a> · <a href="'+rel(lesson['url'],u['url'])+'">Вернуться к изученной теме</a></p></details></div>'
+ s+='<h3>Ответь без готового текста</h3><p>'+prose(block['speech'])+'</p><label>Своя короткая реплика<textarea lang="hy" data-self="constitution-reply"></textarea></label><details><summary>Образец для самопроверки</summary><p lang="hy" class="reading-text">'+e(block['model'])+'</p><p>Сохрани смысл. Дословное совпадение с образцом не требуется.</p></details>'
+ return s+'</section>'
+
 def constitution_bridge(u):
  if u['n']<6:return ''
  # Only a few early terms; later reuse the actual study pages.
@@ -148,6 +181,7 @@ def supplement(u):
   if u['n']>4:s+=cumulative(u)
  s+=spaced(u)
  if u['kind'] in ['review','checkpoint']:s+=cumulative(u)
+ if u['kind']=='review':s+=constitution_review(u)
  if u['kind']=='checkpoint':s+=checkpoint(u)
  if u['kind']=='constitution':
   s+=f'<section class="card"><h2>Подлинная формулировка</h2><p>Статья {e(u["article"])}. В цитате унифицирован конечный знак препинания.</p><blockquote lang="hy" class="reading-text">{e(u["original"])}</blockquote><details{" open" if u["level"]=="A1" else ""}><summary>Русский смысл</summary><p>{e(u["meaning"])}</p></details><p><a href="{source}">Полный текст Конституции с изменениями 2020 года</a>. Объяснения и упрощённые предложения выше — учебная адаптация.</p></section>'
