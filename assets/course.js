@@ -11,9 +11,37 @@
   document.addEventListener('hy:score',e=>{
     if (!id) return;
     const all=read('hy-practice-v1');
-    all[id]={ok:e.detail.ok,total:e.detail.total,possible:document.querySelectorAll('[data-quiz],[data-order]').length,at:Date.now()};
+    all[id]={ok:e.detail.ok,total:e.detail.total,possible:document.querySelectorAll('[data-quiz],[data-order],[data-match]').length,at:Date.now()};
     if (!write('hy-practice-v1',all)) status('Браузер не разрешил сохранить результат. Он доступен только в этой сессии.');
   });
+  // Mechanical event handler drafted with Grok CLI, then reviewed locally.
+  function setupMatch(box, report) {
+    const selects = Array.from(box.querySelectorAll('select[data-expected]'));
+    const button = box.querySelector('[data-match-check]');
+    const feedback = box.querySelector('[data-match-feedback]');
+    let reported = false;
+    button.addEventListener('click', event => {
+      event.preventDefault();
+      if (reported) return;
+      if (selects.some(select => select.value === '')) {
+        feedback.textContent = 'Выбери все соответствия.';
+        return;
+      }
+      const correct = selects.every(select => select.value === select.dataset.expected);
+      const lines = selects.map((select, index) => {
+        select.disabled = true;
+        const option = Array.from(select.options).find(option => option.value === select.dataset.expected);
+        return (index + 1) + '. ' + option.textContent;
+      });
+      button.disabled = true;
+      reported = true;
+      feedback.textContent = (correct ? 'Верно. ' : 'Сверь пары. ') + lines.join('; ');
+      report(correct);
+    });
+  }
+  document.querySelectorAll('[data-match]').forEach(box => setupMatch(box, ok => {
+    document.dispatchEvent(new CustomEvent('hy:answer', { detail: { ok } }));
+  }));
   document.querySelectorAll('[data-order]').forEach(box=>{
     const bank=box.querySelector('[data-bank]'), answer=box.querySelector('[data-built]'), fb=box.querySelector('[data-order-feedback]');
     let checked=false;
@@ -23,7 +51,7 @@
       if(checked)return;
       if(bank.children.length){fb.textContent='Используй все слова. Нажми слово в ответе, чтобы вернуть его.';return;}
       checked=true;
-      const ok=norm(Array.from(answer.children).map(b=>b.textContent).join(' '))===norm(box.dataset.answer);
+      const ok=norm(Array.from(answer.children).map(b=>b.textContent).join(box.dataset.separator ?? ' '))===norm(box.dataset.answer);
       fb.textContent=(ok?'Верно. ':'Проверь порядок слов. Образец: ')+box.dataset.answer;
       fb.className=ok?'is-good':'is-bad';
       box.querySelectorAll('button').forEach(b=>b.disabled=true);

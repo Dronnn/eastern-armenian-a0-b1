@@ -2,8 +2,20 @@
 const ExamLogic = (function () {
   'use strict';
   function shuffle(items,rng=Math.random){const a=items.slice();for(let i=a.length-1;i>0;i--){const j=Math.floor(rng()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
+  // Generic parser drafted with Grok CLI; reviewed locally. Course content was not shared.
+  function parseTopicIds(value, allowedIds) {
+    if (typeof value !== 'string' || !value.length) return [];
+    const allowed = new Set(allowedIds), seen = new Set(), ids = [];
+    for (const part of value.split(',')) {
+      const id = part.trim();
+      if (!/^[1-9]\d*$/.test(id) || !allowed.has(id) || seen.has(id)) continue;
+      seen.add(id); ids.push(id);
+    }
+    return ids;
+  }
   function create(bank,mode,topic,now=Date.now(),rng=Math.random){
-    const pool=bank.questions.filter(q=>mode==='mock'||!topic||String(q.topic)===String(topic));
+    const selected=parseTopicIds(topic,Object.keys(bank.topics));
+    const pool=bank.questions.filter(q=>mode==='mock'||!topic||selected.includes(String(q.topic)));
     const count=mode==='mock'?bank.rules.questionCount:Math.min(10,pool.length);
     if(!count||pool.length<count)throw Error('Недостаточно вопросов для этого режима.');
     const questions=shuffle(pool,rng).slice(0,count).map(q=>({id:q.id,order:shuffle(q.options.map((_,i)=>i),rng)}));
@@ -29,7 +41,7 @@ const ExamLogic = (function () {
     const total=rows.length;
     return {correct,total,answered,wrong:total-correct,percent:Math.round(correct*100/total),passed:session.mode==='mock'?correct>=bank.rules.passCount:null,topics,rows};
   }
-  return {shuffle,create,valid,score};
+  return {shuffle,create,valid,score,parseTopicIds};
 })();
 if(typeof module!=='undefined'&&module.exports)module.exports=ExamLogic;
 if(typeof document!=='undefined') (function(){
@@ -43,6 +55,11 @@ if(typeof document!=='undefined') (function(){
   let session=read(SESSION),timer;
   if(!ExamLogic.valid(session,bank))session=null;
   for(const [k,v] of Object.entries(bank.topics)){const o=text('option',v);o.value=k;el('exam-topic').appendChild(o);}
+  const requested=ExamLogic.parseTopicIds(new URLSearchParams(window.location?.search||'').get('topics'),Object.keys(bank.topics));
+  if(requested.length){
+    const o=text('option','Изученные темы: '+requested.map(k=>bank.topics[k]).join(', '));
+    o.value=requested.join(',');el('exam-topic').appendChild(o);el('exam-topic').value=o.value;
+  }
   function store(){save(SESSION,session);}
   function showFeedback(item,host){
     const q=bank.questions.find(q=>q.id===item.id),ok=session.answers[q.id]===q.answer;

@@ -37,3 +37,6 @@
 .course-words{min-width:440px}
 .course-words td{overflow-wrap:normal}
 .course-words .flearn{white-space:nowrap}
+
+.match-row{display:flex;align-items:center;flex-wrap:wrap;gap:.6rem;margin:.8rem 0}.match-row select{max-width:100%;min-height:44px;flex:1 1 16rem;background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:.5rem;font:inherit}.match-row .hy{overflow-wrap:anywhere}
+.exam-toolbar label{min-width:0;max-width:100%;flex:1 1 100%}.exam-toolbar select{display:block;width:100%;max-width:100%;min-width:0;font:inherit}

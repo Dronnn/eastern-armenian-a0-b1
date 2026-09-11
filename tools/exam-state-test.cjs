@@ -8,10 +8,10 @@ class Element{
  querySelectorAll(tag){return this.children.flatMap(c=>typeof c==='object'?[...(c.tagName===tag?[c]:[]),...c.querySelectorAll(tag)]:[]);}
 }
 let clock=1000000,storage=new Map(),nodes;
-function run(){
+function run(search=""){
  nodes={};const document={getElementById:id=>nodes[id]??=new Element('div'),createElement:tag=>new Element(tag)};
  class Clock extends Date{static now(){return clock;}}
- vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/exam.js'),'utf8'),{window:{HY_EXAM:bank},document,Date:Clock,setInterval:()=>1,clearInterval(){},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)}});
+ vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../assets/exam.js'),'utf8'),{window:{HY_EXAM:bank,location:{search}},URLSearchParams,document,Date:Clock,setInterval:()=>1,clearInterval(){},localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)}});
 }
 const unfinished=L.create(bank,'mock','',clock);
 const first=unfinished.questions[0];unfinished.answers[first.id]=bank.questions.find(q=>q.id===first.id).answer;
@@ -25,3 +25,7 @@ nodes['start-mock'].handlers.click();assert.equal(nodes['exam-questions'].childr
 const firstBox=nodes['exam-questions'].children[0],input=firstBox.querySelectorAll('input')[0];clock+=61*60000;input.handlers.change();
 assert.match(nodes['exam-summary'].textContent,/Время истекло/);assert.match(nodes['exam-summary'].textContent,/0 из 33/);
 console.log('Exam controller: expired resume, idempotent history, corrupt storage and late answer checks passed.');
+
+// The A2 checkpoint must only draw from its five introduced topics.
+storage=new Map();run("?topics=1,2,3,4,5");assert.equal(nodes["exam-topic"].value,"1,2,3,4,5");nodes["start-practice"].handlers.click();const a2=JSON.parse(storage.get("hy-exam-session-v1"));assert.equal(a2.questions.length,10);assert.ok(a2.questions.every(x=>bank.questions.find(q=>q.id===x.id).topic<=5));
+console.log("A2 topic selection through the real controller passed.");

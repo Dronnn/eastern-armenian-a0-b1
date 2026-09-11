@@ -9,17 +9,33 @@
       "review-05",
       "0006"
     ],
-    "example": "անուն տուն նոր օր"
+    "example": "անուն լուսին նոր օր",
+    "reviews": [
+      "0002",
+      "0004",
+      "0007",
+      "0011",
+      "constitution-02"
+    ],
+    "after_course_reviews": 0
   },
   {
-    "hy": "տուն",
-    "ru": "дом",
+    "hy": "լուսին",
+    "ru": "луна",
     "level": "A1",
     "url": "lessons/0001-alphabet-1.html",
     "units": [
       "0001"
     ],
-    "example": "անուն տուն նոր օր"
+    "example": "անուն լուսին նոր օր",
+    "reviews": [
+      "0002",
+      "0004",
+      "0007",
+      "0011",
+      "constitution-02"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "նոր",
@@ -29,7 +45,15 @@
     "units": [
       "0001"
     ],
-    "example": "անուն տուն նոր օր"
+    "example": "անուն լուսին նոր օր",
+    "reviews": [
+      "0002",
+      "0004",
+      "0007",
+      "0011",
+      "constitution-02"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "օր",
@@ -40,7 +64,15 @@
       "0001",
       "0019"
     ],
-    "example": "անուն տուն նոր օր"
+    "example": "անուն լուսին նոր օր",
+    "reviews": [
+      "0002",
+      "0004",
+      "0007",
+      "0011",
+      "constitution-02"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հաց",
@@ -50,7 +82,15 @@
     "units": [
       "0002"
     ],
-    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ"
+    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ",
+    "reviews": [
+      "0003",
+      "0005",
+      "0008",
+      "reading-08",
+      "0019"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ջուր",
@@ -61,7 +101,15 @@
       "0002",
       "review-10"
     ],
-    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ"
+    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ",
+    "reviews": [
+      "0003",
+      "0005",
+      "0008",
+      "reading-08",
+      "0019"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "փակ",
@@ -72,7 +120,15 @@
       "0002",
       "0032"
     ],
-    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ"
+    "example": "ՀԱՑ ՋՈՒՐ ՓԱԿ",
+    "reviews": [
+      "0003",
+      "0005",
+      "0008",
+      "reading-08",
+      "0019"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "փող",
@@ -82,7 +138,15 @@
     "units": [
       "0002"
     ],
-    "example": "Փող չունեմ։"
+    "example": "Փող չունեմ։",
+    "reviews": [
+      "0003",
+      "0005",
+      "0008",
+      "reading-08",
+      "0019"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "մուտք",
@@ -94,7 +158,15 @@
       "reading-01",
       "0018"
     ],
-    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ"
+    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ",
+    "reviews": [
+      "0004",
+      "review-05",
+      "reading-01",
+      "0012",
+      "0020"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ելք",
@@ -105,7 +177,15 @@
       "0003",
       "reading-01"
     ],
-    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ"
+    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ",
+    "reviews": [
+      "0004",
+      "review-05",
+      "reading-01",
+      "0012",
+      "0020"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բաց",
@@ -115,7 +195,15 @@
     "units": [
       "0003"
     ],
-    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ"
+    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ",
+    "reviews": [
+      "0004",
+      "review-05",
+      "reading-01",
+      "0012",
+      "0020"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "դեղատուն",
@@ -125,7 +213,15 @@
     "units": [
       "0003"
     ],
-    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ"
+    "example": "ԴԵՂԱՏՈՒՆ ՄՈՒՏՔ ԵԼՔ ԲԱՑ",
+    "reviews": [
+      "0004",
+      "review-05",
+      "reading-01",
+      "0012",
+      "0020"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ներողություն",
@@ -135,7 +231,15 @@
     "units": [
       "0004"
     ],
-    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։"
+    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։",
+    "reviews": [
+      "0005",
+      "0006",
+      "0009",
+      "constitution-01",
+      "0021"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "խնդրում եմ",
@@ -145,7 +249,15 @@
     "units": [
       "0004"
     ],
-    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։"
+    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։",
+    "reviews": [
+      "0005",
+      "0006",
+      "0009",
+      "constitution-01",
+      "0021"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կրկնեք",
@@ -155,7 +267,15 @@
     "units": [
       "0004"
     ],
-    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։"
+    "example": "Ներողություն, կրկնե՛ք, խնդրում եմ։",
+    "reviews": [
+      "0005",
+      "0006",
+      "0009",
+      "constitution-01",
+      "0021"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "շնորհակալություն",
@@ -165,7 +285,15 @@
     "units": [
       "0004"
     ],
-    "example": "Շնորհակալություն։"
+    "example": "Շնորհակալություն։",
+    "reviews": [
+      "0005",
+      "0006",
+      "0009",
+      "constitution-01",
+      "0021"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հարևան",
@@ -175,9 +303,18 @@
     "units": [
       "0005",
       "review-05",
+      "reading-08",
       "reading-04"
     ],
-    "example": "Ես ձեր հարևանն եմ։"
+    "example": "Ես ձեր հարևանն եմ։",
+    "reviews": [
+      "review-05",
+      "0007",
+      "0010",
+      "0013",
+      "reading-10"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ուսուցիչ",
@@ -188,7 +325,15 @@
       "0005",
       "review-05"
     ],
-    "example": "Ես ուսուցիչ եմ։"
+    "example": "Ես ուսուցիչ եմ։",
+    "reviews": [
+      "review-05",
+      "0007",
+      "0010",
+      "0013",
+      "reading-10"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բժիշկ",
@@ -200,7 +345,15 @@
       "review-05",
       "0030"
     ],
-    "example": "Ոչ, ես բժիշկ եմ։"
+    "example": "Ոչ, ես բժիշկ եմ։",
+    "reviews": [
+      "review-05",
+      "0007",
+      "0010",
+      "0013",
+      "reading-10"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "այստեղ",
@@ -210,7 +363,15 @@
     "units": [
       "0005"
     ],
-    "example": "Այստեղ ջուր կա։"
+    "example": "Այստեղ ջուր կա։",
+    "reviews": [
+      "review-05",
+      "0007",
+      "0010",
+      "0013",
+      "reading-10"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ազգանուն",
@@ -220,7 +381,15 @@
     "units": [
       "0006"
     ],
-    "example": "Ազգանուն՝ Սարգսյան։"
+    "example": "Ազգանուն՝ Սարգսյան։",
+    "reviews": [
+      "0007",
+      "reading-01",
+      "review-10",
+      "reading-09",
+      "0022"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հասցե",
@@ -235,7 +404,15 @@
       "reading-03",
       "checkpoint-34"
     ],
-    "example": "Հասցե՝ Արամի փողոց։"
+    "example": "Հասցե՝ Արամի փողոց։",
+    "reviews": [
+      "0007",
+      "reading-01",
+      "review-10",
+      "reading-09",
+      "0022"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հեռախոս",
@@ -245,7 +422,15 @@
     "units": [
       "0006"
     ],
-    "example": "Սա իմ հեռախոսն է։"
+    "example": "Սա իմ հեռախոսն է։",
+    "reviews": [
+      "0007",
+      "reading-01",
+      "review-10",
+      "reading-09",
+      "0022"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "Հայաստան",
@@ -255,7 +440,15 @@
     "units": [
       "0006"
     ],
-    "example": "Երկիր՝ Հայաստան։"
+    "example": "Երկիր՝ Հայաստան։",
+    "reviews": [
+      "0007",
+      "reading-01",
+      "review-10",
+      "reading-09",
+      "0022"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բանալի",
@@ -266,7 +459,15 @@
       "0007",
       "review-10"
     ],
-    "example": "Սա մի բանալի է։"
+    "example": "Սա մի բանալի է։",
+    "reviews": [
+      "0008",
+      "0009",
+      "0011",
+      "0015",
+      "0023"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պայուսակ",
@@ -277,7 +478,15 @@
       "0007",
       "review-10"
     ],
-    "example": "Սա իմ պայուսակն է։"
+    "example": "Սա իմ պայուսակն է։",
+    "reviews": [
+      "0008",
+      "0009",
+      "0011",
+      "0015",
+      "0023"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "փաստաթուղթ",
@@ -289,7 +498,15 @@
       "checkpoint-16",
       "checkpoint-34"
     ],
-    "example": "Սա ձեր փաստաթո՞ւղթն է։"
+    "example": "Սա ձեր փաստաթո՞ւղթն է։",
+    "reviews": [
+      "0008",
+      "0009",
+      "0011",
+      "0015",
+      "0023"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "Հանրապետություն",
@@ -299,7 +516,15 @@
     "units": [
       "0007"
     ],
-    "example": "Հայաստանի Հանրապետություն։"
+    "example": "Հայաստանի Հանրապետություն։",
+    "reviews": [
+      "0008",
+      "0009",
+      "0011",
+      "0015",
+      "0023"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "թուղթ",
@@ -310,7 +535,15 @@
       "0008",
       "reading-01"
     ],
-    "example": "Սա իմ փաստաթուղթն է։"
+    "example": "Սա իմ փաստաթուղթն է։",
+    "reviews": [
+      "reading-01",
+      "0010",
+      "reading-08",
+      "0016",
+      "0024"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պատուհան",
@@ -321,7 +554,15 @@
       "0008",
       "reading-01"
     ],
-    "example": "Սա պատուհան է։"
+    "example": "Սա պատուհան է։",
+    "reviews": [
+      "reading-01",
+      "0010",
+      "reading-08",
+      "0016",
+      "0024"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "այս",
@@ -331,7 +572,15 @@
     "units": [
       "0008"
     ],
-    "example": "Այս թղթերը նոր են։"
+    "example": "Այս թղթերը նոր են։",
+    "reviews": [
+      "reading-01",
+      "0010",
+      "reading-08",
+      "0016",
+      "0024"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "այն",
@@ -341,7 +590,15 @@
     "units": [
       "0008"
     ],
-    "example": "Այն թղթերը նոր չեն։"
+    "example": "Այն թղթերը նոր չեն։",
+    "reviews": [
+      "reading-01",
+      "0010",
+      "reading-08",
+      "0016",
+      "0024"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "սենյակ",
@@ -352,7 +609,15 @@
       "reading-01",
       "0014"
     ],
-    "example": "Այս սենյակը փոքր է։"
+    "example": "Այս սենյակը փոքր է։",
+    "reviews": [
+      "0009",
+      "reading-07",
+      "0012",
+      "reading-02",
+      "constitution-03"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "տեղ",
@@ -362,7 +627,15 @@
     "units": [
       "0009"
     ],
-    "example": "Այստեղ ազատ տեղ կա՞։"
+    "example": "Այստեղ ազատ տեղ կա՞։",
+    "reviews": [
+      "0010",
+      "review-10",
+      "constitution-01",
+      "speaking-01",
+      "reading-03"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ազատ",
@@ -372,7 +645,15 @@
     "units": [
       "0009"
     ],
-    "example": "Այստեղ ազատ տեղ կա՞։"
+    "example": "Այստեղ ազատ տեղ կա՞։",
+    "reviews": [
+      "0010",
+      "review-10",
+      "constitution-01",
+      "speaking-01",
+      "reading-03"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ժամանակ",
@@ -382,7 +663,15 @@
     "units": [
       "0009"
     ],
-    "example": "Ես ժամանակ ունեմ։"
+    "example": "Ես ժամանակ ունեմ։",
+    "reviews": [
+      "0010",
+      "review-10",
+      "constitution-01",
+      "speaking-01",
+      "reading-03"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ունեմ",
@@ -392,7 +681,15 @@
     "units": [
       "0009"
     ],
-    "example": "Ես մի հարց ունեմ։"
+    "example": "Ես մի հարց ունեմ։",
+    "reviews": [
+      "0010",
+      "review-10",
+      "constitution-01",
+      "speaking-01",
+      "reading-03"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "քաղաքացի",
@@ -402,7 +699,15 @@
     "units": [
       "0009"
     ],
-    "example": "Ես քաղաքացի եմ։"
+    "example": "Ես քաղաքացի եմ։",
+    "reviews": [
+      "0010",
+      "review-10",
+      "constitution-01",
+      "speaking-01",
+      "reading-03"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "սուրճ",
@@ -413,7 +718,15 @@
       "0010",
       "checkpoint-16"
     ],
-    "example": "Սուրճ՝ 700 դրամ։"
+    "example": "Սուրճ՝ 700 դրամ։",
+    "reviews": [
+      "reading-07",
+      "0011",
+      "0013",
+      "checkpoint-16",
+      "0025"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "թեյ",
@@ -423,7 +736,15 @@
     "units": [
       "0010"
     ],
-    "example": "Թեյ՝ 500 դրամ։"
+    "example": "Թեյ՝ 500 դրամ։",
+    "reviews": [
+      "reading-07",
+      "0011",
+      "0013",
+      "checkpoint-16",
+      "0025"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "դրամ",
@@ -434,7 +755,15 @@
       "0010",
       "review-10"
     ],
-    "example": "Սուրճ՝ 700 դրամ։"
+    "example": "Սուրճ՝ 700 դրամ։",
+    "reviews": [
+      "reading-07",
+      "0011",
+      "0013",
+      "checkpoint-16",
+      "0025"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հարյուր",
@@ -444,7 +773,15 @@
     "units": [
       "0010"
     ],
-    "example": "Հարյուր դրամ։"
+    "example": "Հարյուր դրամ։",
+    "reviews": [
+      "reading-07",
+      "0011",
+      "0013",
+      "checkpoint-16",
+      "0025"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հազար",
@@ -454,7 +791,15 @@
     "units": [
       "0010"
     ],
-    "example": "Հազար դրամ։"
+    "example": "Հազար դրամ։",
+    "reviews": [
+      "reading-07",
+      "0011",
+      "0013",
+      "checkpoint-16",
+      "0025"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պետություն",
@@ -465,7 +810,88 @@
       "0010",
       "constitution-01"
     ],
-    "example": "Հայաստանը պետություն է։"
+    "example": "Հայաստանը պետություն է։",
+    "reviews": [
+      "reading-07",
+      "0011",
+      "0013",
+      "checkpoint-16",
+      "0025"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "ճաշացանկ",
+    "ru": "меню",
+    "level": "A1",
+    "url": "practice/reading-07.html",
+    "units": [
+      "reading-07"
+    ],
+    "example": "Սա ճաշացանկն է։",
+    "reviews": [
+      "review-10",
+      "reading-08",
+      "0014",
+      "0017",
+      "0026"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "գին",
+    "ru": "цена",
+    "level": "A1",
+    "url": "practice/reading-07.html",
+    "units": [
+      "reading-07"
+    ],
+    "example": "Գինը՝ 1400 դրամ։",
+    "reviews": [
+      "review-10",
+      "reading-08",
+      "0014",
+      "0017",
+      "0026"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "միասին",
+    "ru": "вместе",
+    "level": "A1",
+    "url": "practice/reading-07.html",
+    "units": [
+      "reading-07",
+      "reading-08"
+    ],
+    "example": "Սուրճը և թեյը միասին 1200 դրամ են։",
+    "reviews": [
+      "review-10",
+      "reading-08",
+      "0014",
+      "0017",
+      "0026"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "ընդամենը",
+    "ru": "всего",
+    "level": "A1",
+    "url": "practice/reading-07.html",
+    "units": [
+      "reading-07"
+    ],
+    "example": "Ընդամենը՝ 1800 դրամ։",
+    "reviews": [
+      "review-10",
+      "reading-08",
+      "0014",
+      "0017",
+      "0026"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "այսօր",
@@ -475,7 +901,15 @@
     "units": [
       "0011"
     ],
-    "example": "Այսօր ես աշխատում եմ տանը։"
+    "example": "Այսօր ես աշխատում եմ տանը։",
+    "reviews": [
+      "reading-08",
+      "constitution-01",
+      "0015",
+      "constitution-02",
+      "0027"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "տանը",
@@ -486,7 +920,15 @@
       "0011",
       "review-21"
     ],
-    "example": "Այսօր ես աշխատում եմ տանը։"
+    "example": "Այսօր ես աշխատում եմ տանը։",
+    "reviews": [
+      "reading-08",
+      "constitution-01",
+      "0015",
+      "constitution-02",
+      "0027"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "աշխատել",
@@ -496,7 +938,15 @@
     "units": [
       "0011"
     ],
-    "example": "Ես աշխատում եմ տանը։"
+    "example": "Ես աշխատում եմ տանը։",
+    "reviews": [
+      "reading-08",
+      "constitution-01",
+      "0015",
+      "constitution-02",
+      "0027"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "սպասել",
@@ -508,7 +958,15 @@
       "0015",
       "reading-02"
     ],
-    "example": "Մենք սպասում ենք այստեղ։"
+    "example": "Մենք սպասում ենք այստեղ։",
+    "reviews": [
+      "reading-08",
+      "constitution-01",
+      "0015",
+      "constitution-02",
+      "0027"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հիմա",
@@ -516,9 +974,18 @@
     "level": "A1",
     "url": "lessons/0011-present-tense.html",
     "units": [
-      "0011"
+      "0011",
+      "reading-08"
     ],
-    "example": "Հիմա նամակ եմ գրում։"
+    "example": "Հիմա նամակ եմ գրում։",
+    "reviews": [
+      "reading-08",
+      "constitution-01",
+      "0015",
+      "constitution-02",
+      "0027"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "Սահմանադրություն",
@@ -529,7 +996,33 @@
       "0011",
       "constitution-01"
     ],
-    "example": "Սա Հայաստանի Հանրապետության Սահմանադրությունն է։"
+    "example": "Սա Հայաստանի Հանրապետության Սահմանադրությունն է։",
+    "reviews": [
+      "reading-08",
+      "constitution-01",
+      "0015",
+      "constitution-02",
+      "0027"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "միշտ",
+    "ru": "всегда",
+    "level": "A1",
+    "url": "practice/reading-08.html",
+    "units": [
+      "reading-08"
+    ],
+    "example": "Ես միշտ բարձրաձայն եմ կարդում։",
+    "reviews": [
+      "0012",
+      "0013",
+      "0016",
+      "0019",
+      "constitution-04"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "տեսնել",
@@ -539,7 +1032,15 @@
     "units": [
       "0012"
     ],
-    "example": "Ես տեսնում եմ տունը։"
+    "example": "Ես տեսնում եմ տունը։",
+    "reviews": [
+      "constitution-01",
+      "0014",
+      "reading-02",
+      "0020",
+      "reading-11"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կարդալ",
@@ -549,7 +1050,15 @@
     "units": [
       "0012"
     ],
-    "example": "Նա կարդում է նամակը։"
+    "example": "Նա կարդում է նամակը։",
+    "reviews": [
+      "constitution-01",
+      "0014",
+      "reading-02",
+      "0020",
+      "reading-11"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "նամակ",
@@ -559,7 +1068,15 @@
     "units": [
       "0012"
     ],
-    "example": "Նա կարդում է նամակը։"
+    "example": "Նա կարդում է նամակը։",
+    "reviews": [
+      "constitution-01",
+      "0014",
+      "reading-02",
+      "0020",
+      "reading-11"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "մարդ",
@@ -569,7 +1086,15 @@
     "units": [
       "0012"
     ],
-    "example": "Այստեղ մի մարդ կա։"
+    "example": "Այստեղ մի մարդ կա։",
+    "reviews": [
+      "constitution-01",
+      "0014",
+      "reading-02",
+      "0020",
+      "reading-11"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "օրենք",
@@ -580,7 +1105,15 @@
       "0012",
       "constitution-01"
     ],
-    "example": "Սա կարևոր օրենք է։"
+    "example": "Սա կարևոր օրենք է։",
+    "reviews": [
+      "constitution-01",
+      "0014",
+      "reading-02",
+      "0020",
+      "reading-11"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "իրավունք",
@@ -591,7 +1124,15 @@
       "constitution-01",
       "constitution-04"
     ],
-    "example": "Այստեղ կարդում ենք պետության և մարդու իրավունքների մասին։"
+    "example": "Այստեղ կարդում ենք պետության և մարդու իրավունքների մասին։",
+    "reviews": [
+      "0013",
+      "reading-09",
+      "speaking-01",
+      "0021",
+      "0028"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հոդված",
@@ -601,7 +1142,15 @@
     "units": [
       "constitution-01"
     ],
-    "example": "Սա առաջին հոդվածն է։"
+    "example": "Սա առաջին հոդվածն է։",
+    "reviews": [
+      "0013",
+      "reading-09",
+      "speaking-01",
+      "0021",
+      "0028"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "թղթապանակ",
@@ -611,7 +1160,15 @@
     "units": [
       "0013"
     ],
-    "example": "Սա Արամի թղթապանակն է։"
+    "example": "Սա Արամի թղթապանակն է։",
+    "reviews": [
+      "0014",
+      "0015",
+      "checkpoint-16",
+      "reading-10",
+      "0029"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "զանգել",
@@ -623,7 +1180,15 @@
       "0015",
       "reading-02"
     ],
-    "example": "Ես զանգում եմ Արամին։"
+    "example": "Ես զանգում եմ Արամին։",
+    "reviews": [
+      "0014",
+      "0015",
+      "checkpoint-16",
+      "reading-10",
+      "0029"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "տալ",
@@ -634,7 +1199,15 @@
       "0013",
       "0023"
     ],
-    "example": "Ես փաստաթուղթը տալիս եմ Արամին։"
+    "example": "Ես փաստաթուղթը տալիս եմ Արամին։",
+    "reviews": [
+      "0014",
+      "0015",
+      "checkpoint-16",
+      "reading-10",
+      "0029"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "քաղաքացու",
@@ -644,7 +1217,15 @@
     "units": [
       "0013"
     ],
-    "example": "Այս փաստաթուղթը քաղաքացու համար է։"
+    "example": "Այս փաստաթուղթը քաղաքացու համար է։",
+    "reviews": [
+      "0014",
+      "0015",
+      "checkpoint-16",
+      "reading-10",
+      "0029"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "համար",
@@ -655,7 +1236,15 @@
       "0013",
       "review-44"
     ],
-    "example": "Այս փաստաթուղթը քաղաքացու համար է։"
+    "example": "Այս փաստաթուղթը քաղաքացու համար է։",
+    "reviews": [
+      "0014",
+      "0015",
+      "checkpoint-16",
+      "reading-10",
+      "0029"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "լուսավոր",
@@ -663,9 +1252,18 @@
     "level": "A1",
     "url": "lessons/0014-family-adjectives.html",
     "units": [
-      "0014"
+      "0014",
+      "reading-09"
     ],
-    "example": "Մեծ սենյակը լուսավոր է։"
+    "example": "Մեծ սենյակը լուսավոր է։",
+    "reviews": [
+      "reading-09",
+      "0016",
+      "0017",
+      "review-21",
+      "0030"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հանգիստ",
@@ -676,7 +1274,15 @@
       "0014",
       "0057"
     ],
-    "example": "Փոքր սենյակը հանգիստ է։"
+    "example": "Փոքր սենյակը հանգիստ է։",
+    "reviews": [
+      "reading-09",
+      "0016",
+      "0017",
+      "review-21",
+      "0030"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "սեղան",
@@ -686,7 +1292,15 @@
     "units": [
       "0014"
     ],
-    "example": "Իմ սեղանը նոր է։"
+    "example": "Իմ սեղանը նոր է։",
+    "reviews": [
+      "reading-09",
+      "0016",
+      "0017",
+      "review-21",
+      "0030"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բնակարան",
@@ -696,7 +1310,71 @@
     "units": [
       "0014"
     ],
-    "example": "Այս բնակարանը փոքր է։"
+    "example": "Այս բնակարանը փոքր է։",
+    "reviews": [
+      "reading-09",
+      "0016",
+      "0017",
+      "review-21",
+      "0030"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "կահույք",
+    "ru": "мебель",
+    "level": "A1",
+    "url": "practice/reading-09.html",
+    "units": [
+      "reading-09"
+    ],
+    "example": "Կահույք կա՝ սեղան, աթոռ և մահճակալ։",
+    "reviews": [
+      "0015",
+      "reading-02",
+      "0018",
+      "0022",
+      "review-30"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "հարմար",
+    "ru": "удобный",
+    "level": "A1",
+    "url": "practice/reading-09.html",
+    "units": [
+      "reading-09",
+      "0026",
+      "0049"
+    ],
+    "example": "Արամի համար առաջին տարբերակն ավելի հարմար է։",
+    "reviews": [
+      "0015",
+      "reading-02",
+      "0018",
+      "0022",
+      "review-30"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "ամսական",
+    "ru": "в месяц",
+    "level": "A1",
+    "url": "practice/reading-09.html",
+    "units": [
+      "reading-09"
+    ],
+    "example": "Գինը՝ ամսական 80000 դրամ։",
+    "reviews": [
+      "0015",
+      "reading-02",
+      "0018",
+      "0022",
+      "review-30"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "վաղը",
@@ -707,7 +1385,15 @@
       "0015",
       "checkpoint-16"
     ],
-    "example": "Վաղը առավոտյան կգա՞ք։"
+    "example": "Վաղը առավոտյան կգա՞ք։",
+    "reviews": [
+      "0016",
+      "speaking-01",
+      "constitution-02",
+      "0023",
+      "0031"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "առավոտ",
@@ -718,7 +1404,15 @@
       "0015",
       "0019"
     ],
-    "example": "Վաղը առավոտյան կգա՞ք։"
+    "example": "Վաղը առավոտյան կգա՞ք։",
+    "reviews": [
+      "0016",
+      "speaking-01",
+      "constitution-02",
+      "0023",
+      "0031"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բերել",
@@ -729,7 +1423,15 @@
       "0015",
       "speaking-01"
     ],
-    "example": "Ես կբերեմ ձեր փաստաթուղթը։"
+    "example": "Ես կբերեմ ձեր փաստաթուղթը։",
+    "reviews": [
+      "0016",
+      "speaking-01",
+      "constitution-02",
+      "0023",
+      "0031"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "առանց",
@@ -739,7 +1441,15 @@
     "units": [
       "0016"
     ],
-    "example": "Ոչ, առանց կաթի։"
+    "example": "Ոչ, առանց կաթի։",
+    "reviews": [
+      "reading-02",
+      "checkpoint-16",
+      "0019",
+      "0024",
+      "constitution-05"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "շաքար",
@@ -749,7 +1459,15 @@
     "units": [
       "0016"
     ],
-    "example": "Եվ մի թեյ՝ առանց շաքարի։"
+    "example": "Եվ մի թեյ՝ առանց շաքարի։",
+    "reviews": [
+      "reading-02",
+      "checkpoint-16",
+      "0019",
+      "0024",
+      "constitution-05"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կաթ",
@@ -759,7 +1477,15 @@
     "units": [
       "0016"
     ],
-    "example": "Կաթո՞վ։"
+    "example": "Կաթո՞վ։",
+    "reviews": [
+      "reading-02",
+      "checkpoint-16",
+      "0019",
+      "0024",
+      "constitution-05"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "տաք",
@@ -769,7 +1495,15 @@
     "units": [
       "0016"
     ],
-    "example": "Թեյը տա՞ք է։"
+    "example": "Թեյը տա՞ք է։",
+    "reviews": [
+      "reading-02",
+      "checkpoint-16",
+      "0019",
+      "0024",
+      "constitution-05"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հաշիվ",
@@ -781,7 +1515,15 @@
       "speaking-01",
       "0031"
     ],
-    "example": "Հաշիվը կբերե՞ք։"
+    "example": "Հաշիվը կբերե՞ք։",
+    "reviews": [
+      "reading-02",
+      "checkpoint-16",
+      "0019",
+      "0024",
+      "constitution-05"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "առաքիչ",
@@ -792,7 +1534,15 @@
       "reading-02",
       "0025"
     ],
-    "example": "Հիմա առաքիչն է զանգում։"
+    "example": "Հիմա առաքիչն է զանգում։",
+    "reviews": [
+      "speaking-01",
+      "0017",
+      "0020",
+      "constitution-03",
+      "0032"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պատվեր",
@@ -803,7 +1553,15 @@
       "reading-02",
       "0031"
     ],
-    "example": "Առաքիչը բերում է պատվերը։"
+    "example": "Առաքիչը բերում է պատվերը։",
+    "reviews": [
+      "speaking-01",
+      "0017",
+      "0020",
+      "constitution-03",
+      "0032"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կրկնել",
@@ -815,7 +1573,15 @@
       "0033",
       "0055"
     ],
-    "example": "Կրկնե՛ք, խնդրում եմ։"
+    "example": "Կրկնե՛ք, խնդրում եմ։",
+    "reviews": [
+      "checkpoint-16",
+      "0018",
+      "0021",
+      "reading-03",
+      "reading-12"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ավտոբուս",
@@ -826,7 +1592,15 @@
       "0017",
       "review-21"
     ],
-    "example": "Սովորաբար գնում եմ ավտոբուսով։"
+    "example": "Սովորաբար գնում եմ ավտոբուսով։",
+    "reviews": [
+      "0018",
+      "0019",
+      "review-21",
+      "0026",
+      "0034"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "տաքսի",
@@ -836,7 +1610,15 @@
     "units": [
       "0017"
     ],
-    "example": "Նա տաքսի է կանչում։"
+    "example": "Նա տաքսի է կանչում։",
+    "reviews": [
+      "0018",
+      "0019",
+      "review-21",
+      "0026",
+      "0034"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ոտքով",
@@ -846,7 +1628,15 @@
     "units": [
       "0017"
     ],
-    "example": "Բանկից հետո մենք ոտքով կգնանք տուն։"
+    "example": "Բանկից հետո մենք ոտքով կգնանք տուն։",
+    "reviews": [
+      "0018",
+      "0019",
+      "review-21",
+      "0026",
+      "0034"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կենտրոն",
@@ -856,7 +1646,15 @@
     "units": [
       "0017"
     ],
-    "example": "Ես այսօր կենտրոն եմ գնում։"
+    "example": "Ես այսօր կենտրոն եմ գնում։",
+    "reviews": [
+      "0018",
+      "0019",
+      "review-21",
+      "0026",
+      "0034"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "մայրաքաղաք",
@@ -867,7 +1665,15 @@
       "0017",
       "constitution-02"
     ],
-    "example": "Հայաստանի Հանրապետության մայրաքաղաքը Երևանն է։"
+    "example": "Հայաստանի Հանրապետության մայրաքաղաքը Երևանն է։",
+    "reviews": [
+      "0018",
+      "0019",
+      "review-21",
+      "0026",
+      "0034"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "գրասենյակ",
@@ -877,7 +1683,15 @@
     "units": [
       "0018"
     ],
-    "example": "Նրա գրասենյակը երկրորդ հարկում է։"
+    "example": "Նրա գրասենյակը երկրորդ հարկում է։",
+    "reviews": [
+      "constitution-02",
+      "0020",
+      "0022",
+      "review-26",
+      "reading-04"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հարկ",
@@ -887,7 +1701,15 @@
     "units": [
       "0018"
     ],
-    "example": "Նրա գրասենյակը երկրորդ հարկում է։"
+    "example": "Նրա գրասենյակը երկրորդ հարկում է։",
+    "reviews": [
+      "constitution-02",
+      "0020",
+      "0022",
+      "review-26",
+      "reading-04"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կողք",
@@ -897,7 +1719,15 @@
     "units": [
       "0018"
     ],
-    "example": "Բանկի կողքին խանութ կա։"
+    "example": "Բանկի կողքին խանութ կա։",
+    "reviews": [
+      "constitution-02",
+      "0020",
+      "0022",
+      "review-26",
+      "reading-04"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բանկ",
@@ -908,7 +1738,15 @@
       "0018",
       "review-21"
     ],
-    "example": "Արամը սպասում է բանկում։"
+    "example": "Արամը սպասում է բանկում։",
+    "reviews": [
+      "constitution-02",
+      "0020",
+      "0022",
+      "review-26",
+      "reading-04"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պետական լեզու",
@@ -918,7 +1756,15 @@
     "units": [
       "constitution-02"
     ],
-    "example": "Պետական լեզուն հայերենն է։"
+    "example": "Պետական լեզուն հայերենն է։",
+    "reviews": [
+      "0019",
+      "0021",
+      "0023",
+      "0027",
+      "speaking-02"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "դրոշ",
@@ -928,7 +1774,15 @@
     "units": [
       "constitution-02"
     ],
-    "example": "Հանրապետության դրոշը եռագույն է։"
+    "example": "Հանրապետության դրոշը եռագույն է։",
+    "reviews": [
+      "0019",
+      "0021",
+      "0023",
+      "0027",
+      "speaking-02"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "զինանշան",
@@ -938,7 +1792,15 @@
     "units": [
       "constitution-02"
     ],
-    "example": "Սահմանադրության մեջ կան նաև զինանշանի և հիմնի մասին դրույթներ։"
+    "example": "Սահմանադրության մեջ կան նաև զինանշանի և հիմնի մասին դրույթներ։",
+    "reviews": [
+      "0019",
+      "0021",
+      "0023",
+      "0027",
+      "speaking-02"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հիմն",
@@ -948,7 +1810,15 @@
     "units": [
       "constitution-02"
     ],
-    "example": "Սահմանադրության մեջ կան նաև զինանշանի և հիմնի մասին դրույթներ։"
+    "example": "Սահմանադրության մեջ կան նաև զինանշանի և հիմնի մասին դրույթներ։",
+    "reviews": [
+      "0019",
+      "0021",
+      "0023",
+      "0027",
+      "speaking-02"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "շաբաթ",
@@ -959,7 +1829,15 @@
       "0019",
       "review-21"
     ],
-    "example": "Այս շաբաթվա ծրագիրը պարզ է։"
+    "example": "Այս շաբաթվա ծրագիրը պարզ է։",
+    "reviews": [
+      "0020",
+      "reading-10",
+      "0024",
+      "constitution-04",
+      "checkpoint-34"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ընկեր",
@@ -969,7 +1847,15 @@
     "units": [
       "0019"
     ],
-    "example": "Երեկոյան հանդիպում եմ ընկերոջս։"
+    "example": "Երեկոյան հանդիպում եմ ընկերոջս։",
+    "reviews": [
+      "0020",
+      "reading-10",
+      "0024",
+      "constitution-04",
+      "checkpoint-34"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "եղբայր",
@@ -979,7 +1865,15 @@
     "units": [
       "0019"
     ],
-    "example": "Ես հանդիպում եմ եղբորս։"
+    "example": "Ես հանդիպում եմ եղբորս։",
+    "reviews": [
+      "0020",
+      "reading-10",
+      "0024",
+      "constitution-04",
+      "checkpoint-34"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "երեկ",
@@ -989,7 +1883,15 @@
     "units": [
       "0020"
     ],
-    "example": "Երեկ երեկոյան տանն էի։"
+    "example": "Երեկ երեկոյան տանն էի։",
+    "reviews": [
+      "0021",
+      "review-21",
+      "constitution-03",
+      "reading-11",
+      "0035"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ինտերնետ",
@@ -999,7 +1901,15 @@
     "units": [
       "0020"
     ],
-    "example": "Նամակ էի գրում, բայց ինտերնետ չկար։"
+    "example": "Նամակ էի գրում, բայց ինտերնետ չկար։",
+    "reviews": [
+      "0021",
+      "review-21",
+      "constitution-03",
+      "reading-11",
+      "0035"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կապ",
@@ -1011,7 +1921,15 @@
       "0033",
       "checkpoint-34"
     ],
-    "example": "Առաքիչը զանգում է, բայց կապը վատ է։"
+    "example": "Առաքիչը զանգում է, բայց կապը վատ է։",
+    "reviews": [
+      "0021",
+      "review-21",
+      "constitution-03",
+      "reading-11",
+      "0035"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "երեկոյան",
@@ -1021,7 +1939,15 @@
     "units": [
       "0020"
     ],
-    "example": "Երեկ երեկոյան տանն էի։"
+    "example": "Երեկ երեկոյան տանն էի։",
+    "reviews": [
+      "0021",
+      "review-21",
+      "constitution-03",
+      "reading-11",
+      "0035"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "նախկինում",
@@ -1031,7 +1957,15 @@
     "units": [
       "0020"
     ],
-    "example": "Նախկինում հաճախ էի աշխատում սրճարանում, հիմա՝ տանը։"
+    "example": "Նախկինում հաճախ էի աշխատում սրճարանում, հիմա՝ տանը։",
+    "reviews": [
+      "0021",
+      "review-21",
+      "constitution-03",
+      "reading-11",
+      "0035"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "երկուշաբթի",
@@ -1041,7 +1975,15 @@
     "units": [
       "0021"
     ],
-    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։"
+    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։",
+    "reviews": [
+      "reading-10",
+      "0022",
+      "reading-03",
+      "0028",
+      "0036"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "չորեքշաբթի",
@@ -1051,7 +1993,15 @@
     "units": [
       "0021"
     ],
-    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։"
+    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։",
+    "reviews": [
+      "reading-10",
+      "0022",
+      "reading-03",
+      "0028",
+      "0036"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ուրբաթ",
@@ -1061,7 +2011,15 @@
     "units": [
       "0021"
     ],
-    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։"
+    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։",
+    "reviews": [
+      "reading-10",
+      "0022",
+      "reading-03",
+      "0028",
+      "0036"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ընդմիջում",
@@ -1070,9 +2028,18 @@
     "url": "lessons/0021-time-calendar.html",
     "units": [
       "0021",
+      "reading-10",
       "reading-03"
     ],
-    "example": "Ընդմիջում՝ 13:00–14:00։"
+    "example": "Ընդմիջում՝ 13:00–14:00։",
+    "reviews": [
+      "reading-10",
+      "0022",
+      "reading-03",
+      "0028",
+      "0036"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ժամը",
@@ -1082,7 +2049,71 @@
     "units": [
       "0021"
     ],
-    "example": "Արամը կգա չորեքշաբթի՝ ժամը տասին։"
+    "example": "Արամը կգա չորեքշաբթի՝ ժամը տասին։",
+    "reviews": [
+      "reading-10",
+      "0022",
+      "reading-03",
+      "0028",
+      "0036"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "ընդունելություն",
+    "ru": "приём",
+    "level": "A2",
+    "url": "practice/reading-10.html",
+    "units": [
+      "reading-10",
+      "0030",
+      "0055"
+    ],
+    "example": "Ընդունելություն՝ երկուշաբթի, չորեքշաբթի և ուրբաթ։",
+    "reviews": [
+      "review-21",
+      "0023",
+      "0025",
+      "0029",
+      "0037"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "աշխատանքային օր",
+    "ru": "рабочий день",
+    "level": "A2",
+    "url": "practice/reading-10.html",
+    "units": [
+      "reading-10"
+    ],
+    "example": "Երկուշաբթին աշխատանքային օր է։",
+    "reviews": [
+      "review-21",
+      "0023",
+      "0025",
+      "0029",
+      "0037"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "գրանցում",
+    "ru": "запись; регистрация",
+    "level": "A2",
+    "url": "practice/reading-10.html",
+    "units": [
+      "reading-10"
+    ],
+    "example": "Նախապես գրանցո՞ւմ է պետք։",
+    "reviews": [
+      "review-21",
+      "0023",
+      "0025",
+      "0029",
+      "0037"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ուղարկել",
@@ -1092,7 +2123,15 @@
     "units": [
       "0022"
     ],
-    "example": "Ես նամակ ուղարկեցի։"
+    "example": "Ես նամակ ուղարկեցի։",
+    "reviews": [
+      "0023",
+      "constitution-03",
+      "review-26",
+      "review-30",
+      "0039"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ստուգել",
@@ -1103,7 +2142,15 @@
       "0022",
       "0043"
     ],
-    "example": "Ես նրան հիշեցրի, որ պետք է հասցեն նորից ստուգել։"
+    "example": "Ես նրան հիշեցրի, որ պետք է հասցեն նորից ստուգել։",
+    "reviews": [
+      "0023",
+      "constitution-03",
+      "review-26",
+      "review-30",
+      "0039"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բացել",
@@ -1113,7 +2160,15 @@
     "units": [
       "0022"
     ],
-    "example": "Նա բացեց դուռը։"
+    "example": "Նա բացեց դուռը։",
+    "reviews": [
+      "0023",
+      "constitution-03",
+      "review-26",
+      "review-30",
+      "0039"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "փակել",
@@ -1123,7 +2178,15 @@
     "units": [
       "0022"
     ],
-    "example": "Ես փակեցի պատուհանը։"
+    "example": "Ես փակեցի պատուհանը։",
+    "reviews": [
+      "0023",
+      "constitution-03",
+      "review-26",
+      "review-30",
+      "0039"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պատասխան",
@@ -1137,7 +2200,15 @@
       "0042",
       "review-49"
     ],
-    "example": "Ես կարդացի հարցը և պատասխան գրեցի։"
+    "example": "Ես կարդացի հարցը և պատասխան գրեցի։",
+    "reviews": [
+      "0023",
+      "constitution-03",
+      "review-26",
+      "review-30",
+      "0039"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "գտնել",
@@ -1147,7 +2218,15 @@
     "units": [
       "0023"
     ],
-    "example": "Նարեն գտավ փաստաթուղթը։"
+    "example": "Նարեն գտավ փաստաթուղթը։",
+    "reviews": [
+      "0024",
+      "reading-03",
+      "0027",
+      "0031",
+      "constitution-06"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "վերցնել",
@@ -1157,7 +2236,15 @@
     "units": [
       "0023"
     ],
-    "example": "Արամը վերցրեց պայուսակը։"
+    "example": "Արամը վերցրեց պայուսակը։",
+    "reviews": [
+      "0024",
+      "reading-03",
+      "0027",
+      "0031",
+      "constitution-06"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "գալ",
@@ -1167,7 +2254,15 @@
     "units": [
       "0023"
     ],
-    "example": "Նա երեկ եկավ։"
+    "example": "Նա երեկ եկավ։",
+    "reviews": [
+      "0024",
+      "reading-03",
+      "0027",
+      "0031",
+      "constitution-06"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կորցնել",
@@ -1177,7 +2272,15 @@
     "units": [
       "0023"
     ],
-    "example": "Ես կորցրի բանալին։"
+    "example": "Ես կորցրի բանալին։",
+    "reviews": [
+      "0024",
+      "reading-03",
+      "0027",
+      "0031",
+      "constitution-06"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "վճարել",
@@ -1187,7 +2290,15 @@
     "units": [
       "0024"
     ],
-    "example": "Առավոտյան գնալու եմ բանկ և վճարելու եմ բնակարանի համար։"
+    "example": "Առավոտյան գնալու եմ բանկ և վճարելու եմ բնակարանի համար։",
+    "reviews": [
+      "constitution-03",
+      "0025",
+      "constitution-04",
+      "constitution-05",
+      "review-39"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պատրաստվել",
@@ -1197,7 +2308,15 @@
     "units": [
       "0024"
     ],
-    "example": "Ես պատրաստվում եմ հանդիպմանը։"
+    "example": "Ես պատրաստվում եմ հանդիպմանը։",
+    "reviews": [
+      "constitution-03",
+      "0025",
+      "constitution-04",
+      "constitution-05",
+      "review-39"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "այցելել",
@@ -1207,7 +2326,15 @@
     "units": [
       "0024"
     ],
-    "example": "Վաղը այցելելու եմ ընկերոջս։"
+    "example": "Վաղը այցելելու եմ ընկերոջս։",
+    "reviews": [
+      "constitution-03",
+      "0025",
+      "constitution-04",
+      "constitution-05",
+      "review-39"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հանդիպում",
@@ -1220,7 +2347,15 @@
       "checkpoint-34",
       "0036"
     ],
-    "example": "Մտածում էի, որ հանդիպումը ժամը երեքին է։"
+    "example": "Առավոտյան Արամից հաղորդագրություն ստացա․ «Հանդիպումը մի քիչ երկարեց։",
+    "reviews": [
+      "constitution-03",
+      "0025",
+      "constitution-04",
+      "constitution-05",
+      "review-39"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "որոշել",
@@ -1230,7 +2365,15 @@
     "units": [
       "0024"
     ],
-    "example": "Մենք որոշեցինք մնալ տանը։"
+    "example": "Մենք որոշեցինք մնալ տանը։",
+    "reviews": [
+      "constitution-03",
+      "0025",
+      "constitution-04",
+      "constitution-05",
+      "review-39"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "Ազգային ժողով",
@@ -1240,7 +2383,15 @@
     "units": [
       "constitution-03"
     ],
-    "example": "Ազգային ժողովը ժողովրդի ներկայացուցչական մարմինն է։"
+    "example": "Ազգային ժողովը ժողովրդի ներկայացուցչական մարմինն է։",
+    "reviews": [
+      "reading-03",
+      "0026",
+      "reading-11",
+      "0032",
+      "0040"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "նախագահ",
@@ -1250,7 +2401,15 @@
     "units": [
       "constitution-03"
     ],
-    "example": "Հանրապետության նախագահը պետության գլուխն է։"
+    "example": "Հանրապետության նախագահը պետության գլուխն է։",
+    "reviews": [
+      "reading-03",
+      "0026",
+      "reading-11",
+      "0032",
+      "0040"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կառավարություն",
@@ -1260,7 +2419,15 @@
     "units": [
       "constitution-03"
     ],
-    "example": "Կառավարությունը գործադիր իշխանության բարձրագույն մարմինն է։"
+    "example": "Կառավարությունը գործադիր իշխանության բարձրագույն մարմինն է։",
+    "reviews": [
+      "reading-03",
+      "0026",
+      "reading-11",
+      "0032",
+      "0040"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "վարչապետ",
@@ -1271,7 +2438,15 @@
       "constitution-03",
       "constitution-06"
     ],
-    "example": "Վարչապետը ղեկավարում է Կառավարության գործունեությունը։"
+    "example": "Վարչապետը ղեկավարում է Կառավարության գործունեությունը։",
+    "reviews": [
+      "reading-03",
+      "0026",
+      "reading-11",
+      "0032",
+      "0040"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "իշխանություն",
@@ -1281,7 +2456,15 @@
     "units": [
       "constitution-03"
     ],
-    "example": "Այն իրականացնում է օրենսդիր իշխանությունը։"
+    "example": "Այն իրականացնում է օրենսդիր իշխանությունը։",
+    "reviews": [
+      "reading-03",
+      "0026",
+      "reading-11",
+      "0032",
+      "0040"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "նախկին",
@@ -1291,7 +2474,15 @@
     "units": [
       "reading-03"
     ],
-    "example": "Ես նախկինում մի քանի անգամ այնտեղ էի գնում, բայց այս անգամ շենքը փակ էր։"
+    "example": "Ես նախկինում մի քանի անգամ այնտեղ էի գնում, բայց այս անգամ շենքը փակ էր։",
+    "reviews": [
+      "0025",
+      "review-26",
+      "0028",
+      "reading-12",
+      "reading-13"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "տեղափոխվել",
@@ -1301,7 +2492,15 @@
     "units": [
       "reading-03"
     ],
-    "example": "Բանկը տեղափոխվել էր ուրիշ փողոց։"
+    "example": "Բանկը տեղափոխվել էր ուրիշ փողոց։",
+    "reviews": [
+      "0025",
+      "review-26",
+      "0028",
+      "reading-12",
+      "reading-13"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "դիմաց",
@@ -1311,7 +2510,15 @@
     "units": [
       "0025"
     ],
-    "example": "Նա բանկի դիմաց է։"
+    "example": "Նա բանկի դիմաց է։",
+    "reviews": [
+      "0026",
+      "0027",
+      "0029",
+      "0033",
+      "0041"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հետևում",
@@ -1321,7 +2528,15 @@
     "units": [
       "0025"
     ],
-    "example": "Ես ասում եմ. «Մեր տունը դեղատան հետևում է։"
+    "example": "Ես ասում եմ. «Մեր տունը դեղատան հետևում է։",
+    "reviews": [
+      "0026",
+      "0027",
+      "0029",
+      "0033",
+      "0041"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կողքին",
@@ -1331,7 +2546,15 @@
     "units": [
       "0025"
     ],
-    "example": "Մուտքը փոքր խանութի կողքին է»։"
+    "example": "Մուտքը փոքր խանութի կողքին է»։",
+    "reviews": [
+      "0026",
+      "0027",
+      "0029",
+      "0033",
+      "0041"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "առջև",
@@ -1341,18 +2564,15 @@
     "units": [
       "0025"
     ],
-    "example": "Հիմա մենք խանութի առջև ենք։"
-  },
-  {
-    "hy": "հարմար",
-    "ru": "удобный",
-    "level": "A2",
-    "url": "lessons/0026-comparison-ordinals.html",
-    "units": [
+    "example": "Հիմա մենք խանութի առջև ենք։",
+    "reviews": [
       "0026",
-      "0049"
+      "0027",
+      "0029",
+      "0033",
+      "0041"
     ],
-    "example": "Արամի համար առաջին տարբերակն ավելի հարմար է։"
+    "after_course_reviews": 0
   },
   {
     "hy": "էժան",
@@ -1363,7 +2583,15 @@
       "0026",
       "review-26"
     ],
-    "example": "Երկրորդ բնակարանն ավելի մեծ է և ավելի էժան։"
+    "example": "Երկրորդ բնակարանն ավելի մեծ է և ավելի էժան։",
+    "reviews": [
+      "review-26",
+      "constitution-04",
+      "0030",
+      "0034",
+      "0042"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "թանկ",
@@ -1373,7 +2601,15 @@
     "units": [
       "0026"
     ],
-    "example": "Այս բնակարանն ավելի թանկ է։"
+    "example": "Այս բնակարանն ավելի թանկ է։",
+    "reviews": [
+      "review-26",
+      "constitution-04",
+      "0030",
+      "0034",
+      "0042"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "մոտ",
@@ -1383,7 +2619,15 @@
     "units": [
       "0026"
     ],
-    "example": "Այն փոքր է, բայց աշխատանքին մոտ է։"
+    "example": "Այն փոքր է, բայց աշխատանքին մոտ է։",
+    "reviews": [
+      "review-26",
+      "constitution-04",
+      "0030",
+      "0034",
+      "0042"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հեռու",
@@ -1393,7 +2637,15 @@
     "units": [
       "0026"
     ],
-    "example": "Բայց այն կենտրոնից հեռու է։"
+    "example": "Բայց այն կենտրոնից հեռու է։",
+    "reviews": [
+      "review-26",
+      "constitution-04",
+      "0030",
+      "0034",
+      "0042"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "առաջին",
@@ -1403,7 +2655,15 @@
     "units": [
       "review-26"
     ],
-    "example": "Առաջինը բանկի դիմաց էր։"
+    "example": "Առաջինը բանկի դիմաց էր։",
+    "reviews": [
+      "0027",
+      "reading-11",
+      "review-30",
+      "reading-04",
+      "constitution-07"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "երկրորդ",
@@ -1413,7 +2673,15 @@
     "units": [
       "review-26"
     ],
-    "example": "Երկրորդ բնակարանը ավելի մեծ էր։"
+    "example": "Երկրորդ բնակարանը ավելի մեծ էր։",
+    "reviews": [
+      "0027",
+      "reading-11",
+      "review-30",
+      "reading-04",
+      "constitution-07"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պայման",
@@ -1426,7 +2694,15 @@
       "review-39",
       "0048"
     ],
-    "example": "Կուզեի նախ խոսել երկու ղեկավարների հետ և իմանալ բոլոր պայմանները։"
+    "example": "Կուզեի նախ խոսել երկու ղեկավարների հետ և իմանալ բոլոր պայմանները։",
+    "reviews": [
+      "0027",
+      "reading-11",
+      "review-30",
+      "reading-04",
+      "constitution-07"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "դիմում",
@@ -1437,7 +2713,15 @@
       "0027",
       "0042"
     ],
-    "example": "Այսօր պետք է դիմում լրացնեմ։"
+    "example": "Այսօր պետք է դիմում լրացնեմ։",
+    "reviews": [
+      "constitution-04",
+      "0028",
+      "0031",
+      "speaking-02",
+      "0043"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "լրացնել",
@@ -1448,7 +2732,15 @@
       "0027",
       "0043"
     ],
-    "example": "Ընկերս ինձ խնդրեց օգնել դիմումը լրացնել։"
+    "example": "Ընկերս ինձ խնդրեց օգնել դիմումը լրացնել։",
+    "reviews": [
+      "constitution-04",
+      "0028",
+      "0031",
+      "speaking-02",
+      "0043"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ստորագրել",
@@ -1458,7 +2750,15 @@
     "units": [
       "0027"
     ],
-    "example": "Հիմա կարող եմ ստորագրել։"
+    "example": "Հիմա կարող եմ ստորագրել։",
+    "reviews": [
+      "constitution-04",
+      "0028",
+      "0031",
+      "speaking-02",
+      "0043"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "օգնել",
@@ -1469,7 +2769,15 @@
       "0027",
       "review-30"
     ],
-    "example": "Ես աշխատակցին ասում եմ. «Կարո՞ղ եք օգնել։"
+    "example": "Ես աշխատակցին ասում եմ. «Կարո՞ղ եք օգնել։",
+    "reviews": [
+      "constitution-04",
+      "0028",
+      "0031",
+      "speaking-02",
+      "0043"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պետք է",
@@ -1479,7 +2787,15 @@
     "units": [
       "0027"
     ],
-    "example": "Այսօր պետք է դիմում լրացնեմ։"
+    "example": "Այսօր պետք է դիմում լրացնեմ։",
+    "reviews": [
+      "constitution-04",
+      "0028",
+      "0031",
+      "speaking-02",
+      "0043"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "յուրաքանչյուր ոք",
@@ -1489,7 +2805,15 @@
     "units": [
       "constitution-04"
     ],
-    "example": "Յուրաքանչյուր ոք ունի կրթության իրավունք։"
+    "example": "Յուրաքանչյուր ոք ունի կրթության իրավունք։",
+    "reviews": [
+      "reading-11",
+      "0029",
+      "constitution-05",
+      "checkpoint-34",
+      "0044"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բոլորը",
@@ -1500,7 +2824,15 @@
       "constitution-04",
       "0028"
     ],
-    "example": "Բոլորը հավասար են օրենքի առջև։"
+    "example": "Բոլորը հավասար են օրենքի առջև։",
+    "reviews": [
+      "reading-11",
+      "0029",
+      "constitution-05",
+      "checkpoint-34",
+      "0044"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պարտականություն",
@@ -1510,7 +2842,15 @@
     "units": [
       "constitution-04"
     ],
-    "example": "Սա իմ պարտականությունն է։"
+    "example": "Սա իմ պարտականությունն է։",
+    "reviews": [
+      "reading-11",
+      "0029",
+      "constitution-05",
+      "checkpoint-34",
+      "0044"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "արգելվում է",
@@ -1520,7 +2860,87 @@
     "units": [
       "constitution-04"
     ],
-    "example": "Խոշտանգումն արգելվում է։"
+    "example": "Խոշտանգումն արգելվում է։",
+    "reviews": [
+      "reading-11",
+      "0029",
+      "constitution-05",
+      "checkpoint-34",
+      "0044"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "դաշտ",
+    "ru": "поле формы",
+    "level": "A2",
+    "url": "practice/reading-11.html",
+    "units": [
+      "reading-11"
+    ],
+    "example": "Այս երեք դաշտերը պարտադիր են։",
+    "reviews": [
+      "0028",
+      "0030",
+      "0032",
+      "0035",
+      "review-44"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "պարտադիր",
+    "ru": "обязательный",
+    "level": "A2",
+    "url": "practice/reading-11.html",
+    "units": [
+      "reading-11"
+    ],
+    "example": "Այս երեք դաշտերը պարտադիր են։",
+    "reviews": [
+      "0028",
+      "0030",
+      "0032",
+      "0035",
+      "review-44"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "ընտրովի",
+    "ru": "необязательный; по выбору",
+    "level": "A2",
+    "url": "practice/reading-11.html",
+    "units": [
+      "reading-11"
+    ],
+    "example": "Էլեկտրոնային հասցեն ընտրովի է։",
+    "reviews": [
+      "0028",
+      "0030",
+      "0032",
+      "0035",
+      "review-44"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "ստորագրություն",
+    "ru": "подпись",
+    "level": "A2",
+    "url": "practice/reading-11.html",
+    "units": [
+      "reading-11"
+    ],
+    "example": "Այս փաստաթղթի վրա ստորագրություն չկա։",
+    "reviews": [
+      "0028",
+      "0030",
+      "0032",
+      "0035",
+      "review-44"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "մեկը",
@@ -1530,7 +2950,15 @@
     "units": [
       "0028"
     ],
-    "example": "Մեկը հարցնում է. «Ո՞վ է տանը։"
+    "example": "Մեկը հարցնում է. «Ո՞վ է տանը։",
+    "reviews": [
+      "0029",
+      "review-30",
+      "reading-12",
+      "0036",
+      "0045"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ոչ ոք",
@@ -1540,7 +2968,15 @@
     "units": [
       "0028"
     ],
-    "example": "Բայց դա չի նշանակում, որ ոչ ոք չի ուզում օգնել։"
+    "example": "Բայց դա չի նշանակում, որ ոչ ոք չի ուզում օգնել։",
+    "reviews": [
+      "0029",
+      "review-30",
+      "reading-12",
+      "0036",
+      "0045"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ոչինչ",
@@ -1550,7 +2986,15 @@
     "units": [
       "0028"
     ],
-    "example": "Մյուսները դեռ ոչինչ չեն գրում։"
+    "example": "Մյուսները դեռ ոչինչ չեն գրում։",
+    "reviews": [
+      "0029",
+      "review-30",
+      "reading-12",
+      "0036",
+      "0045"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "մի քանի",
@@ -1560,7 +3004,15 @@
     "units": [
       "0028"
     ],
-    "example": "Տան խմբում մի քանի նոր հաղորդագրություն կա։"
+    "example": "Տան խմբում մի քանի նոր հաղորդագրություն կա։",
+    "reviews": [
+      "0029",
+      "review-30",
+      "reading-12",
+      "0036",
+      "0045"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "որովհետև",
@@ -1570,7 +3022,15 @@
     "units": [
       "0029"
     ],
-    "example": "Մենք բանկ ենք գնում, որովհետև պետք է վճարում անենք։"
+    "example": "Մենք բանկ ենք գնում, որովհետև պետք է վճարում անենք։",
+    "reviews": [
+      "0030",
+      "0031",
+      "0033",
+      "0037",
+      "0046"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "եթե",
@@ -1580,7 +3040,15 @@
     "units": [
       "0029"
     ],
-    "example": "Եթե բանկում երկար հերթ լինի, հետո կգնանք։"
+    "example": "Եթե բանկում երկար հերթ լինի, հետո կգնանք։",
+    "reviews": [
+      "0030",
+      "0031",
+      "0033",
+      "0037",
+      "0046"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բայց",
@@ -1590,7 +3058,15 @@
     "units": [
       "0029"
     ],
-    "example": "Բայց այսօր գործը պետք է ավարտենք։"
+    "example": "Բայց այսօր գործը պետք է ավարտենք։",
+    "reviews": [
+      "0030",
+      "0031",
+      "0033",
+      "0037",
+      "0046"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "արդեն",
@@ -1602,7 +3078,15 @@
       "0035",
       "review-39"
     ],
-    "example": "Արամը արդեն տաքսի է կանչում։"
+    "example": "Արամը արդեն տաքսի է կանչում։",
+    "reviews": [
+      "0030",
+      "0031",
+      "0033",
+      "0037",
+      "0046"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "դեռ",
@@ -1615,7 +3099,15 @@
       "review-39",
       "0049"
     ],
-    "example": "Նարեն դեռ տանն է։"
+    "example": "Նարեն դեռ տանն է։",
+    "reviews": [
+      "0030",
+      "0031",
+      "0033",
+      "0037",
+      "0046"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ջերմություն",
@@ -1626,7 +3118,15 @@
       "0030",
       "review-30"
     ],
-    "example": "Ջերմություն ունեմ և հազում եմ։"
+    "example": "Ջերմություն ունեմ և հազում եմ։",
+    "reviews": [
+      "review-30",
+      "constitution-05",
+      "0034",
+      "0038",
+      "constitution-08"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ցավ",
@@ -1636,7 +3136,15 @@
     "units": [
       "0030"
     ],
-    "example": "Ուժեղ ցավ ունեմ։"
+    "example": "Ուժեղ ցավ ունեմ։",
+    "reviews": [
+      "review-30",
+      "constitution-05",
+      "0034",
+      "0038",
+      "constitution-08"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հազ",
@@ -1646,18 +3154,15 @@
     "units": [
       "0030"
     ],
-    "example": "Ջերմություն ունեմ և հազում եմ։"
-  },
-  {
-    "hy": "ընդունելություն",
-    "ru": "приём",
-    "level": "A2",
-    "url": "lessons/0030-health-doctor.html",
-    "units": [
-      "0030",
-      "0055"
+    "example": "Ջերմություն ունեմ և հազում եմ։",
+    "reviews": [
+      "review-30",
+      "constitution-05",
+      "0034",
+      "0038",
+      "constitution-08"
     ],
-    "example": "Այսօր ընդունելություն չկա։"
+    "after_course_reviews": 0
   },
   {
     "hy": "քարտ",
@@ -1667,7 +3172,15 @@
     "units": [
       "0031"
     ],
-    "example": "Հարցնում եմ. «Քարտով կարո՞ղ եմ վճարել»։"
+    "example": "Հարցնում եմ. «Քարտով կարո՞ղ եմ վճարել»։",
+    "reviews": [
+      "constitution-05",
+      "reading-12",
+      "speaking-02",
+      "constitution-06",
+      "0047"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կանխիկ",
@@ -1677,7 +3190,15 @@
     "units": [
       "0031"
     ],
-    "example": "Կանխիկ փող չունեմ։"
+    "example": "Կանխիկ փող չունեմ։",
+    "reviews": [
+      "constitution-05",
+      "reading-12",
+      "speaking-02",
+      "constitution-06",
+      "0047"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "սխալ",
@@ -1687,7 +3208,15 @@
     "units": [
       "0031"
     ],
-    "example": "Այս հասցեն սխալ է։"
+    "example": "Այս հասցեն սխալ է։",
+    "reviews": [
+      "constitution-05",
+      "reading-12",
+      "speaking-02",
+      "constitution-06",
+      "0047"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ընտրել",
@@ -1697,7 +3226,15 @@
     "units": [
       "constitution-05"
     ],
-    "example": "Ազգային ժողովի ընտրության օրը տասնութ տարին լրացած Հայաստանի Հանրապետության քաղաքացիներն ունեն ընտրելու իրավունք։"
+    "example": "Ազգային ժողովի ընտրության օրը տասնութ տարին լրացած Հայաստանի Հանրապետության քաղաքացիներն ունեն ընտրելու իրավունք։",
+    "reviews": [
+      "0032",
+      "0033",
+      "checkpoint-34",
+      "review-39",
+      "0048"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "քվեարկություն",
@@ -1707,7 +3244,15 @@
     "units": [
       "constitution-05"
     ],
-    "example": "Քվեարկությունը գաղտնի է։"
+    "example": "Քվեարկությունը գաղտնի է։",
+    "reviews": [
+      "0032",
+      "0033",
+      "checkpoint-34",
+      "review-39",
+      "0048"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "գաղտնի",
@@ -1717,7 +3262,15 @@
     "units": [
       "constitution-05"
     ],
-    "example": "Քվեարկությունը գաղտնի է։"
+    "example": "Քվեարկությունը գաղտնի է։",
+    "reviews": [
+      "0032",
+      "0033",
+      "checkpoint-34",
+      "review-39",
+      "0048"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հանրաքվե",
@@ -1727,7 +3280,15 @@
     "units": [
       "constitution-05"
     ],
-    "example": "Հանրաքվեն քվեարկություն է։"
+    "example": "Հանրաքվեն քվեարկություն է։",
+    "reviews": [
+      "0032",
+      "0033",
+      "checkpoint-34",
+      "review-39",
+      "0048"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պատգամավոր",
@@ -1737,7 +3298,15 @@
     "units": [
       "constitution-05"
     ],
-    "example": "Այն կազմված է առնվազն հարյուր մեկ պատգամավորից։"
+    "example": "Այն կազմված է առնվազն հարյուր մեկ պատգամավորից։",
+    "reviews": [
+      "0032",
+      "0033",
+      "checkpoint-34",
+      "review-39",
+      "0048"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կանգառ",
@@ -1747,7 +3316,15 @@
     "units": [
       "0032"
     ],
-    "example": "Այս կանգառը այսօր փակ է։"
+    "example": "Այս կանգառը այսօր փակ է։",
+    "reviews": [
+      "reading-12",
+      "0034",
+      "0035",
+      "0040",
+      "reading-14"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "աջ",
@@ -1757,7 +3334,15 @@
     "units": [
       "0032"
     ],
-    "example": "Ավտոբուսը կանգնում է հաջորդ փողոցում։"
+    "example": "Ավտոբուսը կանգնում է հաջորդ փողոցում։",
+    "reviews": [
+      "reading-12",
+      "0034",
+      "0035",
+      "0040",
+      "reading-14"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ձախ",
@@ -1767,7 +3352,15 @@
     "units": [
       "0032"
     ],
-    "example": "Թեքվե՛ք ձախ։"
+    "example": "Թեքվե՛ք ձախ։",
+    "reviews": [
+      "reading-12",
+      "0034",
+      "0035",
+      "0040",
+      "reading-14"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ուղիղ",
@@ -1777,7 +3370,87 @@
     "units": [
       "0032"
     ],
-    "example": "Նա ասում է. «Գնացե՛ք ուղիղ, հետո թեքվե՛ք աջ։"
+    "example": "Նա ասում է. «Գնացե՛ք ուղիղ, հետո թեքվե՛ք աջ։",
+    "reviews": [
+      "reading-12",
+      "0034",
+      "0035",
+      "0040",
+      "reading-14"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "ուղեանց",
+    "ru": "путепровод",
+    "level": "A2",
+    "url": "practice/reading-12.html",
+    "units": [
+      "reading-12"
+    ],
+    "example": "Սեպտեմբերի 10-ից մինչև նոյեմբերի 1-ը փակ է լինելու Կոմիտասի պողոտան Դավիթ Անհաղթի փողոցին միացնող ուղեանցի վերին հատվածը։",
+    "reviews": [
+      "0033",
+      "reading-04",
+      "0036",
+      "reading-13",
+      "0049"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "վերին հատված",
+    "ru": "верхняя часть",
+    "level": "A2",
+    "url": "practice/reading-12.html",
+    "units": [
+      "reading-12"
+    ],
+    "example": "Սեպտեմբերի 10-ից մինչև նոյեմբերի 1-ը փակ է լինելու Կոմիտասի պողոտան Դավիթ Անհաղթի փողոցին միացնող ուղեանցի վերին հատվածը։",
+    "reviews": [
+      "0033",
+      "reading-04",
+      "0036",
+      "reading-13",
+      "0049"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "նորոգում",
+    "ru": "ремонт",
+    "level": "A2",
+    "url": "practice/reading-12.html",
+    "units": [
+      "reading-12"
+    ],
+    "example": "Պատճառը հիմնանորոգումն է։",
+    "reviews": [
+      "0033",
+      "reading-04",
+      "0036",
+      "reading-13",
+      "0049"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "երթուղի",
+    "ru": "маршрут",
+    "level": "A2",
+    "url": "practice/reading-12.html",
+    "units": [
+      "reading-12"
+    ],
+    "example": "Հասարակական տրանսպորտի նոր երթուղին այստեղ նկարագրված չէ։",
+    "reviews": [
+      "0033",
+      "reading-04",
+      "0036",
+      "reading-13",
+      "0049"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "լսել",
@@ -1787,7 +3460,15 @@
     "units": [
       "0033"
     ],
-    "example": "Ներողություն, լավ չեմ լսում։"
+    "example": "Ներողություն, լավ չեմ լսում։",
+    "reviews": [
+      "0034",
+      "speaking-02",
+      "0037",
+      "0041",
+      "review-49"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "դանդաղ",
@@ -1797,7 +3478,15 @@
     "units": [
       "0033"
     ],
-    "example": "Մի քիչ դանդաղ խոսե՛ք, խնդրում եմ»։"
+    "example": "Մի քիչ դանդաղ խոսե՛ք, խնդրում եմ»։",
+    "reviews": [
+      "0034",
+      "speaking-02",
+      "0037",
+      "0041",
+      "review-49"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հեռախոսահամար",
@@ -1807,7 +3496,15 @@
     "units": [
       "0033"
     ],
-    "example": "Ձեր հեռախոսահամարը կասե՞ք։"
+    "example": "Ձեր հեռախոսահամարը կասե՞ք։",
+    "reviews": [
+      "0034",
+      "speaking-02",
+      "0037",
+      "0041",
+      "review-49"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "գործընկեր",
@@ -1817,7 +3514,15 @@
     "units": [
       "0034"
     ],
-    "example": "Գործընկերս զանգում է։"
+    "example": "Գործընկերս զանգում է։",
+    "reviews": [
+      "reading-04",
+      "checkpoint-34",
+      "0038",
+      "0042",
+      "0050"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "եղանակ",
@@ -1827,7 +3532,15 @@
     "units": [
       "0034"
     ],
-    "example": "Եղանակը վատ է, և նա քաղաքից դուրս է։"
+    "example": "Եղանակը վատ է, և նա քաղաքից դուրս է։",
+    "reviews": [
+      "reading-04",
+      "checkpoint-34",
+      "0038",
+      "0042",
+      "0050"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ավարտել",
@@ -1837,7 +3550,15 @@
     "units": [
       "0034"
     ],
-    "example": "Այսօր պետք է ավարտեմ գործը։"
+    "example": "Այսօր պետք է ավարտեմ գործը։",
+    "reviews": [
+      "reading-04",
+      "checkpoint-34",
+      "0038",
+      "0042",
+      "0050"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "տեղափոխել",
@@ -1847,7 +3568,15 @@
     "units": [
       "0034"
     ],
-    "example": "Մենք որոշում ենք վաղվա հանդիպումը տեղափոխել հաջորդ շաբաթ։"
+    "example": "Մենք որոշում ենք վաղվա հանդիպումը տեղափոխել հաջորդ շաբաթ։",
+    "reviews": [
+      "reading-04",
+      "checkpoint-34",
+      "0038",
+      "0042",
+      "0050"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հաջորդ",
@@ -1857,7 +3586,15 @@
     "units": [
       "0034"
     ],
-    "example": "Մենք որոշում ենք վաղվա հանդիպումը տեղափոխել հաջորդ շաբաթ։"
+    "example": "Մենք որոշում ենք վաղվա հանդիպումը տեղափոխել հաջորդ շաբաթ։",
+    "reviews": [
+      "reading-04",
+      "checkpoint-34",
+      "0038",
+      "0042",
+      "0050"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "թաղամաս",
@@ -1867,7 +3604,15 @@
     "units": [
       "reading-04"
     ],
-    "example": "Թաղամասը դեռ լավ չգիտեի։"
+    "example": "Թաղամասը դեռ լավ չգիտեի։",
+    "reviews": [
+      "speaking-02",
+      "0035",
+      "0039",
+      "constitution-07",
+      "0051"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "խումբ",
@@ -1877,7 +3622,15 @@
     "units": [
       "reading-04"
     ],
-    "example": "Մեր խմբում նոր մարդ կա։"
+    "example": "Մեր խմբում նոր մարդ կա։",
+    "reviews": [
+      "speaking-02",
+      "0035",
+      "0039",
+      "constitution-07",
+      "0051"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հաղորդագրություն",
@@ -1887,7 +3640,15 @@
     "units": [
       "reading-04"
     ],
-    "example": "Այնտեղ կարդացի ջրի և մուտքի մասին հաղորդագրությունները։"
+    "example": "Այնտեղ կարդացի ջրի և մուտքի մասին հաղորդագրությունները։",
+    "reviews": [
+      "speaking-02",
+      "0035",
+      "0039",
+      "constitution-07",
+      "0051"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ժամանակին",
@@ -1897,7 +3658,15 @@
     "units": [
       "reading-04"
     ],
-    "example": "Ես ժամանակին եկա։"
+    "example": "Ես ժամանակին եկա։",
+    "reviews": [
+      "speaking-02",
+      "0035",
+      "0039",
+      "constitution-07",
+      "0051"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "խնդիր",
@@ -1907,7 +3676,15 @@
     "units": [
       "speaking-02"
     ],
-    "example": "Մի խնդիր կա։"
+    "example": "Մի խնդիր կա։",
+    "reviews": [
+      "checkpoint-34",
+      "0036",
+      "constitution-06",
+      "0043",
+      "0052"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ճշտել",
@@ -1920,7 +3697,15 @@
       "review-49",
       "0055"
     ],
-    "example": "Արամ. Ուզում եմ ճշտել. մինչև չո՞րսը։"
+    "example": "Արամ. Ուզում եմ ճշտել. մինչև չո՞րսը։",
+    "reviews": [
+      "checkpoint-34",
+      "0036",
+      "constitution-06",
+      "0043",
+      "0052"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "փոխել",
@@ -1930,7 +3715,15 @@
     "units": [
       "speaking-02"
     ],
-    "example": "Կարո՞ղ ենք փոխել հանդիպման ժամը։"
+    "example": "Կարո՞ղ ենք փոխել հանդիպման ժամը։",
+    "reviews": [
+      "checkpoint-34",
+      "0036",
+      "constitution-06",
+      "0043",
+      "0052"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "վերադառնալ",
@@ -1940,7 +3733,15 @@
     "units": [
       "speaking-02"
     ],
-    "example": "Ես երեկ վերադարձա տուն։"
+    "example": "Ես երեկ վերադարձա տուն։",
+    "reviews": [
+      "checkpoint-34",
+      "0036",
+      "constitution-06",
+      "0043",
+      "0052"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ստանալ",
@@ -1950,7 +3751,15 @@
     "units": [
       "0035"
     ],
-    "example": "Պատասխան դեռ չեմ ստացել։"
+    "example": "Պատասխան դեռ չեմ ստացել։",
+    "reviews": [
+      "0036",
+      "0038",
+      "0040",
+      "review-44",
+      "0054"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պատրաստ",
@@ -1960,7 +3769,15 @@
     "units": [
       "0035"
     ],
-    "example": "Մի փաստաթղթի պատճենը դեռ չեմ պատրաստել։"
+    "example": "Մի փաստաթղթի պատճենը դեռ չեմ պատրաստել։",
+    "reviews": [
+      "0036",
+      "0038",
+      "0040",
+      "review-44",
+      "0054"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պատճեն",
@@ -1969,9 +3786,18 @@
     "url": "lessons/0035-perfect.html",
     "units": [
       "0035",
+      "reading-13",
       "review-54"
     ],
-    "example": "Մի փաստաթղթի պատճենը դեռ չեմ պատրաստել։"
+    "example": "Մի փաստաթղթի պատճենը դեռ չեմ պատրաստել։",
+    "reviews": [
+      "0036",
+      "0038",
+      "0040",
+      "review-44",
+      "0054"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "նախապես",
@@ -1981,7 +3807,15 @@
     "units": [
       "0036"
     ],
-    "example": "Հիմա նախապես եմ ստուգում հաղորդագրությունները։"
+    "example": "Հիմա նախապես եմ ստուգում հաղորդագրությունները։",
+    "reviews": [
+      "0037",
+      "0039",
+      "reading-13",
+      "0045",
+      "review-54"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "մինչև",
@@ -1991,7 +3825,15 @@
     "units": [
       "0036"
     ],
-    "example": "Սպասեցի մինչև ժամը հինգը։"
+    "example": "Սպասեցի մինչև ժամը հինգը։",
+    "reviews": [
+      "0037",
+      "0039",
+      "reading-13",
+      "0045",
+      "review-54"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ուշանալ",
@@ -2001,7 +3843,15 @@
     "units": [
       "0036"
     ],
-    "example": "Ես ուշացել էի տասնհինգ րոպեով։"
+    "example": "Ես ուշացել էի տասնհինգ րոպեով։",
+    "reviews": [
+      "0037",
+      "0039",
+      "reading-13",
+      "0045",
+      "review-54"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "փոխվել",
@@ -2011,7 +3861,15 @@
     "units": [
       "0036"
     ],
-    "example": "Պարզվեց՝ ժամը փոխվել էր։"
+    "example": "Պարզվեց՝ ժամը փոխվել էր։",
+    "reviews": [
+      "0037",
+      "0039",
+      "reading-13",
+      "0045",
+      "review-54"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "աշխատավարձ",
@@ -2021,7 +3879,15 @@
     "units": [
       "0037"
     ],
-    "example": "Առաջին գրասենյակը տանս մոտ է, բայց աշխատավարձը փոքր է։"
+    "example": "Առաջին գրասենյակը տանս մոտ է, բայց աշխատավարձը փոքր է։",
+    "reviews": [
+      "0038",
+      "constitution-06",
+      "0041",
+      "0046",
+      "0055"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ընտրություն",
@@ -2031,7 +3897,15 @@
     "units": [
       "0037"
     ],
-    "example": "Դա իմ ընտրությունն է։"
+    "example": "Դա իմ ընտրությունն է։",
+    "reviews": [
+      "0038",
+      "constitution-06",
+      "0041",
+      "0046",
+      "0055"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հնարավորություն",
@@ -2041,7 +3915,15 @@
     "units": [
       "0037"
     ],
-    "example": "Ես հնարավորություն ունեմ տնից աշխատելու։"
+    "example": "Ես հնարավորություն ունեմ տնից աշխատելու։",
+    "reviews": [
+      "0038",
+      "constitution-06",
+      "0041",
+      "0046",
+      "0055"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կուզեի",
@@ -2051,7 +3933,15 @@
     "units": [
       "0037"
     ],
-    "example": "Կուզեի նախ խոսել երկու ղեկավարների հետ և իմանալ բոլոր պայմանները։"
+    "example": "Կուզեի նախ խոսել երկու ղեկավարների հետ և իմանալ բոլոր պայմանները։",
+    "reviews": [
+      "0038",
+      "constitution-06",
+      "0041",
+      "0046",
+      "0055"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "երանի",
@@ -2061,7 +3951,15 @@
     "units": [
       "0038"
     ],
-    "example": "Երանի ավելի ազատ ժամանակ ունենայի։"
+    "example": "Երանի ավելի ազատ ժամանակ ունենայի։",
+    "reviews": [
+      "0039",
+      "review-39",
+      "0042",
+      "constitution-08",
+      "0056"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հաջողություն",
@@ -2071,7 +3969,15 @@
     "units": [
       "0038"
     ],
-    "example": "Առավոտյան նրան գրեցի. «Քեզ հաջողություն եմ ցանկանում»։"
+    "example": "Առավոտյան նրան գրեցի. «Քեզ հաջողություն եմ ցանկանում»։",
+    "reviews": [
+      "0039",
+      "review-39",
+      "0042",
+      "constitution-08",
+      "0056"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հույս",
@@ -2081,7 +3987,15 @@
     "units": [
       "0038"
     ],
-    "example": "Հույս ունեմ, որ հաջորդ շաբաթ կկարողանամ առաջին նամակն ուղարկել։"
+    "example": "Հույս ունեմ, որ հաջորդ շաբաթ կկարողանամ առաջին նամակն ուղարկել։",
+    "reviews": [
+      "0039",
+      "review-39",
+      "0042",
+      "constitution-08",
+      "0056"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ուրախ",
@@ -2091,7 +4005,15 @@
     "units": [
       "0038"
     ],
-    "example": "Նա մի քիչ անհանգիստ էր, բայց երեկոյան արդեն ուրախ էր խոսում։"
+    "example": "Նա մի քիչ անհանգիստ էր, բայց երեկոյան արդեն ուրախ էր խոսում։",
+    "reviews": [
+      "0039",
+      "review-39",
+      "0042",
+      "constitution-08",
+      "0056"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ցանկանալ",
@@ -2101,7 +4023,15 @@
     "units": [
       "0038"
     ],
-    "example": "Քեզ հաջողություն եմ ցանկանում։"
+    "example": "Քեզ հաջողություն եմ ցանկանում։",
+    "reviews": [
+      "0039",
+      "review-39",
+      "0042",
+      "constitution-08",
+      "0056"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "անհրաժեշտ",
@@ -2111,7 +4041,15 @@
     "units": [
       "0039"
     ],
-    "example": "Ինձ անհրաժեշտ է հասկանալ պայմանները։"
+    "example": "Ինձ անհրաժեշտ է հասկանալ պայմանները։",
+    "reviews": [
+      "constitution-06",
+      "0040",
+      "constitution-07",
+      "reading-05",
+      "reading-15"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հնարավոր",
@@ -2122,7 +4060,15 @@
       "0039",
       "0049"
     ],
-    "example": "Հնարավո՞ր է հանդիպել ժամը երեքին կամ ուրբաթ առավոտյան»։"
+    "example": "Հնարավո՞ր է հանդիպել ժամը երեքին կամ ուրբաթ առավոտյան»։",
+    "reviews": [
+      "constitution-06",
+      "0040",
+      "constitution-07",
+      "reading-05",
+      "reading-15"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "նպատակ",
@@ -2134,7 +4080,15 @@
       "review-39",
       "0047"
     ],
-    "example": "Իմ նպատակն արագ ստորագրելը չէ։"
+    "example": "Իմ նպատակն արագ ստորագրելը չէ։",
+    "reviews": [
+      "constitution-06",
+      "0040",
+      "constitution-07",
+      "reading-05",
+      "reading-15"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բացատրել",
@@ -2144,7 +4098,15 @@
     "units": [
       "0039"
     ],
-    "example": "Խնդրում եմ բացատրել այս կետը։"
+    "example": "Խնդրում եմ բացատրել այս կետը։",
+    "reviews": [
+      "constitution-06",
+      "0040",
+      "constitution-07",
+      "reading-05",
+      "reading-15"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "պահանջ",
@@ -2154,7 +4116,15 @@
     "units": [
       "0039"
     ],
-    "example": "Ես չեմ հասկանում այս պահանջը։"
+    "example": "Ես չեմ հասկանում այս պահանջը։",
+    "reviews": [
+      "constitution-06",
+      "0040",
+      "constitution-07",
+      "reading-05",
+      "reading-15"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "լիազորություն",
@@ -2164,7 +4134,15 @@
     "units": [
       "constitution-06"
     ],
-    "example": "Պետական մարմինը գործում է իր լիազորությունների սահմաններում։"
+    "example": "Պետական մարմինը գործում է իր լիազորությունների սահմաններում։",
+    "reviews": [
+      "review-39",
+      "reading-13",
+      "0043",
+      "0047",
+      "0057"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "նախարար",
@@ -2174,7 +4152,15 @@
     "units": [
       "constitution-06"
     ],
-    "example": "Կառավարությունը կազմված է վարչապետից, փոխվարչապետներից և նախարարներից։"
+    "example": "Կառավարությունը կազմված է վարչապետից, փոխվարչապետներից և նախարարներից։",
+    "reviews": [
+      "review-39",
+      "reading-13",
+      "0043",
+      "0047",
+      "0057"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կազմ",
@@ -2184,7 +4170,15 @@
     "units": [
       "constitution-06"
     ],
-    "example": "Կառավարությունը կազմված է վարչապետից, փոխվարչապետներից և նախարարներից։"
+    "example": "Կառավարությունը կազմված է վարչապետից, փոխվարչապետներից և նախարարներից։",
+    "reviews": [
+      "review-39",
+      "reading-13",
+      "0043",
+      "0047",
+      "0057"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ղեկավարել",
@@ -2194,7 +4188,15 @@
     "units": [
       "constitution-06"
     ],
-    "example": "Նա ղեկավարում է այս բաժինը։"
+    "example": "Նա ղեկավարում է այս բաժինը։",
+    "reviews": [
+      "review-39",
+      "reading-13",
+      "0043",
+      "0047",
+      "0057"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "աշխատող",
@@ -2204,7 +4206,15 @@
     "units": [
       "0040"
     ],
-    "example": "Ընդունարանում աշխատող կինը ցույց տվեց անհրաժեշտ փաստաթղթերի ցանկը։"
+    "example": "Ընդունարանում աշխատող կինը ցույց տվեց անհրաժեշտ փաստաթղթերի ցանկը։",
+    "reviews": [
+      "reading-13",
+      "0042",
+      "review-44",
+      "reading-14",
+      "reading-06"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "գրած",
@@ -2214,7 +4224,15 @@
     "units": [
       "0040"
     ],
-    "example": "Աշխատակիցը կարդաց իմ գրած հասցեն և խնդրեց մեկ տառ ուղղել։"
+    "example": "Աշխատակիցը կարդաց իմ գրած հասցեն և խնդրեց մեկ տառ ուղղել։",
+    "reviews": [
+      "reading-13",
+      "0042",
+      "review-44",
+      "reading-14",
+      "reading-06"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "լրացված",
@@ -2225,7 +4243,15 @@
       "0040",
       "review-44"
     ],
-    "example": "Ինձ պետք էին լրացված դիմումը և անձնագրի պատճենը։"
+    "example": "Ինձ պետք էին լրացված դիմումը և անձնագրի պատճենը։",
+    "reviews": [
+      "reading-13",
+      "0042",
+      "review-44",
+      "reading-14",
+      "reading-06"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ստորագրված",
@@ -2236,7 +4262,15 @@
       "0040",
       "review-44"
     ],
-    "example": "Հետո հարցրեց, թե որտեղ է ստորագրված օրինակը։"
+    "example": "Հետո հարցրեց, թե որտեղ է ստորագրված օրինակը։",
+    "reviews": [
+      "reading-13",
+      "0042",
+      "review-44",
+      "reading-14",
+      "reading-06"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բաժին",
@@ -2246,7 +4280,70 @@
     "units": [
       "0040"
     ],
-    "example": "Ես աշխատում եմ այս բաժնում։"
+    "example": "Ես աշխատում եմ այս բաժնում։",
+    "reviews": [
+      "reading-13",
+      "0042",
+      "review-44",
+      "reading-14",
+      "reading-06"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "բնօրինակ",
+    "ru": "оригинал",
+    "level": "B1",
+    "url": "practice/reading-13.html",
+    "units": [
+      "reading-13",
+      "reading-06"
+    ],
+    "example": "Բնօրինակը պահեք ձեզ մոտ և ներկայացրեք միայն աշխատակցի խնդրանքով։",
+    "reviews": [
+      "0041",
+      "constitution-07",
+      "0045",
+      "0049",
+      "speaking-03"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "ընթեռնելի",
+    "ru": "разборчивый",
+    "level": "B1",
+    "url": "practice/reading-13.html",
+    "units": [
+      "reading-13"
+    ],
+    "example": "Անունը, ամսաթիվը և փաստաթղթի համարը պետք է ընթեռնելի լինեն։",
+    "reviews": [
+      "0041",
+      "constitution-07",
+      "0045",
+      "0049",
+      "speaking-03"
+    ],
+    "after_course_reviews": 0
+  },
+  {
+    "hy": "կցված",
+    "ru": "приложенный",
+    "level": "B1",
+    "url": "practice/reading-13.html",
+    "units": [
+      "reading-13"
+    ],
+    "example": "Հարգելի՛ դիմող, խնդրում ենք ստուգել կցված փաստաթղթի պատճենը։",
+    "reviews": [
+      "0041",
+      "constitution-07",
+      "0045",
+      "0049",
+      "speaking-03"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "կարդալիս",
@@ -2256,7 +4353,15 @@
     "units": [
       "0041"
     ],
-    "example": "Հիմա հարցը կարդալիս մատիտով նշում եմ կարևոր բառերը։"
+    "example": "Հիմա հարցը կարդալիս մատիտով նշում եմ կարևոր բառերը։",
+    "reviews": [
+      "0042",
+      "0043",
+      "0046",
+      "review-49",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "բարձրաձայն",
@@ -2266,7 +4371,15 @@
     "units": [
       "0041"
     ],
-    "example": "Բարձրաձայն կարդալով՝ ավելի հեշտ եմ նկատում նախադասության կառուցվածքը։"
+    "example": "Բարձրաձայն կարդալով՝ ավելի հեշտ եմ նկատում նախադասության կառուցվածքը։",
+    "reviews": [
+      "0042",
+      "0043",
+      "0046",
+      "review-49",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ասելիք",
@@ -2276,7 +4389,15 @@
     "units": [
       "0041"
     ],
-    "example": "Քեզ մի բան ունեմ ասելու։ Դա իմ ասելիքն է։"
+    "example": "Քեզ մի բան ունեմ ասելու։ Դա իմ ասելիքն է։",
+    "reviews": [
+      "0042",
+      "0043",
+      "0046",
+      "review-49",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "վերջ",
@@ -2286,7 +4407,15 @@
     "units": [
       "0041"
     ],
-    "example": "Նամակի վերջում հարց կա։"
+    "example": "Նամակի վերջում հարց կա։",
+    "reviews": [
+      "0042",
+      "0043",
+      "0046",
+      "review-49",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "հուշում",
@@ -2296,7 +4425,15 @@
     "units": [
       "0041"
     ],
-    "example": "Առանց հուշման պատասխանեցի հարցին։"
+    "example": "Առանց հուշման պատասխանեցի հարցին։",
+    "reviews": [
+      "0042",
+      "0043",
+      "0046",
+      "review-49",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 0
   },
   {
     "hy": "ընդունվել",
@@ -2306,7 +4443,14 @@
     "units": [
       "0042"
     ],
-    "example": "Դիմումն ընդունվել է։"
+    "example": "Դիմումն ընդունվել է։",
+    "reviews": [
+      "constitution-07",
+      "0044",
+      "constitution-08",
+      "0050"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "ուղարկվել",
@@ -2316,7 +4460,14 @@
     "units": [
       "0042"
     ],
-    "example": "Նախորդ անգամ նամակը ուղարկվել էր սխալ հասցեով։"
+    "example": "Նախորդ անգամ նամակը ուղարկվել էր սխալ հասցեով։",
+    "reviews": [
+      "constitution-07",
+      "0044",
+      "constitution-08",
+      "0050"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "գրանցվել",
@@ -2326,7 +4477,14 @@
     "units": [
       "0042"
     ],
-    "example": "Ես արդեն գրանցվել եմ։"
+    "example": "Ես արդեն գրանցվել եմ։",
+    "reviews": [
+      "constitution-07",
+      "0044",
+      "constitution-08",
+      "0050"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "դատարան",
@@ -2336,7 +4494,14 @@
     "units": [
       "constitution-07"
     ],
-    "example": "Հայաստանի Հանրապետությունում արդարադատությունն իրականացնում են միայն դատարանները։"
+    "example": "Հայաստանի Հանրապետությունում արդարադատությունն իրականացնում են միայն դատարանները։",
+    "reviews": [
+      "0043",
+      "review-44",
+      "reading-05",
+      "0051"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "դատավոր",
@@ -2346,7 +4511,14 @@
     "units": [
       "constitution-07"
     ],
-    "example": "Դատավորը անկախ է և գործում է Սահմանադրությանը և օրենքներին համապատասխան։"
+    "example": "Դատավորը անկախ է և գործում է Սահմանադրությանը և օրենքներին համապատասխան։",
+    "reviews": [
+      "0043",
+      "review-44",
+      "reading-05",
+      "0051"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "արդարադատություն",
@@ -2356,7 +4528,14 @@
     "units": [
       "constitution-07"
     ],
-    "example": "Հայաստանի Հանրապետությունում արդարադատությունն իրականացնում են միայն դատարանները։"
+    "example": "Հայաստանի Հանրապետությունում արդարադատությունն իրականացնում են միայն դատարանները։",
+    "reviews": [
+      "0043",
+      "review-44",
+      "reading-05",
+      "0051"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "անկախ",
@@ -2366,7 +4545,14 @@
     "units": [
       "constitution-07"
     ],
-    "example": "Դատավորը անկախ է և գործում է Սահմանադրությանը և օրենքներին համապատասխան։"
+    "example": "Դատավորը անկախ է և գործում է Սահմանադրությանը և օրենքներին համապատասխան։",
+    "reviews": [
+      "0043",
+      "review-44",
+      "reading-05",
+      "0051"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "պաշտպան",
@@ -2376,7 +4562,14 @@
     "units": [
       "constitution-07"
     ],
-    "example": "Մարդու իրավունքների պաշտպանն անկախ պաշտոնատար անձ է։"
+    "example": "Մարդու իրավունքների պաշտպանն անկախ պաշտոնատար անձ է։",
+    "reviews": [
+      "0043",
+      "review-44",
+      "reading-05",
+      "0051"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "հիշեցնել",
@@ -2386,7 +4579,14 @@
     "units": [
       "0043"
     ],
-    "example": "Հիշեցրո՛ւ ինձ հանդիպման մասին։"
+    "example": "Հիշեցրո՛ւ ինձ հանդիպման մասին։",
+    "reviews": [
+      "0044",
+      "0045",
+      "0047",
+      "0052"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "սովորեցնել",
@@ -2396,7 +4596,14 @@
     "units": [
       "0043"
     ],
-    "example": "Նա ինձ հայերեն է սովորեցնում։"
+    "example": "Նա ինձ հայերեն է սովորեցնում։",
+    "reviews": [
+      "0044",
+      "0045",
+      "0047",
+      "0052"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "հասկացնել",
@@ -2406,7 +4613,14 @@
     "units": [
       "0043"
     ],
-    "example": "Նա հասկացրեց, որ համաձայն չէ։"
+    "example": "Նա հասկացրեց, որ համաձայն չէ։",
+    "reviews": [
+      "0044",
+      "0045",
+      "0047",
+      "0052"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "տանտեր",
@@ -2416,7 +4630,14 @@
     "units": [
       "0044"
     ],
-    "example": "Տանտերը խոստացավ ուղարկել ամբողջ տեքստը։"
+    "example": "Տանտերը խոստացավ ուղարկել ամբողջ տեքստը։",
+    "reviews": [
+      "review-44",
+      "0046",
+      "0048",
+      "0053"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "վարձակալ",
@@ -2426,7 +4647,14 @@
     "units": [
       "0044"
     ],
-    "example": "Ընկերս խորհուրդ տվեց խոսել նաև նախկին վարձակալի հետ։"
+    "example": "Ընկերս խորհուրդ տվեց խոսել նաև նախկին վարձակալի հետ։",
+    "reviews": [
+      "review-44",
+      "0046",
+      "0048",
+      "0053"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "պայմանագիր",
@@ -2437,7 +4665,14 @@
       "0044",
       "0050"
     ],
-    "example": "Բնակարանի վարձակալության պայմանագիրը ավարտվում է հաջորդ ամսվա վերջին։"
+    "example": "Բնակարանի վարձակալության պայմանագիրը ավարտվում է հաջորդ ամսվա վերջին։",
+    "reviews": [
+      "review-44",
+      "0046",
+      "0048",
+      "0053"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "բնակիչ",
@@ -2445,9 +4680,17 @@
     "level": "B1",
     "url": "lessons/0044-relative-clauses.html",
     "units": [
-      "0044"
+      "0044",
+      "reading-15"
     ],
-    "example": "Բնակիչները քննարկեցին առաջարկը։"
+    "example": "Մի բնակիչ էլ գրեց, որ նստարան ընդհանրապես պետք չէ․ երեկոյան այնտեղ աղմուկ է լինում, իսկ իր պատուհանը շատ մոտ է։",
+    "reviews": [
+      "review-44",
+      "0046",
+      "0048",
+      "0053"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "հարց",
@@ -2457,7 +4700,14 @@
     "units": [
       "0044"
     ],
-    "example": "Ես հարցրի պայմանագրի մասին, որը դեռ չէի կարդացել։"
+    "example": "Ես հարցրի պայմանագրի մասին, որը դեռ չէի կարդացել։",
+    "reviews": [
+      "review-44",
+      "0046",
+      "0048",
+      "0053"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "օրինակ",
@@ -2468,7 +4718,14 @@
       "review-44",
       "0056"
     ],
-    "example": "Նա խնդրեց ցույց տալ ստորագրված օրինակը։"
+    "example": "Նա խնդրեց ցույց տալ ստորագրված օրինակը։",
+    "reviews": [
+      "0045",
+      "constitution-08",
+      "reading-14",
+      "0054"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "հայտնել",
@@ -2478,7 +4735,14 @@
     "units": [
       "0045"
     ],
-    "example": "Խնդրում եմ հայտնել որոշումը։"
+    "example": "Խնդրում եմ հայտնել որոշումը։",
+    "reviews": [
+      "0046",
+      "reading-05",
+      "0049",
+      "review-54"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "հարցնել",
@@ -2488,7 +4752,14 @@
     "units": [
       "0045"
     ],
-    "example": "Ես հարցրի, թե երբ է հանդիպումը։"
+    "example": "Ես հարցրի, թե երբ է հանդիպումը։",
+    "reviews": [
+      "0046",
+      "reading-05",
+      "0049",
+      "review-54"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "պատասխանել",
@@ -2498,7 +4769,14 @@
     "units": [
       "0045"
     ],
-    "example": "Նա պատասխանեց իմ հարցին։"
+    "example": "Նա պատասխանեց իմ հարցին։",
+    "reviews": [
+      "0046",
+      "reading-05",
+      "0049",
+      "review-54"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "տեղեկություն",
@@ -2510,7 +4788,14 @@
       "review-49",
       "checkpoint-58"
     ],
-    "example": "Չէի ուզում իմ ենթադրությունը ներկայացնել որպես հաստատված տեղեկություն։"
+    "example": "Չէի ուզում իմ ենթադրությունը ներկայացնել որպես հաստատված տեղեկություն։",
+    "reviews": [
+      "0046",
+      "reading-05",
+      "0049",
+      "review-54"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "ջրամատակարարում",
@@ -2520,7 +4805,14 @@
     "units": [
       "0046"
     ],
-    "example": "Վերանորոգման պատճառով ջրամատակարարումը դադարեցվելու է ժամը տասից մինչև չորսը։"
+    "example": "Վերանորոգման պատճառով ջրամատակարարումը դադարեցվելու է ժամը տասից մինչև չորսը։",
+    "reviews": [
+      "constitution-08",
+      "0047",
+      "review-49",
+      "0055"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "դադարեցնել",
@@ -2530,7 +4822,14 @@
     "units": [
       "0046"
     ],
-    "example": "Նրանք որոշեցին դադարեցնել աշխատանքը։"
+    "example": "Նրանք որոշեցին դադարեցնել աշխատանքը։",
+    "reviews": [
+      "constitution-08",
+      "0047",
+      "review-49",
+      "0055"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "վերականգնել",
@@ -2540,7 +4839,14 @@
     "units": [
       "0046"
     ],
-    "example": "Պետք է վերականգնել կորցրած փաստաթուղթը։"
+    "example": "Պետք է վերականգնել կորցրած փաստաթուղթը։",
+    "reviews": [
+      "constitution-08",
+      "0047",
+      "review-49",
+      "0055"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "վերանորոգում",
@@ -2550,7 +4856,14 @@
     "units": [
       "0046"
     ],
-    "example": "Վերանորոգումը դեռ չի ավարտվել։"
+    "example": "Վերանորոգումը դեռ չի ավարտվել։",
+    "reviews": [
+      "constitution-08",
+      "0047",
+      "review-49",
+      "0055"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "պատճառ",
@@ -2562,7 +4875,14 @@
       "review-49",
       "checkpoint-58"
     ],
-    "example": "Վերանորոգման պատճառով ջրամատակարարումը դադարեցվելու է ժամը տասից մինչև չորսը։"
+    "example": "Վերանորոգման պատճառով ջրամատակարարումը դադարեցվելու է ժամը տասից մինչև չորսը։",
+    "reviews": [
+      "constitution-08",
+      "0047",
+      "review-49",
+      "0055"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "բացառությամբ",
@@ -2572,7 +4892,14 @@
     "units": [
       "constitution-08"
     ],
-    "example": "Բոլորը եկան՝ բացառությամբ Արամի։"
+    "example": "Բոլորը եկան՝ բացառությամբ Արամի։",
+    "reviews": [
+      "reading-05",
+      "0048",
+      "0050",
+      "0056"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "միայն",
@@ -2582,7 +4909,14 @@
     "units": [
       "constitution-08"
     ],
-    "example": "Թեստի ժամանակ պետք է ուշադիր կարդալ «միայն», «առնվազն», «չի կարող» բառերը։"
+    "example": "Թեստի ժամանակ պետք է ուշադիր կարդալ «միայն», «առնվազն», «չի կարող» բառերը։",
+    "reviews": [
+      "reading-05",
+      "0048",
+      "0050",
+      "0056"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "առնվազն",
@@ -2592,7 +4926,14 @@
     "units": [
       "constitution-08"
     ],
-    "example": "Թեստի ժամանակ պետք է ուշադիր կարդալ «միայն», «առնվազն», «չի կարող» բառերը։"
+    "example": "Թեստի ժամանակ պետք է ուշադիր կարդալ «միայն», «առնվազն», «չի կարող» բառերը։",
+    "reviews": [
+      "reading-05",
+      "0048",
+      "0050",
+      "0056"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "ենթակա չէ",
@@ -2602,7 +4943,14 @@
     "units": [
       "constitution-08"
     ],
-    "example": "Այդ փոփոխությունը քննարկման ենթակա չէ։"
+    "example": "Այդ փոփոխությունը քննարկման ենթակա չէ։",
+    "reviews": [
+      "reading-05",
+      "0048",
+      "0050",
+      "0056"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "ուժի մեջ",
@@ -2612,7 +4960,14 @@
     "units": [
       "constitution-08"
     ],
-    "example": "Պայմանագիրն ուժի մեջ է։"
+    "example": "Պայմանագիրն ուժի մեջ է։",
+    "reviews": [
+      "reading-05",
+      "0048",
+      "0050",
+      "0056"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "աղբյուր",
@@ -2623,7 +4978,14 @@
       "reading-05",
       "0054"
     ],
-    "example": "Հաղորդագրության մեջ ոչ հասցե կար, ոչ էլ պաշտոնական աղբյուր։"
+    "example": "Հաղորդագրության մեջ ոչ հասցե կար, ոչ էլ պաշտոնական աղբյուր։",
+    "reviews": [
+      "0047",
+      "reading-14",
+      "0051",
+      "reading-15"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "պաշտոնական",
@@ -2633,7 +4995,14 @@
     "units": [
       "reading-05"
     ],
-    "example": "Հաղորդագրության մեջ ոչ հասցե կար, ոչ էլ պաշտոնական աղբյուր։"
+    "example": "Հաղորդագրության մեջ ոչ հասցե կար, ոչ էլ պաշտոնական աղբյուր։",
+    "reviews": [
+      "0047",
+      "reading-14",
+      "0051",
+      "reading-15"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "ենթադրություն",
@@ -2643,7 +5012,14 @@
     "units": [
       "reading-05"
     ],
-    "example": "Դա միայն ենթադրություն է։"
+    "example": "Դա միայն ենթադրություն է։",
+    "reviews": [
+      "0047",
+      "reading-14",
+      "0051",
+      "reading-15"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "հաստատել",
@@ -2655,7 +5031,14 @@
       "0053",
       "speaking-03"
     ],
-    "example": "Խնդրում եմ նաև հաստատել, որ ստացել եք այս նամակն ու կից փաստաթուղթը։"
+    "example": "Խնդրում եմ նաև հաստատել, որ ստացել եք այս նամակն ու կից փաստաթուղթը։",
+    "reviews": [
+      "0047",
+      "reading-14",
+      "0051",
+      "reading-15"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "ժամկետ",
@@ -2666,7 +5049,14 @@
       "reading-05",
       "0050"
     ],
-    "example": "Պետք է գտնել գործող անձին, պահանջվող գործողությունը, ժամկետը և բացառությունները։"
+    "example": "Պետք է գտնել գործող անձին, պահանջվող գործողությունը, ժամկետը և բացառությունները։",
+    "reviews": [
+      "0047",
+      "reading-14",
+      "0051",
+      "reading-15"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "արդյունք",
@@ -2677,7 +5067,14 @@
       "0047",
       "0058"
     ],
-    "example": "Արդյունքը դեռ չգիտեմ։"
+    "example": "Արդյունքը դեռ չգիտեմ։",
+    "reviews": [
+      "0048",
+      "0049",
+      "0052",
+      "0057"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "դժվարություն",
@@ -2687,7 +5084,14 @@
     "units": [
       "0047"
     ],
-    "example": "Ես դժվարություն ունեմ այս բառը կարդալիս։"
+    "example": "Ես դժվարություն ունեմ այս բառը կարդալիս։",
+    "reviews": [
+      "0048",
+      "0049",
+      "0052",
+      "0057"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "թեև",
@@ -2697,7 +5101,14 @@
     "units": [
       "0047"
     ],
-    "example": "Թեև աշխատանքից հետո հոգնած եմ լինում, ամեն երեկո մի քիչ հայերեն եմ կարդում։"
+    "example": "Թեև աշխատանքից հետո հոգնած եմ լինում, ամեն երեկո մի քիչ հայերեն եմ կարդում։",
+    "reviews": [
+      "0048",
+      "0049",
+      "0052",
+      "0057"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "որպեսզի",
@@ -2707,7 +5118,14 @@
     "units": [
       "0047"
     ],
-    "example": "Հիմա նախ կարդում եմ ամբողջ տեքստը, որպեսզի հասկանամ ընդհանուր իմաստը։"
+    "example": "Հիմա նախ կարդում եմ ամբողջ տեքստը, որպեսզի հասկանամ ընդհանուր իմաստը։",
+    "reviews": [
+      "0048",
+      "0049",
+      "0052",
+      "0057"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "հետևանք",
@@ -2717,7 +5135,14 @@
     "units": [
       "0048"
     ],
-    "example": "Դա ուշացման հետևանքն է։"
+    "example": "Դա ուշացման հետևանքն է։",
+    "reviews": [
+      "reading-14",
+      "review-49",
+      "0053",
+      "0058"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "ուշացում",
@@ -2727,7 +5152,14 @@
     "units": [
       "0048"
     ],
-    "example": "Ուշացման պատճառով չհասա հանդիպմանը։"
+    "example": "Ուշացման պատճառով չհասա հանդիպմանը։",
+    "reviews": [
+      "reading-14",
+      "review-49",
+      "0053",
+      "0058"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "փոխարեն",
@@ -2738,7 +5170,14 @@
       "0048",
       "0049"
     ],
-    "example": "Սուրճի փոխարեն թեյ պատվիրեցի։"
+    "example": "Սուրճի փոխարեն թեյ պատվիրեցի։",
+    "reviews": [
+      "reading-14",
+      "review-49",
+      "0053",
+      "0058"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "որոշում",
@@ -2749,7 +5188,85 @@
       "0048",
       "checkpoint-58"
     ],
-    "example": "Նա դեռ չէր ստացել վերջնական որոշումը, բայց գիտեր իր հաջորդ քայլը։"
+    "example": "Նա դեռ չէր ստացել վերջնական որոշումը, բայց գիտեր իր հաջորդ քայլը։",
+    "reviews": [
+      "reading-14",
+      "review-49",
+      "0053",
+      "0058"
+    ],
+    "after_course_reviews": 1
+  },
+  {
+    "hy": "գործարք",
+    "ru": "операция",
+    "level": "B1",
+    "url": "practice/reading-14.html",
+    "units": [
+      "reading-14",
+      "0051",
+      "review-54"
+    ],
+    "example": "Ուսումնական հաղորդագրություն․ «Հարգելի՛ հաճախորդ, ձեր քարտով կատարված գործարքի վերաբերյալ հարցը ստացվել է։",
+    "reviews": [
+      "0049",
+      "0050",
+      "0054",
+      "reading-06"
+    ],
+    "after_course_reviews": 1
+  },
+  {
+    "hy": "գանձում",
+    "ru": "списание",
+    "level": "B1",
+    "url": "practice/reading-14.html",
+    "units": [
+      "reading-14",
+      "0051"
+    ],
+    "example": "Նա վստահ չէր՝ երկու գանձո՞ւմ է եղել, թե՞ նույն տեղեկությունն է երկու տեղում երևում։",
+    "reviews": [
+      "0049",
+      "0050",
+      "0054",
+      "reading-06"
+    ],
+    "after_course_reviews": 1
+  },
+  {
+    "hy": "մնացորդ",
+    "ru": "остаток на счёте",
+    "level": "B1",
+    "url": "practice/reading-14.html",
+    "units": [
+      "reading-14"
+    ],
+    "example": "Ուզում եմ ստուգել իմ հաշվի մնացորդը։",
+    "reviews": [
+      "0049",
+      "0050",
+      "0054",
+      "reading-06"
+    ],
+    "after_course_reviews": 1
+  },
+  {
+    "hy": "համեմատել",
+    "ru": "сравнивать",
+    "level": "B1",
+    "url": "practice/reading-14.html",
+    "units": [
+      "reading-14"
+    ],
+    "example": "Սկզբում ցանկացավ անմիջապես բողոք գրել, բայց որոշեց նախ համեմատել տվյալները։",
+    "reviews": [
+      "0049",
+      "0050",
+      "0054",
+      "reading-06"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "ցավոք",
@@ -2759,7 +5276,14 @@
     "units": [
       "0049"
     ],
-    "example": "Գրեցի. «Ցավոք, ժամը իննին չեմ կարող գալ։"
+    "example": "Գրեցի. «Ցավոք, ժամը իննին չեմ կարող գալ։",
+    "reviews": [
+      "review-49",
+      "0051",
+      "review-54",
+      "speaking-03"
+    ],
+    "after_course_reviews": 1
   },
   {
     "hy": "վարձակալություն",
@@ -2769,7 +5293,13 @@
     "units": [
       "0050"
     ],
-    "example": "Վարձակալության պայմանագիրը պետք է կարդալ։"
+    "example": "Վարձակալության պայմանագիրը պետք է կարդալ։",
+    "reviews": [
+      "0051",
+      "0053",
+      "0056"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "երկարաձգել",
@@ -2779,7 +5309,13 @@
     "units": [
       "0050"
     ],
-    "example": "Ուզում եմ այն երկարաձգել ևս վեց ամսով։"
+    "example": "Ուզում եմ այն երկարաձգել ևս վեց ամսով։",
+    "reviews": [
+      "0051",
+      "0053",
+      "0056"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "վճար",
@@ -2789,17 +5325,13 @@
     "units": [
       "0050"
     ],
-    "example": "Ինձ համար կարևոր էր հասկանալ՝ վարձը փոխվելո՞ւ է, և ո՞վ է վճարելու փոքր վերանորոգման համար։"
-  },
-  {
-    "hy": "գանձում",
-    "ru": "списание денег",
-    "level": "B1",
-    "url": "lessons/0051-emergencies-complaints.html",
-    "units": [
-      "0051"
+    "example": "Ինձ համար կարևոր էր հասկանալ՝ վարձը փոխվելո՞ւ է, և ո՞վ է վճարելու փոքր վերանորոգման համար։",
+    "reviews": [
+      "0051",
+      "0053",
+      "0056"
     ],
-    "example": "Առավոտյան տեսա երկու նույն գումարի գանձում։"
+    "after_course_reviews": 2
   },
   {
     "hy": "վերադարձ",
@@ -2809,7 +5341,13 @@
     "units": [
       "0051"
     ],
-    "example": "Միայն «գումարս վերադարձրեք» չգրեցի, որովհետև դեռ չգիտեի՝ ինչ է տեղի ունեցել։"
+    "example": "Միայն «գումարս վերադարձրեք» չգրեցի, որովհետև դեռ չգիտեի՝ ինչ է տեղի ունեցել։",
+    "reviews": [
+      "0052",
+      "0054",
+      "reading-15"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "անդորրագիր",
@@ -2819,18 +5357,13 @@
     "units": [
       "0051"
     ],
-    "example": "Խնդրում եմ տալ անդորրագիրը։"
-  },
-  {
-    "hy": "գործարք",
-    "ru": "операция",
-    "level": "B1",
-    "url": "lessons/0051-emergencies-complaints.html",
-    "units": [
-      "0051",
-      "review-54"
+    "example": "Խնդրում եմ տալ անդորրագիրը։",
+    "reviews": [
+      "0052",
+      "0054",
+      "reading-15"
     ],
-    "example": "Չհասկացա՝ դա սխա՞լ է, թե՞ գործարքներից մեկը դեռ մշակվում է։"
+    "after_course_reviews": 2
   },
   {
     "hy": "ստուգում",
@@ -2840,7 +5373,13 @@
     "units": [
       "0051"
     ],
-    "example": "Ստուգումն ավարտվել է։"
+    "example": "Ստուգումն ավարտվել է։",
+    "reviews": [
+      "0052",
+      "0054",
+      "reading-15"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "համայնք",
@@ -2850,7 +5389,13 @@
     "units": [
       "0052"
     ],
-    "example": "Մեր համայնքում գրադարան կա։"
+    "example": "Մեր համայնքում գրադարան կա։",
+    "reviews": [
+      "0053",
+      "review-54",
+      "0057"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "մասնակցել",
@@ -2860,7 +5405,13 @@
     "units": [
       "0052"
     ],
-    "example": "«Մասնակցություն» բառի իմաստը հասկացա, որովհետև գիտեի «մասնակցել» բայը։"
+    "example": "«Մասնակցություն» բառի իմաստը հասկացա, որովհետև գիտեի «մասնակցել» բայը։",
+    "reviews": [
+      "0053",
+      "review-54",
+      "0057"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "պատասխանատվություն",
@@ -2870,7 +5421,13 @@
     "units": [
       "0052"
     ],
-    "example": "Ո՞վ է պատասխանատվություն կրում այս աշխատանքի համար։"
+    "example": "Ո՞վ է պատասխանատվություն կրում այս աշխատանքի համար։",
+    "reviews": [
+      "0053",
+      "review-54",
+      "0057"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "քաղաքացիություն",
@@ -2880,7 +5437,13 @@
     "units": [
       "0052"
     ],
-    "example": "Նա դիմել է քաղաքացիություն ստանալու համար։"
+    "example": "Նա դիմել է քաղաքացիություն ստանալու համար։",
+    "reviews": [
+      "0053",
+      "review-54",
+      "0057"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "համագործակցություն",
@@ -2890,7 +5453,13 @@
     "units": [
       "0052"
     ],
-    "example": "«Համագործակցություն» բառը դեռ ծանոթ չէր, բայց համատեքստից պարզ էր, որ խոսքը միասին աշխատելու մասին է։"
+    "example": "«Համագործակցություն» բառը դեռ ծանոթ չէր, բայց համատեքստից պարզ էր, որ խոսքը միասին աշխատելու մասին է։",
+    "reviews": [
+      "0053",
+      "review-54",
+      "0057"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "հարգելի",
@@ -2900,7 +5469,13 @@
     "units": [
       "0053"
     ],
-    "example": "Հարգելի՛ աշխատակից, Երեկ ստացել եմ Ձեր նամակը՝ լրացուցիչ փաստաթուղթ ներկայացնելու մասին։"
+    "example": "Հարգելի՛ աշխատակից, Երեկ ստացել եմ Ձեր նամակը՝ լրացուցիչ փաստաթուղթ ներկայացնելու մասին։",
+    "reviews": [
+      "0054",
+      "0055",
+      "0058"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "կից",
@@ -2911,7 +5486,13 @@
       "0053",
       "review-54"
     ],
-    "example": "Հարգելի՛ աշխատակից, Երեկ ստացել եմ Ձեր նամակը՝ լրացուցիչ փաստաթուղթ ներկայացնելու մասին։"
+    "example": "Հարգելի՛ աշխատակից, Երեկ ստացել եմ Ձեր նամակը՝ լրացուցիչ փաստաթուղթ ներկայացնելու մասին։",
+    "reviews": [
+      "0054",
+      "0055",
+      "0058"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "պարզաբանել",
@@ -2923,7 +5504,13 @@
       "review-54",
       "speaking-03"
     ],
-    "example": "Խնդրում եմ պարզաբանել՝ անհրաժեշտ է ներկայացնել նաև բնօրինա՞կը։"
+    "example": "Խնդրում եմ պարզաբանել՝ անհրաժեշտ է ներկայացնել նաև բնօրինա՞կը։",
+    "reviews": [
+      "0054",
+      "0055",
+      "0058"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "դիմող",
@@ -2933,7 +5520,13 @@
     "units": [
       "0053"
     ],
-    "example": "Դիմողը ստորագրել է դիմումը։"
+    "example": "Դիմողը ստորագրել է դիմումը։",
+    "reviews": [
+      "0054",
+      "0055",
+      "0058"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "վերնագիր",
@@ -2943,7 +5536,13 @@
     "units": [
       "0054"
     ],
-    "example": "Սկզբում կարդա՛ վերնագիրը։"
+    "example": "Սկզբում կարդա՛ վերնագիրը։",
+    "reviews": [
+      "review-54",
+      "0056",
+      "reading-06"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "փաստ",
@@ -2953,7 +5552,13 @@
     "units": [
       "0054"
     ],
-    "example": "Այս փաստը նշված է հաղորդագրության մեջ։"
+    "example": "Այս փաստը նշված է հաղորդագրության մեջ։",
+    "reviews": [
+      "review-54",
+      "0056",
+      "reading-06"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "ծրագիր",
@@ -2963,7 +5568,13 @@
     "units": [
       "0054"
     ],
-    "example": "Համայնքում քննարկվել է նոր ընթերցասրահ բացելու ծրագիրը։"
+    "example": "Համայնքում քննարկվել է նոր ընթերցասրահ բացելու ծրագիրը։",
+    "reviews": [
+      "review-54",
+      "0056",
+      "reading-06"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "քննարկում",
@@ -2973,7 +5584,13 @@
     "units": [
       "0054"
     ],
-    "example": "Քննարկումը դեռ շարունակվում է։"
+    "example": "Քննարկումը դեռ շարունակվում է։",
+    "reviews": [
+      "review-54",
+      "0056",
+      "reading-06"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "այսինքն",
@@ -2983,7 +5600,13 @@
     "units": [
       "0055"
     ],
-    "example": "Վաղը չեմ կարող գալ, այսինքն՝ պետք է ժամը փոխենք։"
+    "example": "Վաղը չեմ կարող գալ, այսինքն՝ պետք է ժամը փոխենք։",
+    "reviews": [
+      "0056",
+      "0057",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "նկատի ունենալ",
@@ -2993,7 +5616,13 @@
     "units": [
       "0055"
     ],
-    "example": "Ի՞նչ նկատի ունեք։"
+    "example": "Ի՞նչ նկատի ունեք։",
+    "reviews": [
+      "0056",
+      "0057",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 2
   },
   {
     "hy": "իմ կարծիքով",
@@ -3003,7 +5632,12 @@
     "units": [
       "0056"
     ],
-    "example": "Իմ կարծիքով՝ բնակարան ընտրելիս միայն կենտրոնին մոտ լինելը բավարար չէ։"
+    "example": "Իմ կարծիքով՝ բնակարան ընտրելիս միայն կենտրոնին մոտ լինելը բավարար չէ։",
+    "reviews": [
+      "reading-15",
+      "0058"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "սակայն",
@@ -3013,7 +5647,12 @@
     "units": [
       "0056"
     ],
-    "example": "Սակայն վարձը հաճախ բարձր է, և փողոցը կարող է աղմկոտ լինել։"
+    "example": "Սակայն վարձը հաճախ բարձր է, և փողոցը կարող է աղմկոտ լինել։",
+    "reviews": [
+      "reading-15",
+      "0058"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "առավելություն",
@@ -3023,7 +5662,12 @@
     "units": [
       "0056"
     ],
-    "example": "Կենտրոնում ապրելն ունի առավելություններ։"
+    "example": "Կենտրոնում ապրելն ունի առավելություններ։",
+    "reviews": [
+      "reading-15",
+      "0058"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "թերություն",
@@ -3033,7 +5677,57 @@
     "units": [
       "0056"
     ],
-    "example": "Այս տարբերակն ունի նաև թերություններ։"
+    "example": "Այս տարբերակն ունի նաև թերություններ։",
+    "reviews": [
+      "reading-15",
+      "0058"
+    ],
+    "after_course_reviews": 3
+  },
+  {
+    "hy": "առաջարկ",
+    "ru": "предложение",
+    "level": "B1",
+    "url": "practice/reading-15.html",
+    "units": [
+      "reading-15"
+    ],
+    "example": "Տների խմբային զրույցում առաջին առաջարկը նոր նստարան գնելն էր։",
+    "reviews": [
+      "0057",
+      "reading-06"
+    ],
+    "after_course_reviews": 3
+  },
+  {
+    "hy": "աղմուկ",
+    "ru": "шум",
+    "level": "B1",
+    "url": "practice/reading-15.html",
+    "units": [
+      "reading-15"
+    ],
+    "example": "Մի բնակիչ էլ գրեց, որ նստարան ընդհանրապես պետք չէ․ երեկոյան այնտեղ աղմուկ է լինում, իսկ իր պատուհանը շատ մոտ է։",
+    "reviews": [
+      "0057",
+      "reading-06"
+    ],
+    "after_course_reviews": 3
+  },
+  {
+    "hy": "ընդհանուր",
+    "ru": "общий",
+    "level": "B1",
+    "url": "practice/reading-15.html",
+    "units": [
+      "reading-15"
+    ],
+    "example": "Մի օր նստարանի մի մասը կոտրվեց, և բակի սովորական խոսակցությունը դարձավ ընդհանուր խնդիր։",
+    "reviews": [
+      "0057",
+      "reading-06"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "անհանգիստ",
@@ -3043,7 +5737,12 @@
     "units": [
       "0057"
     ],
-    "example": "Վաղը կարևոր օր է, և ես մի քիչ անհանգիստ եմ։"
+    "example": "Վաղը կարևոր օր է, և ես մի քիչ անհանգիստ եմ։",
+    "reviews": [
+      "0058",
+      "speaking-03"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "հույս ունենալ",
@@ -3053,7 +5752,12 @@
     "units": [
       "0057"
     ],
-    "example": "Հույս ունեմ, որ վաղը կհանդիպենք։"
+    "example": "Հույս ունեմ, որ վաղը կհանդիպենք։",
+    "reviews": [
+      "0058",
+      "speaking-03"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "վստահ",
@@ -3063,7 +5767,12 @@
     "units": [
       "0057"
     ],
-    "example": "Հասկանում եմ, որ վստահ լինելը չի նշանակում երբեք չսխալվել։"
+    "example": "Հասկանում եմ, որ վստահ լինելը չի նշանակում երբեք չսխալվել։",
+    "reviews": [
+      "0058",
+      "speaking-03"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "հուզվել",
@@ -3073,7 +5782,12 @@
     "units": [
       "0057"
     ],
-    "example": "Կարևոր հանդիպումից առաջ հուզվում եմ։"
+    "example": "Կարևոր հանդիպումից առաջ հուզվում եմ։",
+    "reviews": [
+      "0058",
+      "speaking-03"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "ինքնուրույն",
@@ -3083,7 +5797,12 @@
     "units": [
       "0058"
     ],
-    "example": "Դիմումը լրացրեցի ինքնուրույն։"
+    "example": "Դիմումը լրացրեցի ինքնուրույն։",
+    "reviews": [
+      "reading-06",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "հաստատում",
@@ -3094,7 +5813,12 @@
       "0058",
       "checkpoint-58"
     ],
-    "example": "Եթե հաստատում չստանար, պետք է կրկին կապ հաստատեր։"
+    "example": "Եթե հաստատում չստանար, պետք է կրկին կապ հաստատեր։",
+    "reviews": [
+      "reading-06",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "հստակ",
@@ -3104,7 +5828,12 @@
     "units": [
       "0058"
     ],
-    "example": "Խնդրում եմ հստակ պատասխան տալ։"
+    "example": "Խնդրում եմ հստակ պատասխան տալ։",
+    "reviews": [
+      "reading-06",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "հաջորդ քայլ",
@@ -3114,7 +5843,12 @@
     "units": [
       "0058"
     ],
-    "example": "Ո՞րն է հաջորդ քայլը։"
+    "example": "Ո՞րն է հաջորդ քայլը։",
+    "reviews": [
+      "reading-06",
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 3
   },
   {
     "hy": "վերջնաժամկետ",
@@ -3124,17 +5858,11 @@
     "units": [
       "reading-06"
     ],
-    "example": "Վերջնաժամկետը նշված էր առանձին տողով։"
-  },
-  {
-    "hy": "բնօրինակ",
-    "ru": "оригинал",
-    "level": "B1",
-    "url": "practice/reading-06.html",
-    "units": [
-      "reading-06"
+    "example": "Վերջնաժամկետը նշված էր առանձին տողով։",
+    "reviews": [
+      "speaking-03"
     ],
-    "example": "Սկզբում պետք էր պատճենն ուղարկել, իսկ այցելության ժամանակ բնօրինակը բերել։"
+    "after_course_reviews": 4
   },
   {
     "hy": "լրացուցիչ",
@@ -3144,7 +5872,11 @@
     "units": [
       "reading-06"
     ],
-    "example": "Պետք էր ներկայացնել լրացուցիչ փաստաթուղթ և հաստատել այցելության օրը։"
+    "example": "Պետք էր ներկայացնել լրացուցիչ փաստաթուղթ և հաստատել այցելության օրը։",
+    "reviews": [
+      "speaking-03"
+    ],
+    "after_course_reviews": 4
   },
   {
     "hy": "պարզաբանում",
@@ -3154,7 +5886,11 @@
     "units": [
       "reading-06"
     ],
-    "example": "Ինձ լրացուցիչ պարզաբանում է պետք։"
+    "example": "Ինձ լրացուցիչ պարզաբանում է պետք։",
+    "reviews": [
+      "speaking-03"
+    ],
+    "after_course_reviews": 4
   },
   {
     "hy": "պայմանավորվածություն",
@@ -3165,7 +5901,11 @@
       "reading-06",
       "speaking-03"
     ],
-    "example": "Խնդրում եմ հաստատել մեր պայմանավորվածությունը։"
+    "example": "Խնդրում եմ հաստատել մեր պայմանավորվածությունը։",
+    "reviews": [
+      "speaking-03"
+    ],
+    "after_course_reviews": 4
   },
   {
     "hy": "ընդունելի",
@@ -3175,6 +5915,10 @@
     "units": [
       "speaking-03"
     ],
-    "example": "Այս տարբերակն ինձ համար ընդունելի է։"
+    "example": "Այս տարբերակն ինձ համար ընդունելի է։",
+    "reviews": [
+      "checkpoint-58"
+    ],
+    "after_course_reviews": 4
   }
 ]

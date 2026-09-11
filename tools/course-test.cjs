@@ -11,6 +11,13 @@ for(let i=0;i<120;i++){
  ok(Object.values(r.topics).reduce((n,t)=>n+t.total,0)===33,'topic denominator');
 }
 for(const topic of Object.keys(bank.topics)){const s=L.create(bank,'practice',topic);ok(L.valid(s,bank)&&s.questions.length===8,'topic practice');ok(L.score(s,bank).passed===null,'practice has no exam pass');ok(s.questions.every(x=>String(bank.questions.find(q=>q.id===x.id).topic)===topic),'topic filter');}
+assert.deepEqual(L.parseTopicIds('1, 2,2,03,-1,9,foo,5',Object.keys(bank.topics)),['1','2','5']);
+for(let i=0;i<50;i++){
+ const filtered=L.create(bank,'practice','1,2,3,4,5');
+ ok(filtered.questions.length===10,'A2 ten questions');
+ ok(filtered.questions.every(x=>bank.questions.find(q=>q.id===x.id).topic<=5),'A2 excludes future topics');
+}
+assert.throws(()=>L.create(bank,'practice','99'));
 const s=L.create(bank,'mock','');
 for(const corrupt of [null,{},[],{...s,questions:[null]},{...s,checked:[]},{...s,started:'bad'},{...s,deadline:0},{...s,answers:{foreign:0}},{...s,questions:[s.questions[0],...s.questions.slice(0,32)]},{...s,version:'old'}])ok(!L.valid(corrupt,bank),'malformed state rejected');
 const bad=clone(s);bad.questions[0].order=[0,0,2];ok(!L.valid(bad,bank),'invalid option permutation');

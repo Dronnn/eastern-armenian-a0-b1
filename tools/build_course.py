@@ -13,6 +13,7 @@ units=sorted([u for p in CONTENT.glob('units-*.json') for u in json.loads(p.read
 extra=sum([load(f) for f in ['reviews.json','readings.json','speaking.json','constitution.json']],[])
 plan={int(r['номер']):r for r in csv.DictReader((ROOT/'docs/curriculum.tsv').open(),delimiter='\t')}
 word_examples=load('word-examples.json')
+chains={x['n']:x for x in load('practice-chains.json')}
 bank=load('exam-bank.json'); source=bank['source']; rules=bank['rules']
 files={int(p.name[:4]):p for p in (SITE/'lessons').glob('*.html')}
 for u in units:u.update(id=f'{u["n"]:04}',after=u['n'],kind='lesson',level=plan[u['n']]['уровень'],url=files[u['n']].relative_to(SITE).as_posix())
@@ -21,6 +22,16 @@ priority={'constitution':1,'reading':2,'speaking':3,'review':4,'checkpoint':5}
 routes=[]
 for u in units:routes.append(u);routes+=sorted([x for x in extra if x['after']==u['n']],key=lambda x:priority[x['kind']])
 route_by={u['id']:i for i,u in enumerate(routes)}
+review_schedule={u['id']:[] for u in routes}
+active_first={}
+for i,u in enumerate(routes):
+ for a,b in u['words']:
+  key=a.lower().replace('և','եւ')
+  if key in active_first:continue
+  targets=[i+gap for gap in (1,3,7,14,28)]
+  active_first[key]={'first':u,'targets':[routes[j]['id'] for j in targets if j<len(routes)],'later':sum(j>=len(routes) for j in targets)}
+  for stage,j in enumerate(targets):
+   if j<len(routes):review_schedule[routes[j]['id']].append((a,b,u,stage))
 worddata=json.loads(subprocess.check_output(['node','-e',"const fs=require('fs'),vm=require('vm');const c={window:{}};vm.runInNewContext(fs.readFileSync(process.argv[1],'utf8'),c);process.stdout.write(JSON.stringify(c.window.VOCAB));",str(SITE/'assets/vocab-data.js')],text=True))
 # Existing word ids are authoritative. New practice vocabulary is tracked independently when not in this dictionary.
 def normalize(s):return re.sub('[՞՛՜։]','',s.lower()).replace('և','եւ')
@@ -55,25 +66,49 @@ def words(u):
   w=byhy.get(normalize(a));button=f'<button class="flearn" type="button" data-learn="{w["id"]}" aria-pressed="false">выучил</button>' if w else f'<button class="flearn" data-track-complete="word:{e(a)}" data-label="Помню" aria-pressed="false">Помню</button>'
   rows.append(f'<tr><td lang="hy" class="hy">{e(a)}</td><td>{e(b)}</td><td>{button}</td></tr>')
  return '<div class="course-table-scroll"><table class="tbl course-words"><thead><tr><th>Опора</th><th>Смысл здесь</th><th>Память</th></tr></thead><tbody>'+''.join(rows)+'</tbody></table></div>'
-def order(sentence):
- tokens=sentence.split(); order_=list(range(len(tokens)));order_=order_[::-1]
- return f'<div class="quiz" data-order data-answer="{e(sentence)}"><p>Восстанови фразу образца. Нажимай слова по порядку; повторный клик возвращает слово.</p><div class="word-bank" data-bank>'+''.join(f'<button type="button" class="btn btn--ghost" data-token="{i}">{e(tokens[i])}</button>' for i in order_)+'</div><div class="built-answer" data-built aria-label="Собранная фраза"></div><button class="btn btn--primary" data-order-check>Проверить порядок</button> <button class="btn btn--ghost" data-order-reset>Очистить</button><p data-order-feedback role="status"></p></div>'
+def order(sentence,tokens=None,prompt=None):
+ separator=' '
+ if tokens is None:
+  tokens=sentence.split()
+  if len(tokens)==1:tokens=re.findall('ու|.',sentence);separator=''
+ prompt=prompt or ('Собери слово из букв.' if not separator else 'Восстанови фразу образца.')
+ return f'<div class="quiz" data-order data-separator="{separator}" data-answer="{e(sentence)}"><p>{prose(prompt)} Нажимай элементы по порядку; повторный клик возвращает элемент.</p><div class="word-bank" data-bank>'+''.join(f'<button type="button" class="btn btn--ghost" data-token="{i}">{e(tokens[i])}</button>' for i in reversed(range(len(tokens))))+'</div><div class="built-answer" data-built aria-label="Собранный ответ"></div><button class="btn btn--primary" data-order-check>Проверить порядок</button> <button class="btn btn--ghost" data-order-reset>Очистить</button><p data-order-feedback role="status"></p></div>'
 def reading_html(u):return '<div class="reading-text" lang="hy">'+''.join('<p>'+e(p)+'</p>' for p in u['text'])+'</div>'
 def marked(label,key):return f'<button class="btn btn--ghost" data-track-complete="{e(key)}" data-label="{e(label)}" aria-pressed="false">{e(label)}</button>'
+def matching(pairs):
+ return '<div class="quiz" data-match><p>Сопоставь армянские опоры с русскими значениями. Каждое значение используется один раз.</p>'+''.join('<label class="match-row">'+str(i+1)+'. '+hy(a)+f'<select data-expected="{i}" aria-label="Значение {e(a)}"><option value="">Выбери значение</option>'+''.join(f'<option value="{j}">{e(pairs[j][1])}</option>' for j in reversed(range(len(pairs))))+'</select></label>' for i,(a,b) in enumerate(pairs))+'<button class="btn btn--primary" data-match-check>Проверить пары</button><p data-match-feedback role="status"></p></div>'
 def activities(u):
  s=choice(u['gist'][0],u['gist'][1:])+typed(u['detail'],u['answer'])+typed(u['change'],u['changed'])
- for a,b in u['words'][:2]:s+=typed('Вспомни опорное слово: '+b+'.',a)
+ if u['kind']=='lesson':
+  c=chains[u['n']];s+='<h3>Измени фразу шаг за шагом</h3><p>Каждый следующий шаг меняет предыдущий ответ. После проверки скажи результат без текста.</p><p class="reading-text" lang="hy">'+e(c['base'])+'</p>'
+  s+=''.join(typed(str(i+1)+'. '+q,a) for i,(q,a) in enumerate(c['steps']))
+ else:
+  for a,b in u['words'][:2]:s+=typed('Вспомни опорное слово: '+b+'.',a)
  sentence=u['changed'].split('|')[0]
- if len(sentence.split())<3:sentence=u['model'].split('։')[0]+'։'
  s+=order(sentence)
- tokens=sentence.split()
- if len(tokens)>1:s+=typed('Восстанови последнее слово фразы образца: '+' '.join(tokens[:-1])+' …',tokens[-1])
- else:s+=typed('Перепиши слово по памяти после чтения: '+u['words'][-1][1],u['words'][-1][0])
+ if u['kind']!='lesson' or u['n']%4==0:s+=matching(u['words'][:3])
+ for t in u.get('tasks',[]):
+  if t['kind']=='choice':s+=choice(t['q'],t['options'])
+  elif t['kind']=='order':s+=order(' '.join(t['items']),t['items'],t['q'])
+  else:s+=typed(t['q'],t['answer'])
  return s
 
+def spaced(u):
+ rows=review_schedule[u['id']]
+ if not rows:return ''
+ s=f'<details class="card" id="spaced"><summary>Повторение слов: {len(rows)} опор из прошлых занятий</summary><p>Выбери 8–12 слов на сессию. Сначала ответь без подсказки. Затем прочитай прежний контекст вслух, закрой его и придумай свою реплику. Чередуй вопрос о себе и ответ. Повторы назначены через 1, 3, 7, 14 и 28 занятий; номер занятия не равен календарному дню.</p>'
+ for a,b,origin,stage in rows:
+  context=next((s for s in re.split(r'(?<=։)\s*',' '.join(origin['text'])) if a.lower() in s.lower()),word_examples.get(a,a))
+  if stage%2==0:s+=typed('Вспомни по смыслу «'+b+'» слово или сочетание из занятия «'+origin['title']+'».',a)
+  else:
+   alternatives=[x[1] for x in origin['words'] if x[1]!=b][:2]
+   s+=choice('Сопоставь с русским смыслом: '+a+'.',[b]+alternatives)
+  s+='<details><summary>Контекст для проверки и новой реплики</summary><p lang="hy" class="reading-text">'+e(context)+'</p><p>Скажи иначе или о себе. Не добавляй неизвестное время глагола; можно изменить человека, предмет или место.</p><a href="'+rel(origin['url'],u['url'])+'#practice">Первое введение</a></details>'
+ return s+'</details>'
+
 def cumulative(u):
- n=u['after'];nums=sorted(set([max(4,n-1),max(5,n-4),max(5,n-10)]))
- return '<section class="card"><h2>Накопительное повторение</h2><p>Сначала без подсказки. Здесь задания из прошлых уроков, новой грамматики нет.</p>'+''.join(typed('Урок '+str(k)+': '+units[k-1]['change'],units[k-1]['changed']) for k in nums)+f'<p>Через два дня вернись к этим трём заданиям, а через неделю перескажи текст без подготовки.</p></section>'
+ n=u['after'];nums=sorted(set(k for k in [n-1,n-4,n-10,5 if n>16 else 0,15 if n>34 else 0] if k>0))
+ return '<section class="card"><h2>Накопительное повторение грамматики</h2><p>Здесь смешаны старые темы. Прочитай исходную реплику, затем измени её без подсказки.</p>'+''.join('<p>'+hy(chains[k]['steps'][-2][1].split('|')[0])+'</p>'+typed('Урок '+str(k)+': '+chains[k]['steps'][-1][0],chains[k]['steps'][-1][1]) for k in nums)+'<p>Через два дня ответь снова, а через неделю перескажи текст без подготовки.</p></section>'
 def constitution_bridge(u):
  if u['n']<6:return ''
  # Only a few early terms; later reuse the actual study pages.
@@ -93,21 +128,25 @@ def checkpoint(u):
  s+=f'<section class="card"><h2>Письмо</h2><p>{writing}</p><label>Твой текст<textarea lang="hy" data-self="writing" placeholder="Пиши здесь. Сохраняется при вводе."></textarea></label></section>'
  checks=['Понял общий смысл без перевода каждого слова','Нашёл кто, что, где и когда; не пропустил отрицание','Ответил на вопросы по тексту без подсматривания','Прочитал вслух связно и сохранил окончания','Ответил о себе без готового текста','В письме понятны ситуация и просьба','Объяснил, что не понял, и попросил уточнить']
  s+='<section class="card self-list"><h2>Самооценка по навыкам</h2>'+''.join(f'<label><input type="checkbox" data-self="skill-{i}">{v}</label>' for i,v in enumerate(checks))+'<p><strong>Как принять решение:</strong> в проверяемой части цель — не менее 80% в новой попытке без подсказок. В письме и речи должны быть понятны все запрошенные пункты. Если один навык пока не получается, повтори связанные уроки и вернись через 2–3 дня. Это ориентир курса, не официальный порог CEFR.</p><p>Понимание живой речи оценивается отдельно: попроси собеседника или голосовую модель прочитать неизвестный тебе текст этого уровня, ответь на вопросы без письменной версии. Чтение вслух само по себе не подтверждает аудирование.</p></section>'
- if lv!='A1':s+=f'<section class="card"><h2>Конституция</h2><p>Пройди {"10 вопросов по изученным темам" if lv=="A2" else "полный пробный экзамен"} в <a href="{rel("exam.html",u["url"])}">тренажёре</a>. После каждого неверного ответа найди правило в статье. Результат сохраняется отдельно от языковой контрольной.</p></section>'
+ if u.get('legal'):
+  law=u['legal'];s+='<section class="card"><h2>'+e(law['title'])+'</h2><p>'+prose(law['support'])+'</p><blockquote lang="hy" class="reading-text">'+e(law['text'])+'</blockquote><p><a href="'+e(law['source'])+'">Официальный текст Конституции</a></p>'+''.join(choice(q['q'],q['options']) for q in law['questions'])+'</section>'
+ if lv=='B1':s+='<section class="card"><h2>Самостоятельный пересказ и мнение</h2><p>За 3 минуты перескажи большой текст без подсказок: события, причина проблемы, действия и итог. Затем за 2 минуты сравни два способа решения и обоснуй свой выбор двумя доводами. Запиши себя и проверь, понятны ли эти пункты слушателю.</p></section>'
+ if lv!='A1':s+=f'<section class="card"><h2>Конституция</h2><p>Пройди {"до 10 вопросов по изученным темам" if lv=="A2" else "полный пробный экзамен"} в <a href="{rel("exam.html",u["url"])+("?topics=1,2,3,4,5" if lv=="A2" else "")}">тренажёре</a>. После каждого неверного ответа найди правило в статье. Результат сохраняется отдельно от языковой контрольной.</p></section>'
  return s
 
 def news(u):
  if not u.get('news'):return ''
- n=u['news'];return '<section class="card"><h2>'+e(n['title'])+'</h2><p>'+e(n['support'])+'</p><blockquote lang="hy" class="reading-text">'+e(n['quote'])+'</blockquote><p><a href="'+n['source']+'">МВД Армении, '+n['date']+'</a></p><h3>Учебная адаптация</h3>'+''.join('<p lang="hy" class="reading-text">'+e(t)+'</p>' for t in n['text'])+typed(n['question'],n['answer'])+choice('Какой вывод подтверждён сообщением?',['Условия зависят в том числе от вида выборов','Временная защита автоматически равна гражданству','Возраст не упоминается'])+'</section>'
+ n=u['news'];return '<section class="card"><h2>'+e(n['title'])+'</h2><p>'+e(n['support'])+'</p><blockquote lang="hy" class="reading-text">'+e(n['quote'])+'</blockquote><p><a href="'+n['source']+'">МВД Армении, '+n['date']+'</a></p><h3>Учебная адаптация</h3>'+''.join('<p lang="hy" class="reading-text">'+e(t)+'</p>' for t in n['text'])+typed(n['question'],n['answer'])+choice('Какой вывод подтверждён сообщением?',n.get('conclusion',['Условия зависят в том числе от вида выборов','Временная защита автоматически равна гражданству','Возраст не упоминается']))+'</section>'
 def supplement(u):
  label='Чтение и практика' if u['kind']=='lesson' else 'Практика текста'
  s=f'<div class="course-practice" id="practice" data-unit="{u["id"]}"><section class="card"><p class="eyebrow">{e(label)} · {u["level"]}</p><h2>{e(u["title"])}</h2><p>Первый проход: пойми ситуацию. Второй: найди нужную деталь. Затем закрой текст и скажи своё.</p>{words(u)}<div class="note note--tip"><p>{prose(u["support"])}</p></div>{reading_html(u)}{marked("Чтение выполнено",u["id"]+":reading")}</section>'
+ if u.get('source_url'):s+='<p><a href="'+e(u['source_url'])+'">'+e(u['source_note'])+'</a></p>'
  s+='<section class="card"><h2>Понять и использовать</h2>'+activities(u)+'</section>'
  s+=f'<section class="card"><h2>Прочитай вслух и скажи сам</h2><ol><li>Прочитай первый абзац медленно, затем в обычном темпе, затем без остановок.</li><li>Закрой его. Воспроизведи смысл знакомыми словами.</li><li>{prose(u["speech"])}</li></ol><details><summary>Один возможный ответ</summary><p class="reading-text" lang="hy">{e(u["model"])}</p><p>Другие грамматически верные ответы тоже подходят. Здесь оценивается смысл, а не совпадение с образцом.</p></details><label>Своя короткая реплика<textarea lang="hy" data-self="reply"></textarea></label>{marked("Речь выполнена",u["id"]+":speaking")}<details><summary>Практика с голосовой моделью</summary><p>Проведи со мной пятиминутный диалог по этому тексту на восточноармянском. Задавай по одному вопросу. Используй лексику текущего и предыдущих уроков. Дай мне ответить без подсказки, затем поправь одну-две существенные ошибки. Армянские слова записывай только армянским алфавитом. Если доступна моя аудиозапись, помоги заметить неясные звуки; если доступна только расшифровка, не оценивай произношение по ней.</p></details></section>'
  if u['kind']=='lesson':
   s+=constitution_bridge(u)
-  prior=[k for k in [u['n']-1,u['n']-4,u['n']-10] if k>0]
-  if prior:s+='<section class="card card--soft"><h2>Повтори спустя время</h2><p>Перед следующей сессией вспомни без текста по одной фразе из уроков '+', '.join(f'<a href="{rel(files[k].relative_to(SITE).as_posix(),u["url"])}">{k}</a>' for k in prior)+'. Повтори этот блок через два дня и через неделю.</p></section>'
+  if u['n']>4:s+=cumulative(u)
+ s+=spaced(u)
  if u['kind'] in ['review','checkpoint']:s+=cumulative(u)
  if u['kind']=='checkpoint':s+=checkpoint(u)
  if u['kind']=='constitution':
@@ -148,12 +187,12 @@ for u in units:
  path.write_text("\n".join(line.rstrip() for line in s.splitlines())+"\n")
 
 # Course table, in the actual traversal order.
-body='<p class="lead">58 основных уроков и 29 дополнительных занятий. Чтение, речь и Конституция развиваются параллельно. Отметки о прохождении не являются подтверждением уровня B1.</p><p><a href="#A1">A1</a> · <a href="#A2">A2</a> · <a href="#B1">B1</a> · <a href="../tracks.html">Дополнительные занятия по направлениям</a></p>'
+body=f'<p class="lead">58 основных уроков и {len(extra)} дополнительных занятий. Чтение, речь и Конституция развиваются параллельно. Отметки о прохождении не являются подтверждением уровня B1.</p><p><a href="#A1">A1</a> · <a href="#A2">A2</a> · <a href="#B1">B1</a> · <a href="../tracks.html">Дополнительные занятия по направлениям</a></p>'
 for lv in ['A1','A2','B1']:
  items=[r for r in routes if r['level']==lv];body+=f'<section id="{lv}"><h2>{lv} · {len(items)} занятий</h2><div class="course-table-scroll" tabindex="0" aria-label="Таблица программы {lv}"><table class="tbl course-table"><thead><tr>'+''.join('<th>'+x+'</th>' for x in ['№','Тема','Грамматика','Опорная лексика','Чтение','Чтение вслух / речь','Конституция','Повторение'])+'</tr></thead><tbody>'
  for r in items:
   p=plan[r['n']];ordinary=r['kind']=='lesson'
-  cells=[str(r['n']) if ordinary else 'После '+str(r['n']), f'<a href="{rel(r["url"],"reference/curriculum.html")}">{e(p["практическая тема"] if ordinary else r["title"])}</a>',e(p['грамматика'] if ordinary else 'Применение изученного; опоры внутри'),', '.join(hy(w[0]) for w in r['words']),e(r['title']),e(p['речь'] if ordinary else r['speech']),e(p['Конституция'] if ordinary else 'Отдельная тема' if r['kind']=='constitution' else 'Повторение изученных тем'),e(p['повторение'] if ordinary else 'Материал до урока '+str(r['after']))]
+  cells=[str(r['n']) if ordinary else 'После '+str(r['n']), f'<a href="{rel(r["url"],"reference/curriculum.html")}">{e(p["практическая тема"] if ordinary else r["title"])}</a>',e(p['грамматика'] if ordinary else r['grammar']),', '.join(hy(w[0]) for w in r['words']),e(r['title']),e(p['речь'] if ordinary else r['speech']),e(p['Конституция'] if ordinary else r['constitution_goal']),e(p['повторение'] if ordinary else r['review_goal'])]
   body+=f'<tr class="{"" if ordinary else "route-extra"}" data-lesson="{r["id"]}">'+''.join('<td>'+c+'</td>' for c in cells)+'</tr>'
  body+='</tbody></table></div></section>'
 body+='<section class="card"><h2>Учебный день: выбирай блоки</h2><p>Ориентир — 2–3 часа, около пяти дней в неделю. Основной урок 30–50 минут, упражнения и повторение 20–30, словарь 15–25, чтение 30–60, речь 15–30. Конституция 20–40 минут заменяет часть чтения или практики; не нужно складывать максимумы всех блоков.</p><p>Минимальная сессия: один небольшой блок и его воспроизведение по памяти. Номер урока не равен дню; длинный урок можно растянуть на два дня. После контрольной точки возвращайся к слабому навыку.</p></section>'
@@ -183,11 +222,14 @@ for lv in ['A1','A2','B1']:
  for w in items:
   old=byhy.get(normalize(w['hy']));button=f'<button class="flearn" data-learn="{old["id"]}" aria-pressed="false">выучил</button>' if old else marked('Помню','word:'+w['hy'])
   refs=[]
-  for id_ in w['units'][:8]:
+  schedule=active_first[w['hy'].lower().replace('և','եւ')]
+  w['reviews']=schedule['targets'];w['after_course_reviews']=schedule['later']
+  for id_ in dict.fromkeys(w['units']+w['reviews']):
    r=next(r for r in routes if r['id']==id_);refs.append(f'<a href="{r["url"]}#practice">{e(route_title(r))}</a>')
+  if schedule['later']:refs.append('После курса: ещё '+str(schedule['later'])+' повторения через 2, 7, 14, 28 и 60 дней, выбирая первые нужные интервалы.')
   body+=f'<tr><td>{hy(w["hy"])}</td><td>{e(w["ru"])}</td><td>{hy(w["example"])}<br>'+', '.join(refs)+f'</td><td>{button}</td></tr>'
  body+='</tbody></table></div></section>'
-body+='<p><a href="vocabulary.html">Полный словарь и карточки с транскрипцией</a></p>'
+body+='<section class="card"><h2>Повторение после курса</h2><p>У последних слов часть пяти повторений выходит за конец маршрута. В отмеченные выше дни закрой столбец смысла, назови его по памяти, прочитай пример и ответь о себе одной новой фразой. Затем скрой армянское слово и восстанови его письменно. Отложи выученные; трудные верни на следующий день. Повторяй по 8–12 слов, пока для каждой опоры не пройдены все пять возвращений.</p></section><p><a href="vocabulary.html">Полный словарь и карточки с транскрипцией</a></p>'
 (SITE/'active-vocabulary.html').write_text(page('Активный словарь',body,'active-vocabulary.html',wide=True))
 dump(CONTENT/'active-vocabulary.json',list(active.values()))
 
