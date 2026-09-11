@@ -80,7 +80,10 @@ def matching(pairs):
 def activities(u):
  s=choice(u['gist'][0],u['gist'][1:])+typed(u['detail'],u['answer'])+typed(u['change'],u['changed'])
  if u['kind']=='lesson':
-  c=chains[u['n']];s+='<h3>Измени фразу шаг за шагом</h3><p>Каждый следующий шаг меняет предыдущий ответ. После проверки скажи результат без текста.</p><p class="reading-text" lang="hy">'+e(c['base'])+'</p>'
+  c=chains[u['n']]
+  title='Прочитай и вспомни' if u['n']<=3 else 'Вспомни готовые реплики' if u['n']==4 else 'Измени фразу шаг за шагом'
+  instruction='Выполни три коротких задания. После проверки закрой ответ и произнеси его ещё раз.' if u['n']<=4 else 'Каждый следующий шаг меняет предыдущий ответ. После проверки скажи результат без текста.'
+  s+='<h3>'+title+'</h3><p>'+instruction+'</p><p class="reading-text" lang="hy">'+e(c['base'])+'</p>'
   s+=''.join(typed(str(i+1)+'. '+q,a) for i,(q,a) in enumerate(c['steps']))
  else:
   for a,b in u['words'][:2]:s+=typed('Вспомни опорное слово: '+b+'.',a)
@@ -142,15 +145,29 @@ def constitution_review(u):
  s+='<h3>Ответь без готового текста</h3><p>'+prose(block['speech'])+'</p><label>Своя короткая реплика<textarea lang="hy" data-self="constitution-reply"></textarea></label><details><summary>Образец для самопроверки</summary><p lang="hy" class="reading-text">'+e(block['model'])+'</p><p>Сохрани смысл. Дословное совпадение с образцом не требуется.</p></details>'
  return s+'</section>'
 
+# Mechanical selection drafted with Grok CLI; reviewed locally.
+def last_studied_topic(topics, lesson_number):
+    chosen = None
+    for topic in topics:
+        if topic["kind"] != "constitution":
+            continue
+        after = topic["after"]
+        if after >= lesson_number:
+            continue
+        if chosen is None or after > chosen["after"]:
+            chosen = topic
+    return chosen
+
+
 def constitution_bridge(u):
  if u['n']<6:return ''
  # Only a few early terms; later reuse the actual study pages.
  early={6:('Հայաստան','Армения'),7:('Հանրապետություն','республика'),8:('Հայաստանի Հանրապետություն','Республика Армения'),9:('քաղաքացի','гражданин'),10:('պետություն','государство'),11:('Սահմանադրություն','Конституция'),12:('օրենք','закон'),13:('քաղաքացու','гражданина')}
  if u['n'] in early:
-  a,b=early[u['n']];return f'<section class="card card--soft"><h2>Государственные слова понемногу</h2><p>{hy(a)} — {e(b)}. Прочитай, закрой строку и узнай слово в следующем уроке.</p>'+f'<p>После урока 12: <a href="{rel("practice/constitution-01.html",u["url"])}">Конституция 1</a>.</p></section>'
- eligible=[x for x in extra if x['kind']=='constitution' and x['after']<=u['n']]
- latest=eligible[-1] if eligible else next(x for x in extra if x['id']=='constitution-01')
- return f'<section class="card card--soft"><h2>Вернись к Конституции</h2><p>Прочитай название последней темы, вспомни два слова и объясни одно положение своими словами: <a href="{rel(latest["url"],u["url"])}">{e(latest["title"])}</a>.</p></section>'
+  a,b=early[u['n']];return f'<section class="card card--soft"><h2>Государственные слова понемногу</h2><p>{hy(a)} — {e(b)}. Прочитай, закрой строку и назови значение по памяти.</p>'+f'<p>После урока 12: <a href="{rel("practice/constitution-01.html",u["url"])}">Конституция 1</a>.</p></section>'
+ latest=last_studied_topic(extra,u['n'])
+ if latest is None:return ''
+ return f'<section class="card card--soft" data-constitution-return="{latest["id"]}"><h2>Вернись к Конституции</h2><p>Прочитай название последней темы, вспомни два слова и объясни одно положение своими словами: <a href="{rel(latest["url"],u["url"])}">{e(latest["title"])}</a>.</p></section>'
 
 def checkpoint(u):
  lv=u['level'];writing={'A1':'Напиши 5–7 предложений: имя, город, занятие сегодня, что есть дома, один план. Затем добавь короткий заказ напитка.','A2':'Напиши сообщение на 60–90 слов: не можешь прийти, объясни причину, предложи два времени и попроси подтвердить.','B1':'Напиши 120–160 слов: опиши проблему с документом, объясни предпринятые действия, запроси уточнение и предложи следующий шаг. Отдельно сформулируй мнение и обоснуй его.'}[lv]
@@ -175,7 +192,8 @@ def supplement(u):
  s=f'<div class="course-practice" id="practice" data-unit="{u["id"]}"><section class="card"><p class="eyebrow">{e(label)} · {u["level"]}</p><h2>{e(u["title"])}</h2><p>Первый проход: пойми ситуацию. Второй: найди нужную деталь. Затем закрой текст и скажи своё.</p>{words(u)}<div class="note note--tip"><p>{prose(u["support"])}</p></div>{reading_html(u)}{marked("Чтение выполнено",u["id"]+":reading")}</section>'
  if u.get('source_url'):s+='<p><a href="'+e(u['source_url'])+'">'+e(u['source_note'])+'</a></p>'
  s+='<section class="card"><h2>Понять и использовать</h2>'+activities(u)+'</section>'
- s+=f'<section class="card"><h2>Прочитай вслух и скажи сам</h2><ol><li>Прочитай первый абзац медленно, затем в обычном темпе, затем без остановок.</li><li>Закрой его. Воспроизведи смысл знакомыми словами.</li><li>{prose(u["speech"])}</li></ol><details><summary>Один возможный ответ</summary><p class="reading-text" lang="hy">{e(u["model"])}</p><p>Другие грамматически верные ответы тоже подходят. Здесь оценивается смысл, а не совпадение с образцом.</p></details><label>Своя короткая реплика<textarea lang="hy" data-self="reply"></textarea></label>{marked("Речь выполнена",u["id"]+":speaking")}<details><summary>Практика с голосовой моделью</summary><p>Проведи со мной пятиминутный диалог по этому тексту на восточноармянском. Задавай по одному вопросу. Используй лексику текущего и предыдущих уроков. Дай мне ответить без подсказки, затем поправь одну-две существенные ошибки. Армянские слова записывай только армянским алфавитом. Если доступна моя аудиозапись, помоги заметить неясные звуки; если доступна только расшифровка, не оценивай произношение по ней.</p></details></section>'
+ aloud_part='слова и короткие фразы' if u['kind']=='lesson' and u['n']<=3 else 'реплики' if u['kind']=='lesson' and u['n']==4 else 'первый абзац'
+ s+=f'<section class="card"><h2>Прочитай вслух и скажи сам</h2><ol><li>Прочитай {aloud_part} медленно, затем в обычном темпе, затем без остановок.</li><li>Закрой текст. Воспроизведи смысл знакомыми словами.</li><li>{prose(u["speech"])}</li></ol><details><summary>Один возможный ответ</summary><p class="reading-text" lang="hy">{e(u["model"])}</p><p>Другие грамматически верные ответы тоже подходят. Здесь оценивается смысл, а не совпадение с образцом.</p></details><label>Своя короткая реплика<textarea lang="hy" data-self="reply"></textarea></label>{marked("Речь выполнена",u["id"]+":speaking")}<details><summary>Практика с голосовой моделью</summary><p>Проведи со мной пятиминутный диалог по этому тексту на восточноармянском. Задавай по одному вопросу. Используй лексику текущего и предыдущих уроков. Дай мне ответить без подсказки, затем поправь одну-две существенные ошибки. Армянские слова записывай только армянским алфавитом. Если доступна моя аудиозапись, помоги заметить неясные звуки; если доступна только расшифровка, не оценивай произношение по ней.</p></details></section>'
  if u['kind']=='lesson':
   s+=constitution_bridge(u)
   if u['n']>4:s+=cumulative(u)
@@ -285,6 +303,9 @@ print('Built',len(routes),'learning pages;',len(extra),'new pages;',len(active),
 import hashlib
 for path in SITE.rglob('*.html'):
  s=path.read_text()
+ if not re.search(r'<link\b[^>]*rel=[\"\']icon[\"\']',s):
+  icon=rel('favicon.svg',path.relative_to(SITE).as_posix())
+  s=s.replace('</head>',f'<link rel="icon" type="image/svg+xml" href="{icon}"></head>',1)
  def wrap_table(m):
   before=s[max(0,m.start()-160):m.start()]
   if re.search(r'<div[^>]*class="course-table-scroll"[^>]*>$',before):return m[0]

@@ -54,6 +54,13 @@ print('Constitution review: 8 blocks, real questions and only previously introdu
 counts=Counter()
 for path in list((root/'lessons').glob('*.html'))+list((root/'practice').glob('*.html')):
  s=path.read_text();p=Page(s)
+ if path.parent.name=='lessons':
+  returned=[a['data-constitution-return'] for tag,a in p.attrs if 'data-constitution-return' in a]
+  n=int(path.name[:4])
+  prior=[u for u in constitution.values() if u['after']<n]
+  if n>=14:
+   assert returned==[max(prior,key=lambda u:u['after'])['id']],(path,'return to an unstudied topic')
+  else:assert not returned,path
  assert s.count('id="practice"')==1,path
  assert 'data-track-complete=' in s and 'Прочитай вслух' in s,path
  for tag,a in p.attrs:

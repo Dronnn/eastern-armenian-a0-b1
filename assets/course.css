@@ -43,3 +43,12 @@
 
 /* Keep mixed text and Armenian spans in one readable sentence. */
 .quiz__opts > .opt{display:block}
+
+.lnav--bar{grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+.lnav--bar > *{min-width:0;max-width:100%;overflow-wrap:anywhere}
+@media(max-width:600px){.lnav--bar{grid-template-columns:minmax(0,1fr)}.lnav--bar > :nth-child(n){justify-self:stretch;justify-content:center;text-align:center}}
+
+.wrap{overflow-wrap:anywhere}
+.btn:has([data-import-all]){flex-wrap:wrap;max-width:100%}
+[data-import-all]{min-width:0;max-width:100%}
+@media(max-width:380px){.topbar__in{gap:8px}}

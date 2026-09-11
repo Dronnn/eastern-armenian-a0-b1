@@ -49,7 +49,7 @@
     box.querySelector('[data-order-reset]').addEventListener('click',()=>{ if(!checked) Array.from(answer.children).forEach(btn=>bank.appendChild(btn)); });
     box.querySelector('[data-order-check]').addEventListener('click',()=>{
       if(checked)return;
-      if(bank.children.length){fb.textContent='Используй все слова. Нажми слово в ответе, чтобы вернуть его.';return;}
+      if(bank.children.length){fb.textContent='Используй все элементы. Нажми элемент в ответе, чтобы вернуть его.';return;}
       checked=true;
       const ok=norm(Array.from(answer.children).map(b=>b.textContent).join(box.dataset.separator ?? ' '))===norm(box.dataset.answer);
       fb.textContent=(ok?'Верно. ':'Проверь порядок слов. Образец: ')+box.dataset.answer;
