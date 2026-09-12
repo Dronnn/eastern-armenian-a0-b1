@@ -360,7 +360,7 @@ button.pc-result:hover { background: var(--primary-soft); }
 
 @page {
   size: A4 portrait;
-  margin: 0;
+  margin: 10mm;
 }
 
 @media print {
@@ -401,6 +401,7 @@ button.pc-result:hover { background: var(--primary-soft); }
     width: auto !important;
     max-width: none !important;
     min-width: 0 !important;
+    min-height: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
     background: #fff !important;
@@ -421,14 +422,18 @@ button.pc-result:hover { background: var(--primary-soft); }
     page-break-after: auto;
   }
 
+  /* Half a millimetre of headroom prevents a trailing blank page in Safari. */
   .pc-sheet-wrap {
-    width: 210mm !important;
-    height: 297mm !important;
+    width: 190mm !important;
+    height: 276.5mm !important;
     margin: 0 !important;
     overflow: hidden;
   }
 
   .pc-sheet {
+    width: 190mm;
+    height: 276.5mm;
+    padding: 0;
     transform: none !important;
     box-shadow: none !important;
     break-inside: avoid;
