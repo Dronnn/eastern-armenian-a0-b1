@@ -329,6 +329,8 @@ table.tbl { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 1
   border-color: var(--good-line);
 }
 .flashcell.is-learned .flash { border-color: var(--good-line); }
+.letter > .flearn { display: block; margin: 12px auto 0; }
+.letter.is-learned { border-color: var(--good-line); }
 
 /* ---------- Reveal ---------- */
 .reveal { margin: 12px 0; }

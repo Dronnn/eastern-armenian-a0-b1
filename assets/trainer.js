@@ -1064,6 +1064,15 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   });
 
   /* ============ СТАРТ ============ */
+  function reloadLearned() {
+    learned = loadMap(KEY);
+    renderDash();
+    refreshBrowse();
+  }
+  window.addEventListener("storage", function (event) {
+    if (event.key === KEY || event.key === null) reloadLearned();
+  });
+  window.addEventListener("pageshow", reloadLearned);
   renderDash();
   refreshBrowse();
 })();

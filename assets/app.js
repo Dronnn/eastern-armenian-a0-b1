@@ -293,7 +293,7 @@
       var map = vocabLoad();
       if (map[id]) delete map[id]; else map[id] = 1;
       vocabSave(map);
-      paintLearn(btn, map);
+      repaintAllVocab();
     });
 
     // Живая синхронизация между вкладками: тренажёр пишет в тот же ключ.
@@ -301,6 +301,7 @@
       if (e.key && e.key !== VOCAB_KEY) return;
       repaintAllVocab();
     });
+    window.addEventListener("pageshow", repaintAllVocab);
   }
 
   function initAll() {

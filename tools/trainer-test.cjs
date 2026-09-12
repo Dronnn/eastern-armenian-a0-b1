@@ -31,17 +31,31 @@ function makeRng(seed) {
 console.log("=== Тренажёр слов — тесты логики ===\n");
 
 /* ---------- 0. Данные ---------- */
-eq(VOCAB.length, 2869, "всего слов = 2869");
-eq(THEMES.length, 72, "тем = 72");
+eq(VOCAB.length, 3060, "всего слов = 3060");
+eq(THEMES.length, 75, "тем = 75");
 const byLvl = { A1: 0, A2: 0, B1: 0 };
 VOCAB.forEach(w => { byLvl[w.level]++; });
-eq(byLvl.A1, 913, "A1 = 913");
-eq(byLvl.A2, 1195, "A2 = 1195");
-eq(byLvl.B1, 761, "B1 = 761");
-eq(byLvl.A1 + byLvl.A2 + byLvl.B1, 2869, "сумма уровней = всего");
+eq(byLvl.A1, 923, "A1 = 923");
+eq(byLvl.A2, 1230, "A2 = 1230");
+eq(byLvl.B1, 907, "B1 = 907");
+eq(byLvl.A1 + byLvl.A2 + byLvl.B1, 3060, "сумма уровней = всего");
 const ids = new Set(VOCAB.map(w => w.id));
 eq(ids.size, VOCAB.length, "id уникальны");
-console.log("[0] данные: 2869 (A1=913 A2=1195 B1=761), 72 темы, id уникальны — OK");
+const fs = require("fs");
+const lessonsDir = path.join(__dirname, "..", "lessons");
+for (const file of fs.readdirSync(lessonsDir).filter(name => name.endsWith(".html"))) {
+  const html = fs.readFileSync(path.join(lessonsDir, file), "utf8");
+  for (const card of html.matchAll(/<button class="flash"[^>]*>[\s\S]*?<\/button>/g)) {
+    ok(/^<button[^>]*data-learn=/.test(html.slice(card.index + card[0].length)), file + ": у флешкарты есть отметка");
+  }
+  for (const card of html.matchAll(/<div class="letter"><div class="pair hy">[^<]+<\/div><div class="name">[^<]*<\/div><a class="audio"[^>]*>[^<]*<\/a>([\s\S]*?)<\/div>/g)) {
+    ok(card[1].includes("data-learn="), file + ": у карточки с озвучкой есть отметка");
+  }
+  for (const match of html.matchAll(/data-learn="([^"]+)"/g)) {
+    ok(match[1].startsWith("card:") || ids.has(Number(match[1])), file + ": отметка связана со словарём или учебной карточкой");
+  }
+}
+console.log("[0] данные: 3060 (A1=923 A2=1230 B1=907), 75 темы, id уникальны — OK");
 
 /* ---------- 1. Нормализация ввода ---------- */
 eq(L.normalize("  Привет!  "), "привет", "trim + lowercase + пунктуация");
@@ -74,13 +88,13 @@ let deck = L.buildDeck(VOCAB, { level: "all", theme: "all", pool: "all", source:
 eq(deck.length, 10, "колода размером 10");
 // уровень A1, size all
 deck = L.buildDeck(VOCAB, { level: "A1", theme: "all", pool: "all", source: "filters", size: "all", pick: {} }, learnedNone, makeRng(2));
-eq(deck.length, 913, "A1 целиком = 913");
+eq(deck.length, 923, "A1 целиком = 923");
 ok(deck.every(w => w.level === "A1"), "в колоде только A1");
 // pool=new исключает выученные
 const learnedSome = {};
 VOCAB.filter(w => w.level === "A1").slice(0, 100).forEach(w => { learnedSome[w.id] = 1; });
 deck = L.buildDeck(VOCAB, { level: "A1", theme: "all", pool: "new", source: "filters", size: "all", pick: {} }, learnedSome, makeRng(3));
-eq(deck.length, 813, "A1 только новые = 913-100=813");
+eq(deck.length, 823, "A1 только новые = 923-100=823");
 ok(deck.every(w => !learnedSome[w.id]), "выученные исключены");
 // тема
 const someTheme = THEMES[0].theme;
