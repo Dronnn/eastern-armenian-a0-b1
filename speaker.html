@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Armenian Speaker — бесплатное приложение для Mac</title>
+<meta name="description" content="Озвучивание армянского текста и перевод между армянским и русским на вашем Mac. Бесплатно, локально, без аккаунта.">
+<link rel="stylesheet" href="assets/style.css?v=02942dc069">
+<link rel="stylesheet" href="assets/course.css?v=6b960bca4f">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+<header class="topbar"><div class="topbar__in">
+<a class="brand" href="index.html"><span class="brand__mark">Հ</span><span>Հայերեն</span></a>
+<div class="topbar__spacer"></div><a class="crumb" href="index.html">К курсу</a>
+</div></header>
+<main class="wrap">
+<p class="eyebrow">Бесплатно · macOS · работает локально</p>
+<h1>Armenian Speaker</h1>
+<p class="lead">Вставьте армянский текст, выберите скорость и слушайте. Переводите короткие фразы с армянского на русский и обратно: когда панель перевода открыта, перевод появляется автоматически через 0,6 секунды после окончания ввода, а кнопка Translate запускает его сразу. Закрытая панель не запускает перевод. Модели уже внутри приложения: после скачивания интернет не нужен.</p>
+<section class="card card--accent" aria-labelledby="download-title">
+<h2 id="download-title">Скачать для Mac</h2>
+<p>Версия 1.0.2 · Apple Silicon (M1 и новее) · macOS 14 и новее. Для Intel, iPhone и Windows эта сборка не подходит.</p>
+<p><a class="btn btn--primary" href="https://github.com/Dronnn/hay-reader/releases/download/v1.0.2/Armenian-Speaker-1.0.2-arm64.dmg">Скачать Armenian Speaker — DMG, около 415 МБ</a></p>
+<p class="muted">Без оплаты, регистрации и подписки. <a href="https://github.com/Dronnn/hay-reader/releases/tag/v1.0.2">Файлы выпуска и контрольная сумма</a> · <a href="https://github.com/Dronnn/hay-reader">Открытый исходный код</a>.</p>
+</section>
+<h2>Что умеет</h2>
+<ul>
+<li>Озвучивать армянский текст или выделенный армянский фрагмент голосом Gor. Если с русского переведено на армянский, кнопка воспроизведения читает перевод из нижней панели.</li>
+<li>Менять скорость от 0.1× до 2.0× с шагом 0.1×; ставить речь на паузу и продолжать.</li>
+<li>Принимать выделенный текст из Safari, TextEdit и других приложений через Services — Speak Armenian.</li>
+<li>Озвучивать буфер обмена через значок в строке меню.</li>
+<li>Переводить короткие тексты между армянским и русским локально: WindyEnhanced переводит с русского на армянский, SMaLL-100 — с армянского на русский.</li>
+</ul>
+<p>Модели: <a href="https://huggingface.co/WindstormLabs/translate-ru-hy">WindyEnhanced</a> и <a href="https://huggingface.co/alirezamsh/small100">SMaLL-100</a>.</p>
+<p>Это машинный голос и машинный перевод: произношение и смысл могут быть неточными. Используйте перевод как подсказку и сверяйте важные фразы. Распознавание речи с микрофона в эту версию не входит.</p>
+<h2>Как установить</h2>
+<ol class="steps">
+<li>Скачайте и откройте DMG.</li>
+<li>Перетащите Armenian Speaker в папку Applications (Программы).</li>
+<li>Откройте приложение из Applications и вставьте армянский текст.</li>
+</ol>
+<section class="card card--soft">
+<h2>Первый запуск и проверка macOS</h2>
+<p>Эта бесплатная сборка пока не подписана сертификатом Developer ID и не нотарифицирована Apple. Поэтому macOS может заблокировать первый запуск.</p>
+<p>Если вы доверяете этой сборке, после попытки запуска откройте System Settings — Privacy &amp; Security и выберите Open Anyway для Armenian Speaker. На управляемом рабочем Mac такое разрешение может быть недоступно. <a href="https://support.apple.com/en-us/102445">Инструкция Apple о запуске приложений</a>.</p>
+</section>
+<h2>Озвучить текст с сайта</h2>
+<p>Выделите армянскую фразу в Safari. В меню Safari откройте Services — Speak Armenian; действие также может быть доступно в контекстном меню выделения. Текст появится в приложении, а при включённом Auto Play начнётся озвучивание.</p>
+<p>Если пункта нет, откройте System Settings — Keyboard — Keyboard Shortcuts — Services и включите Speak Armenian в разделе текста. Для приложений без поддержки Services используйте Copy, затем Speak Clipboard в строке меню.</p>
+<h2>Ваш текст остаётся на Mac</h2>
+<p>Озвучивание и перевод выполняются локально. Нет аналитики, облачных API и отправки текста на сервер. Историю последних фраз можно отключить и очистить в Settings.</p>
+<p class="muted">Приложение — GPL-3.0; Piper и espeak-ng — GPL-3.0; модель Gor — GPL-2.0; SMaLL-100 — MIT; WindyEnhanced от WindstormLabs / WindyWord.ai — CC-BY-4.0. Лицензии компонентов находятся в Settings — Open Licenses, исходники компонентов доступны в файлах выпуска.</p>
+<p><a href="index.html">Вернуться к курсу</a></p>
+</main>
+<script src="assets/app.js"></script>
+</body>
+</html>
