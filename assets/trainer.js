@@ -444,7 +444,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       deck: deckWords.map(function (w) { return w.id; }),
       dir: setupCfg.dir,
       types: types,
-      stats: { learned: 0, skipped: 0, total: deckWords.length },
+      stats: { learned: 0, practiced: 0, skipped: 0, total: deckWords.length },
       deferredMatches: [],
       retryMatch: false,
       stepNo: 0,
@@ -472,7 +472,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       '<span class="sc sc--rem">осталось <b>' + remaining + '</b></span>' +
       '<span class="sc sc--learn">выучил <b>' + s.learned + '</b></span>' +
       '<span class="sc sc--skip">отложил <b>' + s.skipped + '</b></span>';
-    var done = s.learned + s.skipped;
+    var done = s.learned + s.practiced + s.skipped;
     var pct = s.total ? Math.round(done / s.total * 100) : 0;
     $("session-prog-bar").style.width = pct + "%";
   }
@@ -596,9 +596,10 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       return '<button class="mtile mtile--right" data-side="right" data-id="' + esc(it.id) + '" type="button">' + esc(it.text) + '</button>';
     }).join("");
     return '<div class="sx sx--match">' + typeTag("match") +
-      '<div class="sx-ask">Сопоставь слово и перевод. Можно начать с любой колонки.</div>' +
+      '<div class="sx-ask">Сопоставь слово и перевод. Можно начать с любой колонки. После ответа отметь галочкой только те пары, которые хорошо помнишь.</div>' +
       '<div class="mgrid"><div class="mcol mcol--left">' + leftHtml + '</div>' +
         '<div class="mcol mcol--right">' + rightHtml + '</div></div>' +
+      '<div class="match-learned" id="match-learned"></div>' +
       '<div class="sx-verdict" id="sx-verdict" role="status" hidden></div>' +
       '<div class="sx-actions"><button class="btn btn--ghost sx-act" data-act="match-skip" type="button">Пропустить, повторить позже</button></div>' +
       '<div class="sx-actions sx-actions--match" id="sx-match-after" hidden>' +
@@ -708,6 +709,18 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       [first.tile, tile].forEach(function (b) {
         b.classList.add("is-solved"); b.disabled = true;
       });
+      var word = byId[leftId];
+      var label = document.createElement("label");
+      label.className = "match-learned__pair";
+      var checkbox = document.createElement("input");
+      checkbox.type = "checkbox";
+      checkbox.setAttribute("data-match-learn", leftId);
+      checkbox.checked = !!learned[leftId];
+      var text = document.createElement("span");
+      text.textContent = word.hy + " — " + word.ru + ": хорошо помню";
+      label.appendChild(checkbox);
+      label.appendChild(text);
+      $("match-learned").appendChild(label);
       if (Object.keys(st.solved).length === st.ids.length) {
         v.hidden = false; v.className = "sx-verdict is-ok";
         v.innerHTML = "<b>Все пары верны!</b>";
@@ -736,12 +749,26 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     }, 450);
   }
 
-  // Завершение сопоставления: убрать ВСЕ слова группы из колоды как «пройденные»
-  // (засчитываем выученными — это активная проверка узнавания).
+  // Только явное действие пользователя меняет отметку в словаре.
+  $("session-stage").addEventListener("change", function (e) {
+    var checkbox = e.target.closest("[data-match-learn]");
+    if (!checkbox || !session || session.curType !== "match") return;
+    var id = checkbox.getAttribute("data-match-learn");
+    if (!session.match.solved[id]) return;
+    if (checkbox.checked) learned[id] = 1; else delete learned[id];
+    saveMap(KEY, learned);
+    renderDash();
+  });
+
+  // Решение пары завершает упражнение, но само по себе не означает «выучено».
   function advanceMatch() {
     if (!session || !session.match || Object.keys(session.match.solved).length !== session.match.ids.length) return;
     var ids = session.match.ids;
-    ids.forEach(function (id) { markLearned(id); removeFromDeck(id); session.stats.learned++; });
+    ids.forEach(function (id) {
+      removeFromDeck(id);
+      if (learned[id]) session.stats.learned++;
+      else session.stats.practiced++;
+    });
     session.stepNo++;
     renderDash();
     renderStep();
@@ -777,12 +804,13 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   function finishSession() {
     if (!session) return;
     var s = session.stats;
-    var processed = s.learned + s.skipped;
+    var processed = s.learned + s.practiced + s.skipped;
     var pct = s.total ? Math.round(processed / s.total * 100) : 0;
     $("result-stats").innerHTML =
       '<div class="rstat rstat--learn"><div class="rstat__n">' + s.learned + '</div><div class="rstat__l">выучил</div></div>' +
+      (s.practiced ? '<div class="rstat"><div class="rstat__n">' + s.practiced + '</div><div class="rstat__l">сопоставил без отметки</div></div>' : '') +
       '<div class="rstat rstat--skip"><div class="rstat__n">' + s.skipped + '</div><div class="rstat__l">отложил</div></div>' +
-      '<div class="rstat rstat--rem"><div class="rstat__n">' + session.deck.length + '</div><div class="rstat__l">осталось</div></div>' +
+      '<div class="rstat rstat--rem"><div class="rstat__n">' + (session.deck.length + session.deferredMatches.reduce(function (n, ids) { return n + ids.length; }, 0)) + '</div><div class="rstat__l">осталось</div></div>' +
       '<div class="rstat rstat--pct"><div class="rstat__n">' + pct + '%</div><div class="rstat__l">сессии пройдено</div></div>';
     session = null;
     showOnly("result");
