@@ -316,3 +316,7 @@ for path in SITE.rglob('*.html'):
   return m['prefix']+'assets/'+m['file']+'?v='+digest
  s=re.sub(r'(?P<prefix>(?:\.\./)*)assets/(?P<file>[^"?]+\.(?:js|css))(?:\?v=[a-f0-9]+)?',version_asset,s)
  path.write_text("\n".join(line.rstrip() for line in s.splitlines())+"\n")
+
+# Restore authored translation practice after generating the course sections.
+import runpy
+runpy.run_path(str(SITE / "tools/build_writing.py"), run_name="__main__")

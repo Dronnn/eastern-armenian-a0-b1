@@ -1,0 +1,10 @@
+.writing-task { margin-top: 1.5rem; border-top: 1px solid var(--line, #bbb); padding-top: 1rem; }
+.writing-task textarea { display: block; box-sizing: border-box; width: 100%; min-height: 7rem; margin: .5rem 0 1rem; padding: .8rem; font: inherit; line-height: 1.7; color: inherit; background: transparent; border: 1px solid var(--line, #888); border-radius: .5rem; resize: vertical; }
+.writing-actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.writing-words { display: flex; flex-wrap: wrap; gap: .4rem; }
+.writing-word { padding: .15rem .4rem; border: 1px solid currentColor; border-radius: .3rem; overflow-wrap: anywhere; max-width: 100%; }
+.writing-word--exact { background: #d9f3dd; color: #174c24; }
+.writing-word--typo { background: #fff0c2; color: #614600; }
+.writing-word--wrong { background: #fce0df; color: #7b2020; }
+.writing-practice [hidden] { display: none !important; }
+@media print { .writing-actions, .writing-words { display: none; } }
