@@ -445,6 +445,8 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       dir: setupCfg.dir,
       types: types,
       stats: { learned: 0, skipped: 0, total: deckWords.length },
+      deferredMatches: [],
+      retryMatch: false,
       stepNo: 0,
       answered: false
     };
@@ -465,7 +467,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
 
   function renderSessionBar() {
     var s = session.stats;
-    var remaining = session.deck.length;
+    var remaining = session.deck.length + session.deferredMatches.reduce(function (n, ids) { return n + ids.length; }, 0);
     $("session-counts").innerHTML =
       '<span class="sc sc--rem">осталось <b>' + remaining + '</b></span>' +
       '<span class="sc sc--learn">выучил <b>' + s.learned + '</b></span>' +
@@ -486,12 +488,16 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
 
   function renderStep() {
     if (!session) return;
+    if (!session.deck.length && session.deferredMatches.length) {
+      session.deck = session.deferredMatches.shift();
+      session.retryMatch = true;
+    }
     renderSessionBar();
     if (!session.deck.length) { finishSession(); return; }
     session.answered = false;
     var id = session.deck[0];
     var w = byId[id];
-    var type = pickType();
+    var type = session.retryMatch ? "match" : pickType();
     var dir = pickDir();
     session.curType = type;
     session.curDir = dir;
@@ -582,7 +588,7 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       group.push(byId[id]);
     }
     var m = L.buildMatch(group);
-    session.match = { data: m, picked: { left: null }, solved: {}, ids: group.map(function (w) { return w.id; }) };
+    session.match = { data: m, picked: null, busy: false, solved: {}, ids: group.map(function (w) { return w.id; }) };
     var leftHtml = m.left.map(function (it) {
       return '<button class="mtile mtile--left" data-side="left" data-id="' + esc(it.id) + '" type="button">' + esc(it.text) + '</button>';
     }).join("");
@@ -590,12 +596,13 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
       return '<button class="mtile mtile--right" data-side="right" data-id="' + esc(it.id) + '" type="button">' + esc(it.text) + '</button>';
     }).join("");
     return '<div class="sx sx--match">' + typeTag("match") +
-      '<div class="sx-ask">Сопоставь слово и перевод — кликни слева, затем справа</div>' +
+      '<div class="sx-ask">Сопоставь слово и перевод. Можно начать с любой колонки.</div>' +
       '<div class="mgrid"><div class="mcol mcol--left">' + leftHtml + '</div>' +
         '<div class="mcol mcol--right">' + rightHtml + '</div></div>' +
-      '<div class="sx-verdict" id="sx-verdict" hidden></div>' +
+      '<div class="sx-verdict" id="sx-verdict" role="status" hidden></div>' +
+      '<div class="sx-actions"><button class="btn btn--ghost sx-act" data-act="match-skip" type="button">Пропустить, повторить позже</button></div>' +
       '<div class="sx-actions sx-actions--match" id="sx-match-after" hidden>' +
-        '<button class="btn btn--primary sx-act" data-act="match-continue" type="button">Дальше →</button>' +
+        '<button class="btn btn--primary sx-act" data-act="match-continue" type="button">Дальше</button>' +
       '</div>' +
       '</div>';
   }
@@ -621,6 +628,13 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
     var act = e.target.closest(".sx-act");
     if (act) {
       var a = act.getAttribute("data-act");
+      if (a === "match-skip" && session.curType === "match") {
+        session.deferredMatches.push(session.match.ids.slice());
+        session.match.ids.forEach(removeFromDeck);
+        session.stepNo++;
+        renderStep();
+        return;
+      }
       if (a === "match-continue") {
         if (session.curType === "match") advanceMatch();
         return;
@@ -669,54 +683,63 @@ if (typeof window !== "undefined" && typeof document !== "undefined") {
   }
 
   function handleMatchTile(tile) {
+    var st = session.match;
     var side = tile.getAttribute("data-side");
     var id = tile.getAttribute("data-id");
-    var st = session.match;
-    if (st.solved[id] && side === "left") return; // уже решено
-    if (side === "left") {
-      // снять прежнее выделение слева
-      $("session-stage").querySelectorAll(".mtile--left.is-picked").forEach(function (b) { b.classList.remove("is-picked"); });
-      if (st.picked.left === id) { st.picked.left = null; return; }
-      st.picked.left = id;
+    if (st.busy || st.solved[id]) return;
+    var stage = $("session-stage");
+    if (!st.picked || st.picked.side === side) {
+      stage.querySelectorAll(".mtile.is-picked").forEach(function (b) { b.classList.remove("is-picked"); });
+      if (st.picked && st.picked.id === id) { st.picked = null; return; }
+      st.picked = { side: side, id: id, tile: tile };
       tile.classList.add("is-picked");
       return;
     }
-    // side === right
-    if (!st.picked.left) return;
-    var leftId = st.picked.left;
-    var rightId = id;
-    var leftBtn = $("session-stage").querySelector('.mtile--left[data-id="' + leftId + '"]');
-    var rightBtn = tile;
-    if (st.data.pairs[leftId] === rightId) {
-      // верная пара
+    var first = st.picked;
+    var leftId = side === "left" ? id : first.id;
+    var rightId = side === "right" ? id : first.id;
+    first.tile.classList.remove("is-picked");
+    st.picked = null;
+    var v = $("sx-verdict");
+    v.hidden = true;
+    // DOM attributes are strings; vocabulary IDs are numbers.
+    if (String(st.data.pairs[leftId]) === rightId) {
       st.solved[leftId] = 1;
-      leftBtn.classList.remove("is-picked");
-      leftBtn.classList.add("is-solved"); leftBtn.disabled = true;
-      rightBtn.classList.add("is-solved"); rightBtn.disabled = true;
-      st.picked.left = null;
-      // все решены?
-      if (Object.keys(st.solved).length >= st.ids.length) {
-        var v = $("sx-verdict"); v.hidden = false; v.className = "sx-verdict is-ok";
+      [first.tile, tile].forEach(function (b) {
+        b.classList.add("is-solved"); b.disabled = true;
+      });
+      if (Object.keys(st.solved).length === st.ids.length) {
+        v.hidden = false; v.className = "sx-verdict is-ok";
         v.innerHTML = "<b>Все пары верны!</b>";
         $("sx-match-after").hidden = false;
       }
-    } else {
-      // неверно — мигнуть и сбросить
-      leftBtn.classList.remove("is-picked");
-      leftBtn.classList.add("is-shake");
-      rightBtn.classList.add("is-shake");
-      st.picked.left = null;
-      setTimeout(function () {
-        if (leftBtn) leftBtn.classList.remove("is-shake");
-        if (rightBtn) rightBtn.classList.remove("is-shake");
-      }, 400);
+      return;
     }
+    st.busy = true;
+    first.tile.classList.add("is-shake");
+    tile.classList.add("is-shake");
+    v.hidden = false; v.className = "sx-verdict is-bad";
+    v.textContent = "Неверно. Сейчас подсветится правильная пара.";
+    var correct = stage.querySelector('.mtile[data-side="' + side + '"][data-id="' + first.id + '"]');
+    setTimeout(function () {
+      if (!session || session.curType !== "match" || session.match !== st) return;
+      first.tile.classList.remove("is-shake"); tile.classList.remove("is-shake");
+      first.tile.classList.add("is-hint"); correct.classList.add("is-hint");
+      v.className = "sx-verdict is-ok";
+      v.textContent = "Это правильная пара. Запомни её и выбери самостоятельно.";
+      setTimeout(function () {
+        if (!session || session.curType !== "match" || session.match !== st) return;
+        first.tile.classList.remove("is-hint"); correct.classList.remove("is-hint");
+        st.busy = false;
+        v.hidden = true;
+      }, 1400);
+    }, 450);
   }
 
   // Завершение сопоставления: убрать ВСЕ слова группы из колоды как «пройденные»
   // (засчитываем выученными — это активная проверка узнавания).
   function advanceMatch() {
-    if (!session || !session.match) return;
+    if (!session || !session.match || Object.keys(session.match.solved).length !== session.match.ids.length) return;
     var ids = session.match.ids;
     ids.forEach(function (id) { markLearned(id); removeFromDeck(id); session.stats.learned++; });
     session.stepNo++;

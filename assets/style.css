@@ -663,6 +663,7 @@ table.tbl { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 1
 .mtile--left { font-family: var(--hy); font-size: 19px; }
 .mtile:hover:not([disabled]) { border-color: var(--primary); }
 .mtile.is-picked { border-color: var(--primary); background: var(--primary-soft); }
+.mtile.is-hint { background: var(--good-bg); border-color: var(--good-line); color: var(--good); }
 .mtile.is-solved { background: var(--good-bg); border-color: var(--good-line); color: var(--good); cursor: default; opacity: .85; }
 .mtile.is-shake { border-color: var(--bad); background: var(--bad-bg); animation: sx-shake .3s; }
 @keyframes sx-shake { 0%,100% { transform: translateX(0); } 25% { transform: translateX(-5px); } 75% { transform: translateX(5px); } }
@@ -697,6 +698,7 @@ html[data-theme="dark"] .opt.is-active { color: #11151b; }
 html[data-theme="dark"] .optrow--checks .opt.is-active { color: #11151b; }
 html[data-theme="dark"] .sx-verdict.is-ok,
 html[data-theme="dark"] .sx-opt.is-correct,
+html[data-theme="dark"] .mtile.is-hint,
 html[data-theme="dark"] .mtile.is-solved { color: var(--good); }
 
 /* ---------- Печать ---------- */
