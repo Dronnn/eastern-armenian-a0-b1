@@ -58,8 +58,14 @@ def choice(prompt,opts,correct=0):
  # Deterministic rotation avoids always placing the correct choice first.
  offset=sum(map(ord,prompt))%len(opts); order=list(range(len(opts)));order=order[offset:]+order[:offset]
  return '<div class="quiz" data-quiz><p class="quiz__q">'+prose(prompt)+'</p><div class="quiz__opts">'+''.join(f'<button type="button" class="opt" data-correct="{str(i==correct).lower()}">{prose(opts[i])}</button>' for i in order)+'</div><p class="quiz__fb" data-fb role="status"></p></div>'
-def typed(prompt,answer,hint='Проверь по опорным словам и образцу текста.'):
- return f'<div class="quiz" data-quiz="type" data-answer="{e(answer)}" data-hint="{e(hint)}"><label><span class="quiz__q">{prose(prompt)}</span><input class="inp hy" lang="hy" data-input autocomplete="off" aria-label="{e(prompt)}"></label><button class="btn btn--primary" data-check>Проверить</button><p class="quiz__fb" data-fb role="status"></p></div>'
+def typed(prompt,answer,hint='Сверь задание и форму ответа. Если нужна помощь, открой «Посмотреть ответ» ниже.'):
+ language='ru' if re.search('[А-Яа-яЁё]',answer) else 'hy'
+ first=answer.split('|')[0]
+ if re.fullmatch(r'[0-9:]+',first):form='Введи ответ цифрами.'
+ elif ('...' in prompt or '…' in prompt) and len(first.split())<=2:form='Введи только пропущенную часть.'
+ elif all(len(a.split())==1 for a in answer.split('|')):form='Введи только ответ, без пояснений.'
+ else:form='Введи ответ целиком, без пояснений.'
+ return f'<div class="quiz" data-quiz="type" data-answer="{e(answer)}" data-hint="{e(hint)}"><label><span class="quiz__q">{prose(prompt)}</span><input class="inp hy" lang="{language}" data-input autocomplete="off" aria-label="{e(prompt)}"></label><p class="muted quiz-format">{form} {"Язык ответа: русский." if language=="ru" else "Язык ответа: армянский." if re.search("[Ա-ֆ]",answer) else ""} Регистр и пунктуация не влияют на проверку.</p><button class="btn btn--primary" data-check>Проверить</button><p class="quiz__fb" data-fb role="status"></p><details class="answer-help"><summary>Посмотреть ответ</summary><p lang="{language}" class="reading-text">{e(answer.split("|")[0])}</p><p>Это образец для данного задания. Проверка сравнивает с записанными вариантами; другие верные формулировки могут не распознаться.</p></details></div>'
 def words(u):
  rows=[]
  for a,b in u['words']:
@@ -99,19 +105,30 @@ def activities(u):
 def spaced(u):
  rows=review_schedule[u['id']]
  if not rows:return ''
- s=f'<details class="card" id="spaced"><summary>Повторение слов: {len(rows)} опор из прошлых занятий</summary><p>Выбери 8–12 слов на сессию. Сначала ответь без подсказки. Затем прочитай прежний контекст вслух, закрой его и придумай свою реплику. Чередуй вопрос о себе и ответ. Повторы назначены через 1, 3, 7, 14 и 28 занятий; номер занятия не равен календарному дню.</p>'
+ s=f'<details class="card" id="spaced"><summary>Повторение слов: {len(rows)} опор из прошлых занятий</summary><p>В каждом задании выбери перевод кнопкой или введи армянское слово по русскому значению. Если слов больше 12, можно выполнить только первые 12 и вернуться к остальным позже. Под заданием открой «Слово и пример из прошлого урока», чтобы проверить себя. Повторы назначены через 1, 3, 7, 14 и 28 занятий; номер занятия не равен календарному дню.</p>'
  for a,b,origin,stage in rows:
   context=next((s for s in re.split(r'(?<=։)\s*',' '.join(origin['text'])) if a.lower() in s.lower()),word_examples.get(a,a))
   if stage%2==0:s+=typed('Вспомни по смыслу «'+b+'» слово или сочетание из занятия «'+origin['title']+'».',a)
   else:
    alternatives=[x[1] for x in origin['words'] if x[1]!=b][:2]
    s+=choice('Сопоставь с русским смыслом: '+a+'.',[b]+alternatives)
-  s+='<details><summary>Контекст для проверки и новой реплики</summary><p lang="hy" class="reading-text">'+e(context)+'</p><p>Скажи иначе или о себе. Не добавляй неизвестное время глагола; можно изменить человека, предмет или место.</p><a href="'+rel(origin['url'],u['url'])+'#practice">Первое введение</a></details>'
+  s+='<details><summary>Слово и пример из прошлого урока</summary><p>'+hy(a)+' — '+e(b)+'</p><p lang="hy" class="reading-text">'+e(context)+'</p><p>Прочитай слово и пример вслух. Закрой подсказку и назови перевод ещё раз. Если уже умеешь, составь с этим словом свою фразу устно.</p><a href="'+rel(origin['url'],u['url'])+'#practice">Первое введение</a></details>'
  return s+'</details>'
 
 def cumulative(u):
  n=u['after'];nums=sorted(set(k for k in [n-1,n-4,n-10,5 if n>16 else 0,15 if n>34 else 0] if k>0))
- return '<section class="card"><h2>Накопительное повторение грамматики</h2><p>Здесь смешаны старые темы. Прочитай исходную реплику, затем измени её без подсказки.</p>'+''.join('<p>'+hy(chains[k]['steps'][-2][1].split('|')[0])+'</p>'+typed('Урок '+str(k)+': '+chains[k]['steps'][-1][0],chains[k]['steps'][-1][1]) for k in nums)+'<p>Через два дня ответь снова, а через неделю перескажи текст без подготовки.</p></section>'
+ if not nums:return ''
+ blocks=[]
+ for k in nums:
+  c=chains[k];q,a=c['steps'][-1]
+  if k==1:q='Напиши по памяти слово «луна», которое разбирали в уроке 1.'
+  elif k==2:q='Напиши по памяти слово «хлеб» из урока 2.'
+  elif k==4:q='Напиши готовую реплику «Я не понял» из урока 4.'
+  context='' if k<=4 else '<p>Исходная фраза для этого задания: '+hy(c['base'] if k==52 else c['steps'][-2][1].split('|')[0])+'</p>'
+  help_='<details><summary>Вспомнить материал урока '+str(k)+'</summary><p>Образец из урока: '+hy(c['base'])+'</p><a href="'+rel(files[k].relative_to(SITE).as_posix(),u['url'])+'#practice">Открыть практику урока '+str(k)+'</a></details>'
+  blocks.append('<div class="review-task">'+context+typed('Урок '+str(k)+': '+q,a)+help_+'</div>')
+ return '<section class="card"><h2>Повторение прошлых уроков</h2><p>Это отдельные задания. В каждом прочитай условие и введи ответ на армянском. Если дана исходная фраза, измени её по условию; остальные слова сохрани. Если забыл материал, открой подсказку под заданием или перейди в указанный урок.</p>'+''.join(blocks)+'<p>После проверки прочитай ответы вслух. Через два дня выполни эти задания снова без подсказок.</p></section>'
+
 # Mechanical reference validation drafted with Grok CLI; reviewed locally.
 def resolve_review_questions(question_ids, questions, allowed_topics):
     seen = set()

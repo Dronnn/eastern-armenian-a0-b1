@@ -5,7 +5,12 @@
 .reading-text{font-family:var(--hy);font-size:1.15rem;line-height:1.95;max-width:72ch}
 .reading-text p{margin-bottom:1.1em}
 .course-practice{scroll-margin-top:90px}
-.course-practice details{padding:.8rem 0;border-top:1px solid var(--line)}
+.course-practice details:not(.card){padding:1rem;border-top:1px solid var(--line)}
+.course-practice details.card{padding:22px 24px}
+.course-practice details[open]>summary{margin-bottom:1rem}
+.review-task+.review-task{margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--line)}
+.quiz-format{font-size:.85rem;margin:.25rem 0 .75rem}
+@media(max-width:600px){.course-practice details.card{padding:18px 16px}.course-practice details:not(.card){padding:.8rem}.course-practice .quiz{padding:18px 16px}}
 .course-practice summary{cursor:pointer;font-weight:600}
 .course-practice .inp{width:100%;max-width:44rem;margin:.5rem 0}
 .course-practice textarea{display:block;width:100%;min-height:130px;padding:1rem;background:var(--bg);color:var(--ink);border:1px solid var(--line-strong);border-radius:10px;font:inherit;line-height:1.7}

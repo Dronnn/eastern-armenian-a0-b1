@@ -120,9 +120,15 @@
       var fb = q.querySelector("[data-fb]");
       var answers = (q.dataset.answer || "").split("|").map(norm);
       var tries = 0;
+      var scored = false;
       if (!btn || !input) return;
       function check() {
         if (q.dataset.done) return;
+        if (!norm(input.value)) {
+          fb.textContent = "Сначала введи ответ.";
+          fb.className = "quiz__fb";
+          return;
+        }
         var ok = answers.indexOf(norm(input.value)) !== -1;
         tries++;
         if (ok) {
@@ -130,13 +136,12 @@
           input.style.borderColor = "var(--good)";
           fb.textContent = q.dataset.good || "Верно! 🎉";
           fb.className = "quiz__fb is-good";
-          bumpScore(true);
+          if (!scored) { bumpScore(true); scored = true; }
         } else if (tries >= 2) {
-          q.dataset.done = "1";
           input.style.borderColor = "var(--bad)";
-          fb.innerHTML = 'Правильно: <span class="hy">' + (q.dataset.answer.split("|")[0]) + "</span>";
+          fb.textContent = "Образец ответа: " + q.dataset.answer.split("|")[0] + " Исправь свой ответ и нажми «Проверить» ещё раз.";
           fb.className = "quiz__fb is-bad";
-          bumpScore(false);
+          if (!scored) { bumpScore(false); scored = true; }
         } else {
           input.style.borderColor = "var(--bad)";
           fb.textContent = q.dataset.hint || "Почти — попробуй ещё раз.";

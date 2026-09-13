@@ -76,3 +76,16 @@ assert all(counts[k]>0 for k in ['order','matching','quiz'])
 print('Content coverage passed: 58 lessons, 38 additional pages, 58 three-step chains, 331 active entries with five planned reviews.')
 print('Generated exercise blocks:',dict(counts))
 print('Additional pages by level:',dict(Counter(u['level'] for u in extras)))
+
+# Repetition must preserve the context needed by the selected task.
+five=next((root/'lessons').glob('0005-*.html')).read_text()
+assert 'Напиши по памяти слово «луна»' in five
+assert 'Закрой образец и восстанови слово целиком.' not in five.split('Повторение прошлых уроков')[1]
+assert 'Напиши готовую реплику «Я не понял»' in five
+for path in list((root/'lessons').glob('*.html'))+list((root/'practice').glob('*.html')):
+ text=path.read_text()
+ assert 'Прочитай исходную реплику, затем измени её без подсказки.' not in text,path
+ assert 'Выбери 8–12 слов на сессию.' not in text,path
+ practice=text.split('id="practice"',1)[1].split('<!-- COURSE-PRACTICE END -->')[0]
+ assert practice.count('class="answer-help"')==practice.count('data-quiz="type"'),path
+print('Exercise guidance: all generated typed tasks have answer help; lesson 5 recall has explicit targets.')
